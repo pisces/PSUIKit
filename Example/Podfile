@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PSUIKit_Example' do
+  pod 'PSUIKit', :path => '../'
+
+  target 'PSUIKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
