@@ -1,5 +1,7 @@
 # PSUIKit
 
+PSUIKit is a framework that helps you easily create iOS apps and change the design style. And has many useful components and classes.
+
 [![CI Status](http://img.shields.io/travis/Steve Kim/PSUIKit.svg?style=flat)](https://travis-ci.org/Steve Kim/PSUIKit)
 [![Version](https://img.shields.io/cocoapods/v/PSUIKit.svg?style=flat)](http://cocoapods.org/pods/PSUIKit)
 [![License](https://img.shields.io/cocoapods/l/PSUIKit.svg?style=flat)](http://cocoapods.org/pods/PSUIKit)
@@ -10,12 +12,6 @@
 - Themes provide the navigation bar that helps you easily change the style
 - Frequently used components provided in the application
 
-## Showcase
-<p valign="top">
-<img src="screenshots/showcase1.png" width="320"/>
-<img src="screenshots/showcase2.png" width="320"/>
-</p>
-
 ## Demo Application
 <p valign="top">
 <img src="screenshots/sh_001.png" width="320"/>
@@ -25,7 +21,6 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 
 ### Changing the navigation bar style with a theme
 <p valign="top">
@@ -129,7 +124,7 @@ navigationController.theme = [[UIThemeDefaultStyle alloc] init];
     sourceView.backgroundColor = [UIColor redColor];
     
     PSBadge *badge = [[PSBadge alloc] initWithBackgroundImage:sourceView.image maxSize:CGSizeMake(100, sourceView.height) minSize:sourceView.size padding:CGPaddingMake(3, 3, 3, 3)];
-    badge.text = @"N";
+    badge.text = @"7";
     badge.textLabel.textColor = [UIColor whiteColor];
     badge.origin = CGPointMake(self.xOffset, self.yOffset);
     
@@ -206,6 +201,12 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "PSUIKit"
 ```
+
+## Showcase
+<p valign="top">
+<img src="screenshots/showcase1.png" width="320"/>
+<img src="screenshots/showcase2.png" width="320"/>
+</p>
 
 ## Author
 
