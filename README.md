@@ -20,6 +20,12 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+### Demo
+<p valign="top">
+<img src="screenshots/sh_001.png" width="320"/>
+<img src="screenshots/sh_002.png" width="320"/>
+</p>
+
 ### Changing the navigation bar style with a theme
 <p valign="top">
 <img src="screenshots/UIThemeDefaultStyle.jpg" width="320"/>
