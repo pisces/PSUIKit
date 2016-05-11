@@ -77,6 +77,10 @@
             [self runPSAlertViewWithCustomContentView];
             break;
             
+        case ExampleTypePSBadge:
+            [self runPSBadge];
+            break;
+            
         case ExampleTypePSButtonBar:
             [self runPSButtonBar];
             break;
@@ -121,6 +125,19 @@
     tableView.dataSource = self;
     
     [PSAlertView alertViewWithContentView:tableView cancelButtonTitle:@"Ok" dismission:nil otherButtonTitles:nil, nil];
+}
+
+- (void)runPSBadge {
+    UIView *sourceView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 28, 28)];
+    sourceView.layer.cornerRadius = sourceView.width/2;
+    sourceView.backgroundColor = [UIColor redColor];
+    
+    PSBadge *badge = [[PSBadge alloc] initWithBackgroundImage:sourceView.image maxSize:CGSizeMake(100, sourceView.height) minSize:sourceView.size padding:CGPaddingMake(3, 3, 3, 3)];
+    badge.text = @"N";
+    badge.textLabel.textColor = [UIColor whiteColor];
+    badge.origin = CGPointMake(20, 100);
+    
+    [self.view addSubview:badge];
 }
 
 - (void)runPSButtonBar {

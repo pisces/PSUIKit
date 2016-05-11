@@ -16,15 +16,16 @@
 <img src="screenshots/showcase2.png" width="320"/>
 </p>
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-### Demo
+## Demo Application
 <p valign="top">
 <img src="screenshots/sh_001.png" width="320"/>
 <img src="screenshots/sh_002.png" width="320"/>
 </p>
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 
 ### Changing the navigation bar style with a theme
 <p valign="top">
