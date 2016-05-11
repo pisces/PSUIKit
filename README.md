@@ -206,7 +206,7 @@ pod "PSUIKit"
 <p valign="top">
 <img src="screenshots/showcase1.png" width="320"/>
 <img src="screenshots/showcase2.png" width="320"/>
-<img src="screenshots/orcller_001.png" width="320"/>
+<img src="screenshots/orcller_001.jpg" width="320"/>
 </p>
 
 ## Author
