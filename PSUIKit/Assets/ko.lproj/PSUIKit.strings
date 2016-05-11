@@ -1,0 +1,40 @@
+/* 
+  PSUIKit.strings
+  PSUIKit
+
+  Created by Steve Kim on 2015. 2. 11..
+  Copyright (c) 2013 ~ 2016 Steve Kim. All rights reserved.
+*/
+
+"Album" = "앨범";
+"Camera Roll" = "카메라 롤";
+"Cancel" = "취소";
+"Dismiss" = "뒤로";
+"Favorites" = "선호하는 사진";
+"My Photo Stream" = "나의 사진 스트림";
+"Recently Deleted" = "최근 삭제된 항목";
+"Select" = "선택";
+"Videos" = "비디오";
+
+"yesterday" = "어제";
+"before_yesterday" = "그저께";
+"just_now" = "방금";
+"days_ago" = "일 전";
+"hours_ago" = "시간 전";
+"minutes_ago" = "분 전";
+"seconds_ago" = "초 전";
+"days" = "일";
+"1month" = "1월";
+"2month" = "2월";
+"3month" = "3월";
+"4month" = "4월";
+"5month" = "5월";
+"6month" = "6월";
+"7month" = "7월";
+"8month" = "8월";
+"9month" = "9월";
+"10month" = "10월";
+"11month" = "11월";
+"12month" = "12월";
+"AM" = "오전";
+"PM" = "오후";

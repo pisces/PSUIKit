@@ -1,0 +1,40 @@
+/* 
+  PSUIKit.strings
+  PSUIKit
+
+  Created by Steve Kim on 2015. 2. 11..
+  Copyright (c) 2013 ~ 2016 Steve Kim. All rights reserved.
+*/
+
+"Album" = "Album";
+"Camera Roll" = "Camera Roll";
+"Cancel" = "Cancel";
+"Dismiss" = "Dismiss";
+"Favorites" = "Favorites";
+"My Photo Stream" = "My Photo Stream";
+"Recently Deleted" = "Recently Deleted";
+"Select" = "Select";
+"Videos" = "Videos";
+
+"yesterday" = "Yesterday";
+"before_yesterday" = "Day before yesterday";
+"just_now" = "Just now";
+"days_ago" = "days ago";
+"hours_ago" = "hours ago";
+"minutes_ago" = "minutes ago";
+"seconds_ago" = "seconds ago";
+"1month" = "January";
+"2month" = "February";
+"3month" = "March";
+"4month" = "April";
+"5month" = "May";
+"6month" = "June";
+"7month" = "July";
+"8month" = "August";
+"9month" = "September";
+"10month" = "October";
+"11month" = "November";
+"12month" = "December";
+"days" = "";
+"AM" = "AM";
+"PM" = "PM";

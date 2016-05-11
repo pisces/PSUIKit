@@ -1,0 +1,30 @@
+PODS:
+  - GoogleAnalytics (3.14.0)
+  - OHAttributedLabel (3.5.5)
+  - PSUIKit (1.0.0):
+    - GoogleAnalytics
+    - OHAttributedLabel
+    - Reachability
+    - SDWebImage
+  - Reachability (3.2)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+
+DEPENDENCIES:
+  - PSUIKit (from `../`)
+
+EXTERNAL SOURCES:
+  PSUIKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GoogleAnalytics: 9be1afdb8deeac4bb5f13ca7f7d3b9db2a1f43dc
+  OHAttributedLabel: 9b2eb99323dee6b3a81ef3bc8e98b084117bca2d
+  PSUIKit: 7686ba93e2dc913f42ae7d7c017d49f6172a5a45
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+
+PODFILE CHECKSUM: ad542fa5b1ece0899c4cbe03e98f0c1b5a6389f3
+
+COCOAPODS: 1.0.0
