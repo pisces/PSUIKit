@@ -28,6 +28,7 @@
     self = [super initWithRootViewController:rootViewController];
     
     if (self) {
+        self.transition = [[UIViewControllerMoveTransition alloc] init];
         _allowsMultipleSelection = YES;
         rootViewController.allowsMultipleSelection = self.allowsMultipleSelection;
         rootViewController.assetListViewDelegate = self;

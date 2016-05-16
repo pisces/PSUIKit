@@ -67,7 +67,7 @@
     self.collectionView.allowsMultipleSelection = YES;
     self.collectionView.showsVerticalScrollIndicator = YES;
     
-    self.navigationController.allowsGestureTransitions = NO;
+    self.navigationController.transition.allowsGestureTransitions = NO;
     self.navigationController.theme = [UIThemeDefaultStyle sharedTheme];
     
     [self.navigationItem addRightBarButtonItem:[self.navigationController.theme rightBarButtonItemWithTitle:[PSUIKit localizedStringWithKey:@"Cancel"] target:self action:@selector(close)]];
@@ -197,7 +197,7 @@
     
     __block PSAssetListViewCell *endCell = nil;
     
-    DragDropModalTransitionSource *presentingSource = [[DragDropModalTransitionSource new] from:^CGRect{
+    AnimatedDragDropTransitionSource *presentingSource = [[AnimatedDragDropTransitionSource new] from:^CGRect{
         CGPoint offset = [self.collectionView convertPoint:cell.origin toView:self.view.window];
         return CGRectMake(offset.x, offset.y, cell.imageView.width, cell.imageView.height);
     } to:^CGRect{
@@ -207,7 +207,7 @@
         cell.imageView.hidden = NO;
     }];
     
-    DragDropModalTransitionSource *dismissionSource = [[DragDropModalTransitionSource new] from:^CGRect{
+    AnimatedDragDropTransitionSource *dismissionSource = [[AnimatedDragDropTransitionSource new] from:^CGRect{
         return assetsGroupViewController.selectedView.imageView.frame;
     } to:^CGRect{
         endCell = (PSAssetListViewCell *) [self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:assetsGroupViewController.selectedIndex inSection:0]];

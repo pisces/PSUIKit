@@ -90,8 +90,7 @@ static PopUpViewManager *uniqueInstance;
         return;
     }
     
-    Class class = viewController.modalTransitionStyle == UIModalTransitionStyleCoverVertical ? [MoveModalNavigationController class] : [PSNavigationController class];
-    UINavigationController *navigationController = [[class alloc] initWithRootViewController:viewController];
+    UINavigationController *navigationController = [[PSNavigationController alloc] initWithRootViewController:viewController];
     UIBarButtonItem *leftBarButtonItem = nil;
     
     if (type == LeftBarButtonItemTypeHome)

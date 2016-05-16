@@ -9,10 +9,10 @@
 #import <AddressBook/AddressBook.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <CoreLocation/CoreLocation.h>
+#import <UIViewControllerTransitions/UIViewControllerTransitions.h>
 #import "PSViewController.h"
 #import "PSImageAssetScrollView.h"
 #import "PSRecycledScrollView.h"
-#import "DragDropModalNavigationController.h"
 
 @interface NSDate (org_apache_PSUIKit_PSAssetsGroupViewController_NSDate)
 - (NSString *)relativeTimeSpanString;
@@ -20,7 +20,7 @@
 
 @protocol PSAssetsGroupViewControllerDelegate;
 
-@interface PSAssetsGroupViewController : PSViewController <DragDrapModalNavigationControllerDelegate, PSImageAssetScrollViewGestureDelegate, PSRecycledScrollViewDataSource>
+@interface PSAssetsGroupViewController : PSViewController <UIViewControllerTransitionDelegate, PSImageAssetScrollViewGestureDelegate, PSRecycledScrollViewDataSource>
 @property (nonatomic) NSInteger selectedIndex;
 @property (nonatomic, strong) NSArray *assets;
 @property (nonatomic) BOOL allowsShowPageNumber;
@@ -28,10 +28,14 @@
 @property (nonatomic, readonly) PSImageAssetScrollView *selectedView;
 @property (nonatomic, weak) id<PSAssetsGroupViewControllerDelegate> delegate;
 + (CGRect)frameWithImageRef:(CGImageRef)imageRef;
-+ (PSAssetsGroupViewController *)newWithViewController:(UIViewController *)viewController sourceImage:(UIImage *)sourceImage presentingSource:(DragDropModalTransitionSource *)presentingSource dismissionSource:(DragDropModalTransitionSource *)dismissionSource completion:(void(^)(void))completion;
++ (PSAssetsGroupViewController *)newWithViewController:(UIViewController *)viewController
+                                           sourceImage:(UIImage *)sourceImage
+                                      presentingSource:(AnimatedDragDropTransitionSource *)presentingSource
+                                      dismissionSource:(AnimatedDragDropTransitionSource *)dismissionSource
+                                            completion:(void(^)(void))completion;
 @end
 
-@protocol PSAssetsGroupViewControllerDelegate <DragDrapModalNavigationControllerDelegate>
+@protocol PSAssetsGroupViewControllerDelegate <UIViewControllerTransitionDelegate>
 @optional
 - (void)controller:(PSAssetsGroupViewController *)controller didChangeSelectedIndex:(NSInteger)selectedIndex;
 @end

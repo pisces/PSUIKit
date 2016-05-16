@@ -8,7 +8,7 @@
 
 #import "PSTableViewController.h"
 #import "PSAssetsGroupListViewController.h"
-#import "MoveModalNavigationController.h"
+#import "PSNavigationController.h"
 
 typedef void (^PickerCompletionBlock)(NSArray *results);
 
@@ -16,7 +16,7 @@ typedef void (^PickerCompletionBlock)(NSArray *results);
 @property (nonatomic, copy) PickerCompletionBlock completion;
 @end
 
-@interface PSImagePickerController : MoveModalNavigationController <PickerControllerCompletion, PSAssetListViewControllerDelegate>
+@interface PSImagePickerController : PSNavigationController <PickerControllerCompletion, PSAssetListViewControllerDelegate>
 @property (nonatomic) BOOL allowsMultipleSelection;
 @property (nonatomic, copy) PickerCompletionBlock completion;
 @property (nonatomic, readonly) PSAssetsGroupListViewController *assetsGroupListViewController;

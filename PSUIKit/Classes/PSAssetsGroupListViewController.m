@@ -35,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationController.allowsGestureTransitions = NO;
+//    self.navigationController.allowsGestureTransitions = NO;
     self.navigationController.theme = [UIThemeDefaultStyle sharedTheme];
     
     [self.navigationItem addRightBarButtonItem:[self.navigationController.theme rightBarButtonItemWithTitle:[PSUIKit localizedStringWithKey:@"Cancel"] target:self action:@selector(close)]];

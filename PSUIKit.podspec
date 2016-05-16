@@ -37,6 +37,7 @@ Pod::Spec.new do |s|
   s.dependency 'Reachability'
   s.dependency 'OHAttributedLabel'
   s.dependency 'GoogleAnalytics'
+  s.dependency 'UIViewControllerTransitions'
 
   s.resource_bundles = {
     'PSUIKit' => ['PSUIKit/Assets/*.*', 'PSUIKit/Assets/*/*.*']
