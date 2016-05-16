@@ -35,8 +35,9 @@ const CGFloat contentScrollViewPadding = 15;
 #pragma mark - Overridden: PSViewController
 
 - (BOOL)closeAnimated:(BOOL)animated completion:(void (^)(void))completion {
-    if ([self.navigationController isKindOfClass:[DragDropModalNavigationController class]])
-        ((DragDropModalNavigationController *) self.navigationController).sourceImage = self.selectedView.imageView.image;
+    if ([self.transition isKindOfClass:[UIViewControllerDragDropTransition class]]) {
+        ((UIViewControllerDragDropTransition *) self.transition).sourceImage = self.selectedView.imageView.image;
+    }
     
     return [super closeAnimated:animated completion:completion];
 }
@@ -164,17 +165,25 @@ const CGFloat contentScrollViewPadding = 15;
     return CGRectMake(x, y, w, h);
 }
 
-+ (PSAssetsGroupViewController *)newWithViewController:(UIViewController *)viewController sourceImage:(UIImage *)sourceImage presentingSource:(DragDropModalTransitionSource *)presentingSource dismissionSource:(DragDropModalTransitionSource *)dismissionSource completion:(void(^)(void))completion {
++ (PSAssetsGroupViewController *)newWithViewController:(UIViewController *)viewController
+                                           sourceImage:(UIImage *)sourceImage
+                                      presentingSource:(AnimatedDragDropTransitionSource *)presentingSource
+                                      dismissionSource:(AnimatedDragDropTransitionSource *)dismissionSource
+                                            completion:(void(^)(void))completion {
     PSAssetsGroupViewController *controller = [[PSAssetsGroupViewController alloc] init];
     
     if ([viewController conformsToProtocol:@protocol(PSAssetsGroupViewControllerDelegate)])
         controller.delegate = (id<PSAssetsGroupViewControllerDelegate>) viewController;
     
-    DragDropModalNavigationController *navigationController = [[DragDropModalNavigationController alloc] initWithRootViewController:controller];
-    navigationController.sourceDelegate = controller;
-    navigationController.sourceImage = sourceImage;
-    navigationController.presentingSource = presentingSource;
-    navigationController.dismissionSource = dismissionSource;
+    UIViewControllerDragDropTransition *transition = [[UIViewControllerDragDropTransition alloc] init];
+    transition.sourceImage = sourceImage;
+    transition.dismissionDelegate = controller;
+    transition.dismissionDataSource = controller;
+    transition.presentingSource = presentingSource;
+    transition.dismissionSource = dismissionSource;
+    
+    PSNavigationController *navigationController = [[PSNavigationController alloc] initWithRootViewController:controller];
+    navigationController.transition = transition;
     
     [viewController presentViewController:navigationController animated:YES completion:completion];
     
