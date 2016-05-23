@@ -1,7 +1,7 @@
 PODS:
   - GoogleAnalytics (3.14.0)
   - OHAttributedLabel (3.5.5)
-  - PSUIKit (1.0.0):
+  - PSUIKit (1.0.1):
     - GoogleAnalytics
     - OHAttributedLabel
     - Reachability
@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   GoogleAnalytics: 9be1afdb8deeac4bb5f13ca7f7d3b9db2a1f43dc
   OHAttributedLabel: 9b2eb99323dee6b3a81ef3bc8e98b084117bca2d
-  PSUIKit: 7168d1fc3fceae61ccc2e402153da51f1afd9dc4
+  PSUIKit: a8500a18eabd5f5b36b103aa855a1eae8cf10a1e
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   UIViewControllerTransitions: 2efc70b224b26a9f2366f96d6cc5e171e43e80f4
