@@ -48,7 +48,7 @@ typedef void (^PSButtonBarDelegateBlock)(UIButton *button, NSUInteger buttonInde
 @property (nonatomic) CGPadding padding;
 @property (nonatomic) CGPadding seperatorPadding;
 @property (nonatomic) PSButtonBarAlignment alignment;
-@property (nonatomic, readonly) NSMutableArray *buttons;
+@property (nonatomic, readonly) NSMutableArray<UIButton *> *buttons;
 @property (nonatomic, readonly) UIButton *selectedChild;
 @property (nonatomic, strong) UIColor *seperatorColor;
 @property (nonatomic, strong) PSButtonBarDelegateObject *delegateObject;
