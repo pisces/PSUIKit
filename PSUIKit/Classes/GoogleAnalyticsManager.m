@@ -23,10 +23,6 @@
  */
 
 #import "GoogleAnalyticsManager.h"
-#import "GAI.h"
-#import "GAITracker.h"
-#import "GAIFields.h"
-#import "GAIDictionaryBuilder.h"
 #import <objc/runtime.h>
 
 @implementation GANTracker
