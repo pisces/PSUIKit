@@ -2,7 +2,7 @@
 
 PSUIKit is a framework that helps you easily create iOS apps and change the design style. And has many useful components and classes.
 
-[![CI Status](http://img.shields.io/travis/Steve Kim/PSUIKit.svg?style=flat)](https://travis-ci.org/Steve Kim/PSUIKit)
+[![CI Status](http://img.shields.io/travis/pisces/PSUIKit.svg?style=flat)](https://travis-ci.org/pisces/PSUIKit)
 [![Version](https://img.shields.io/cocoapods/v/PSUIKit.svg?style=flat)](http://cocoapods.org/pods/PSUIKit)
 [![License](https://img.shields.io/cocoapods/l/PSUIKit.svg?style=flat)](http://cocoapods.org/pods/PSUIKit)
 [![Platform](https://img.shields.io/cocoapods/p/PSUIKit.svg?style=flat)](http://cocoapods.org/pods/PSUIKit)
