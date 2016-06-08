@@ -36,6 +36,7 @@ Pod::Spec.new do |s|
   s.dependency 'SDWebImage'
   s.dependency 'Reachability'
   s.dependency 'OHAttributedLabel'
+  s.dependency 'Google'
   s.dependency 'Google/Analytics'
   s.dependency 'UIViewControllerTransitions'
 
