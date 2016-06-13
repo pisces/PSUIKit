@@ -1,0 +1,6 @@
+framework module PSUIKit {
+  umbrella header "PSUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

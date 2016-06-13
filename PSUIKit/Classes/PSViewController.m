@@ -88,7 +88,6 @@
     
     _isViewAppeared = YES;
     
-    [[GoogleAnalyticsManager sharedManager] trackWithController:self];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
     [self invalidateProperties];
 }

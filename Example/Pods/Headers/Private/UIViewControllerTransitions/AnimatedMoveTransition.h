@@ -1,1 +1,0 @@
-../../../UIViewControllerTransitions/UIViewControllerTransitions/Classes/AnimatedMoveTransition.h

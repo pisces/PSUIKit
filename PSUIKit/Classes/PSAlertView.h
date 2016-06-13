@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 ~ 2016 Steve Kim. All rights reserved.
 //
 
-#import <CommonCrypto/CommonDigest.h>
 #import "PSAttributedDivisionLabel.h"
 #import "GraphicsLayout.h"
 #import "base.h"

@@ -6,7 +6,7 @@
 //  Copyright © 2016 Steve Kim. All rights reserved.
 //
 
-#import <PSUIKit/PSUIKit.h>
+@import PSUIKit;
 
 @interface CustomExampleTheme : UIThemeBase
 

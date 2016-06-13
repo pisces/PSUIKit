@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 ~ 2016 Steve Kim. All rights reserved.
 //
 
+#import <CommonCrypto/CommonDigest.h>
 #import "PSAlertView.h"
 
 #define defaultLineColor [UIColor colorWithRed:223/255.0 green:224/255.0 blue:229/255.0 alpha:1]
