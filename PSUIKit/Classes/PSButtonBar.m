@@ -53,7 +53,7 @@
     {
         canUpdateDisplayList = NO;
         
-        [self updateDisplayList];
+        [self setNeedsLayout];
     }
     
     if (numOfButtonsChanged)
@@ -104,21 +104,16 @@
     sepertatorView.padding = self.seperatorPadding;
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    [self updateDisplayList];
+}
+
 - (void)setUpSubviews
 {
     [self addSubview:sepertatorView];
-}
-
-- (void)setFrame:(CGRect)frame
-{
-    if (CGRectEqualToRect(frame, self.frame))
-        return;
-    
-    super.frame = frame;
-    
-    canUpdateDisplayList = YES;
-    
-    [self invalidateProperties];
 }
 
 // ================================================================================================
