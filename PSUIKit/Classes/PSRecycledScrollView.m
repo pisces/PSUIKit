@@ -89,10 +89,11 @@
 
 - (void)moveToIndex:(NSInteger)index withAnimation:(BOOL)animation {
     CGFloat size = [self combinedSizeForViewUntilIndex:index];
-    if (self.type == PSRecycledScrollViewTypeVertical)
+    if (self.type == PSRecycledScrollViewTypeVertical) {
         [self setContentOffset:CGPointMake(self.contentOffset.x, size) animated:animation];
-    else if (self.type == PSRecycledScrollViewTypeHorizontal)
+    } else if (self.type == PSRecycledScrollViewTypeHorizontal) {
         [self setContentOffset:CGPointMake(size, self.contentOffset.y) animated:animation];
+    }
 }
 
 - (void)reloadData {
@@ -160,10 +161,11 @@
 }
 
 - (void)configureView:(UIView *)view atIndex:(NSInteger)index {
-    if (self.type == PSRecycledScrollViewTypeVertical)
+    if (self.type == PSRecycledScrollViewTypeVertical) {
         view.frame = CGRectMake(0.0f, [self combinedSizeForViewUntilIndex:index], self.width, [self sizeForViewAtIndex:index]);
-    else if (self.type == PSRecycledScrollViewTypeHorizontal)
+    } else if (self.type == PSRecycledScrollViewTypeHorizontal) {
         view.frame = CGRectMake([self combinedSizeForViewUntilIndex:index], 0.0f, [self sizeForViewAtIndex:index], self.height);
+    }
 }
 
 - (BOOL)displayingViewAtIndex:(NSInteger)index {
@@ -202,6 +204,12 @@
 - (void)views {
     viewCount = [self viewCount];
     self.contentSize = [self contentSize];
+    
+    if (_type == PSRecycledScrollViewTypeVertical) {
+        self.contentOffset = CGPointMake(0, self.contentOffset.y);
+    } else if (_type == PSRecycledScrollViewTypeHorizontal) {
+        self.contentOffset = CGPointMake(self.contentOffset.x, 0);
+    }
     
     CGRect visibleBounds = CGRectMake(self.contentOffset.x, self.contentOffset.y, self.width, self.height);
     NSInteger firstNeedIndex = 0;
