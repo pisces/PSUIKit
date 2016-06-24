@@ -24,5 +24,6 @@
 
 @interface PSUIKit : NSObject
 + (NSBundle *)bundle;
++ (UIImage *)imageWithName:(NSString *)name;
 + (NSString *)localizedStringWithKey:(NSString *)key;
 @end

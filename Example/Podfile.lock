@@ -6,10 +6,10 @@ PODS:
     - SDWebImage
     - UIViewControllerTransitions
   - Reachability (3.2)
-  - SDWebImage (3.7.6):
-    - SDWebImage/Core (= 3.7.6)
-  - SDWebImage/Core (3.7.6)
-  - UIViewControllerTransitions (1.0.0)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - UIViewControllerTransitions (1.0.1)
 
 DEPENDENCIES:
   - PSUIKit (from `../`)
@@ -22,8 +22,8 @@ SPEC CHECKSUMS:
   OHAttributedLabel: 9b2eb99323dee6b3a81ef3bc8e98b084117bca2d
   PSUIKit: 49e424342f1687fe10de3fad03b54831929915bd
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
-  UIViewControllerTransitions: 2efc70b224b26a9f2366f96d6cc5e171e43e80f4
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  UIViewControllerTransitions: a53088539290f45b98a8b1be9111b4a720ba563e
 
 PODFILE CHECKSUM: 04c99d211cd623968ae81bcb8abced170a3a0762
 

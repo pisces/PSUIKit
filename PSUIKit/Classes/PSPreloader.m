@@ -8,6 +8,7 @@
 
 #import "PSPreloader.h"
 #import "base.h"
+#import "PSUIKit.h"
 
 @interface PSPreloader ()
 @property (nonatomic, readonly) NSArray *animationImages;
@@ -44,8 +45,8 @@
     modalView.backgroundColor = [UIColor blackColor];
     modalView.alpha = 0.3;
     
-    _completedImage = [UIImage imageNamed:@"PSUIKit.bundle/loading_00025.png"];
-    _failedImage = [UIImage imageNamed:@"PSUIKit.bundle/loading_error.png"];
+    _completedImage = [PSUIKit imageWithName:@"loading_00025.png"];
+    _failedImage = [PSUIKit imageWithName:@"loading_error.png"];
     
     _imageView = [[UIImageView alloc] init];
     _imageView.animationImages = self.animationImages;
@@ -160,7 +161,7 @@
     NSMutableArray *images = [NSMutableArray array];
     
     for (NSInteger i=0; i<25; i++) {
-        [images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"PSUIKit.bundle/loading_000%02zd.png", i]]];
+        [images addObject:[PSUIKit imageWithName:[NSString stringWithFormat:@"loading_000%02zd.png", i]]];
     }
     
     return images;
