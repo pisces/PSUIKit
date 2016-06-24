@@ -13,18 +13,17 @@
 #import "controls.h"
 #import "theme.h"
 #import "ActivityIndicatorManager.h"
-#import "GoogleAnalyticsManager.h"
 #import "ImagePopViewManager.h"
 #import "PopUpViewManager.h"
 #import "PSExceptionViewController.h"
 #import "PSExceptionViewDisplaySequence.h"
 #import "PSImagePickerController.h"
-#import "UIMaskedImageView.h"
 #import "UIViewControllerStack.h"
 
 #define PSUIKitBundleFilename @"PSUIKit-Bundle.bundle"
 
 @interface PSUIKit : NSObject
 + (NSBundle *)bundle;
++ (UIImage *)imageWithName:(NSString *)name;
 + (NSString *)localizedStringWithKey:(NSString *)key;
 @end

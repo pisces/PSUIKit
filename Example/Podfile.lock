@@ -1,36 +1,15 @@
 PODS:
-  - FirebaseAnalytics (3.2.0):
-    - FirebaseInstanceID (~> 1.0)
-    - GoogleInterchangeUtilities (~> 1.2)
-    - GoogleSymbolUtilities (~> 1.1)
-    - GoogleUtilities (~> 1.3)
-  - FirebaseInstanceID (1.0.6)
-  - Google (3.0.3):
-    - Google/Core (= 3.0.3)
-  - Google/Analytics (3.0.3):
-    - Google/Core
-    - GoogleAnalytics (~> 3.12)
-  - Google/Core (3.0.3):
-    - FirebaseAnalytics (~> 3.2)
-  - GoogleAnalytics (3.14.0)
-  - GoogleInterchangeUtilities (1.2.1):
-    - GoogleSymbolUtilities (~> 1.0)
-  - GoogleSymbolUtilities (1.1.1)
-  - GoogleUtilities (1.3.1):
-    - GoogleSymbolUtilities (~> 1.0)
   - OHAttributedLabel (3.5.5)
-  - PSUIKit (1.0.1):
-    - Google
-    - Google/Analytics
+  - PSUIKit (1.0.2):
     - OHAttributedLabel
     - Reachability
     - SDWebImage
     - UIViewControllerTransitions
   - Reachability (3.2)
-  - SDWebImage (3.7.6):
-    - SDWebImage/Core (= 3.7.6)
-  - SDWebImage/Core (3.7.6)
-  - UIViewControllerTransitions (1.0.0)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - UIViewControllerTransitions (1.0.1)
 
 DEPENDENCIES:
   - PSUIKit (from `../`)
@@ -40,19 +19,12 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FirebaseAnalytics: 6f75b04e6bfb8e0b6e9ef298e04c24eea3b13863
-  FirebaseInstanceID: d014d574053a2fe84478f12f7bae96979e7051bb
-  Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e
-  GoogleAnalytics: 9be1afdb8deeac4bb5f13ca7f7d3b9db2a1f43dc
-  GoogleInterchangeUtilities: def8415a862effc67d549d5b5b0b9c7a2f97d4de
-  GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
-  GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
   OHAttributedLabel: 9b2eb99323dee6b3a81ef3bc8e98b084117bca2d
-  PSUIKit: a2cec041356cb9eec297d81656bd28e75ff967dc
+  PSUIKit: 49e424342f1687fe10de3fad03b54831929915bd
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
-  UIViewControllerTransitions: 2efc70b224b26a9f2366f96d6cc5e171e43e80f4
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  UIViewControllerTransitions: a53088539290f45b98a8b1be9111b4a720ba563e
 
-PODFILE CHECKSUM: ad542fa5b1ece0899c4cbe03e98f0c1b5a6389f3
+PODFILE CHECKSUM: 04c99d211cd623968ae81bcb8abced170a3a0762
 
 COCOAPODS: 1.0.0

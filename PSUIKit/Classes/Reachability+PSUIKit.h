@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 ~ 2016 Steve Kim. All rights reserved.
 //
 
-#import "Reachability.h"
+@import Reachability;
 
 @interface Reachability (org_apache_PSUIKit_Reachability)
 + (Reachability *)defaultReachability;

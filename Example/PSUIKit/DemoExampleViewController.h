@@ -6,7 +6,7 @@
 //  Copyright © 2016 Steve Kim. All rights reserved.
 //
 
-#import <PSUIKit/PSUIKit.h>
+@import PSUIKit;
 
 #define exampleTitles @[@"Apply Default Navigation Theme", @"Apply Custom Navigation Theme", @"PSImagePickerViewController", @"PSAlertView", @"PSAlertView with CustomContentView", @"PSBadge", @"PSButtonBar", @"PSToastView", @"PSPreloader", @"PSAttributedDivisionLabel"]
 

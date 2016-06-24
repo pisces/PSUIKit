@@ -1,1 +1,0 @@
-../../../../../PSUIKit/Classes/ImagePopViewManager.h

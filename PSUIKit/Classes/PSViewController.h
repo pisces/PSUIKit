@@ -10,8 +10,9 @@
 #import <UIKit/UIKit.h>
 #import "PSNavigationController.h"
 #import "PSPreloader.h"
-#import "Reachability.h"
 #import "UIThemeBase.h"
+
+@import Reachability;
 
 typedef void (^PSViewWillCloseBlock)(void);
 

@@ -149,11 +149,11 @@
 #pragma mark - Private methods
 
 - (UIImage *)imageWithColor:(UIColor *)color borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth cornerRadius:(CGFloat)cornerRadius {
-    UIView *view = [[UIView alloc] initWithColor:color withFrame:CGRectMake(0, 0, 10, 10)];
+    UIView *view = [[UIView alloc] initWithColor:color withFrame:self.bounds];
     view.layer.borderWidth = borderWidth;
     view.layer.borderColor = borderColor.CGColor;
     view.layer.cornerRadius = cornerRadius;
-    return [view.image stretchableImageWithLeftCapWidth:5 topCapHeight:5];
+    return [view.image stretchableImageWithLeftCapWidth:self.width/2 topCapHeight:self.height/2];
 }
 
 @end

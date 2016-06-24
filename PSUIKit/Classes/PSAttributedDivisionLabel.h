@@ -7,7 +7,7 @@
 //  Copyright (c) 2014년 hh963103@naver.com. All rights reserved.
 //
 
-#import "OHAttributedLabel.h"
+@import OHAttributedLabel;
 
 @interface PSAttributedDivisionLabel : OHAttributedLabel
 @property (nonatomic, strong) NSString *divider;

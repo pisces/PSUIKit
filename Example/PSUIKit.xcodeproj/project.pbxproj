@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AFF5F6052BF09D3E330F513 /* libPods-PSUIKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 697FA065BBA9337003394973 /* libPods-PSUIKit_Example.a */; };
+		14A11EB817E1B6EB8BB5FDDF /* Pods_PSUIKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF68388FDB58043B891AEB0 /* Pods_PSUIKit_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		A423173F025F765119CC8E1E /* libPods-PSUIKit_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 767A7C8644D0351B9399C57D /* libPods-PSUIKit_Tests.a */; };
+		BA873EA0D2DFC2768A79FA31 /* Pods_PSUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5C497CFCBDB8F070348787 /* Pods_PSUIKit_Example.framework */; };
 		DC0524D61CE2F10000247D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0524D51CE2F10000247D4A /* LaunchScreen.storyboard */; };
 		DC0524DA1CE2F51200247D4A /* DemoExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0524D81CE2F51200247D4A /* DemoExampleViewController.m */; };
 		DC0524DB1CE2F51200247D4A /* DemoExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC0524D91CE2F51200247D4A /* DemoExampleView.xib */; };
@@ -63,10 +63,9 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		697FA065BBA9337003394973 /* libPods-PSUIKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PSUIKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF68388FDB58043B891AEB0 /* Pods_PSUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EF5D1BFD49A3AF265FEBC2E /* Pods-PSUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSUIKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PSUIKit_Tests/Pods-PSUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7432B473FB90DFC0F76AAFC5 /* PSUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PSUIKit.podspec; path = ../PSUIKit.podspec; sourceTree = "<group>"; };
-		767A7C8644D0351B9399C57D /* libPods-PSUIKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PSUIKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B77438174F53234F3E00075F /* Pods-PSUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSUIKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PSUIKit_Tests/Pods-PSUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC0524D51CE2F10000247D4A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		DC0524D91CE2F51200247D4A /* DemoExampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoExampleView.xib; sourceTree = "<group>"; };
 		DC0524DC1CE31C5000247D4A /* CustomExampleTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomExampleTheme.h; sourceTree = "<group>"; };
 		DC0524DD1CE31C5000247D4A /* CustomExampleTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomExampleTheme.m; sourceTree = "<group>"; };
+		EB5C497CFCBDB8F070348787 /* Pods_PSUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				1AFF5F6052BF09D3E330F513 /* libPods-PSUIKit_Example.a in Frameworks */,
+				BA873EA0D2DFC2768A79FA31 /* Pods_PSUIKit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +96,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				A423173F025F765119CC8E1E /* libPods-PSUIKit_Tests.a in Frameworks */,
+				14A11EB817E1B6EB8BB5FDDF /* Pods_PSUIKit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,8 +142,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				697FA065BBA9337003394973 /* libPods-PSUIKit_Example.a */,
-				767A7C8644D0351B9399C57D /* libPods-PSUIKit_Tests.a */,
+				EB5C497CFCBDB8F070348787 /* Pods_PSUIKit_Example.framework */,
+				6CF68388FDB58043B891AEB0 /* Pods_PSUIKit_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

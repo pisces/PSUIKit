@@ -1,0 +1,6 @@
+framework module Pods_PSUIKit_Tests {
+  umbrella header "Pods-PSUIKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
