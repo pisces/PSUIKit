@@ -198,7 +198,7 @@ static UIView *modalView;
 - (void)initProperties
 {
     if (!repeatTestMap)
-         repeatTestMap = [NSMutableDictionary dictionary];
+        repeatTestMap = [NSMutableDictionary dictionary];
     
     if (!alertViewStack)
         alertViewStack = [NSMutableArray array];
