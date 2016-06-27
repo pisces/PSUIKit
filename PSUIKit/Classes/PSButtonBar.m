@@ -587,6 +587,8 @@
     if (self.rowCount < 1)
         return;
     
+    CGContextSetLineWidth(context, 0.5);
+    
     CGFloat y = rect.size.height/self.rowCount;
     
     for (NSUInteger i=0; i<self.rowCount-1; i++)
@@ -601,6 +603,8 @@
 {
     if (self.columnCount < 1)
         return;
+    
+    CGContextSetLineWidth(context, 0.5);
     
     CGFloat x = rect.size.width/self.columnCount;
     

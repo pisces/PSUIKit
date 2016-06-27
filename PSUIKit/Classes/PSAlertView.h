@@ -6,42 +6,51 @@
 //  Copyright (c) 2013 ~ 2016 Steve Kim. All rights reserved.
 //
 
-public typealias PSAlertViewDismission = (PSAlertView!, Int, Bool) -> Void
+#import "PSAttributedDivisionLabel.h"
+#import "GraphicsLayout.h"
+#import "base.h"
+#import "PSButtonBar.h"
+#import "PSLinedBackgroundView.h"
 
-public class PSAlertView : PSView, PSButtonBarDelegate {
-    public var buttonHeight: CGFloat
-    public var headerViewHeight: CGFloat
-    public var contentPadding: CGPadding
-    public var message: String!
-    public var title: String!
-    public var contentViewHeight: CGFloat { get }
-    public var headerView: UIView!
-    public var contentView: UIView!
-    public var titleLabel: PSAttributedDivisionLabel! { get }
-    public var messageLabel: UILabel! { get }
-    public var delegate: PSAlertViewDelegate!
-    public /*not inherited*/ init!(contentView: UIView!, cancelButtonTitle: String!, dismission: PSAlertViewDismission!, otherButtonTitles: [String]!)
-    public /*not inherited*/ init!(message: String!, cancelButtonTitle: String!, dismission: PSAlertViewDismission!, otherButtonTitles: [String]!)
-    public /*not inherited*/ init!(title: String!, contentView: UIView!, cancelButtonTitle: String!, dismission: PSAlertViewDismission!, otherButtonTitles: [String]!)
-    public /*not inherited*/ init!(title: String!, message: String!, cancelButtonTitle: String!, dismission: PSAlertViewDismission!, otherButtonTitles: [String]!)
-    public class func dismissAll()
-    public func dismissWithClickedButtonIndex(buttonIndex: Int, animated: Bool)
-    public init!(title: String!, message: String!, delegate: AnyObject!, cancelButtonTitle: String!, otherButtonTitles: [String]!)
-    public func show()
-    public func showWithDismission(dismission: PSAlertViewDismission!)
-}
+@class PSAlertView;
+@protocol PSAlertViewDelegate;
 
-public protocol PSAlertViewDelegate : NSObjectProtocol {
-    
-    optional public func PSAlertView(alertView: PSAlertView!, clickedButtonAtIndex buttonIndex: Int)
-    optional public func PSAlertViewCancel(alertView: PSAlertView!)
-    optional public func willPresentPSAlertView(alertView: PSAlertView!)
-    optional public func didPresentPSAlertView(alertView: PSAlertView!)
-    optional public func PSAlertView(alertView: PSAlertView!, willDismissWithButtonIndex buttonIndex: Int)
-    optional public func PSAlertView(alertView: PSAlertView!, didDismissWithButtonIndex buttonIndex: Int)
-    optional public func PSAlertViewShouldEnableFirstOtherButton(alertView: PSAlertView!) -> Bool
-}
+typedef void (^PSAlertViewDismission)(PSAlertView *alertView, NSInteger buttonIndex, BOOL cancel);
 
-extension NSString {
-    public func MD5() -> String!
-}
+@interface PSAlertView : PSView <PSButtonBarDelegate>
+@property (nonatomic) CGFloat buttonHeight;
+@property (nonatomic) CGFloat headerViewHeight;
+@property (nonatomic) CGPadding contentPadding;
+@property (nonatomic, strong) NSString *message;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, readonly) CGFloat contentViewHeight;
+@property (nonatomic, strong) UIView *headerView;
+@property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, readonly) PSAttributedDivisionLabel *titleLabel;
+@property (nonatomic, readonly) UILabel *messageLabel;
+@property (nonatomic, strong) id<PSAlertViewDelegate> delegate;
++ (PSAlertView *)alertViewWithContentView:(UIView *)contentView cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(PSAlertViewDismission)dismission otherButtonTitles:(NSArray<NSString *> *)otherButtonTitles;
++ (PSAlertView *)alertViewWithMessage:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(PSAlertViewDismission)dismission otherButtonTitles:(NSArray<NSString *> *)otherButtonTitles;
++ (PSAlertView *)alertViewWithTitle:(NSString *)title contentView:(UIView *)contentView cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(PSAlertViewDismission)dismission otherButtonTitles:(NSArray<NSString *> *)otherButtonTitles;
++ (PSAlertView *)alertViewWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(PSAlertViewDismission)dismission otherButtonTitles:(NSArray<NSString *> *)otherButtonTitles;
++ (void)dismissAll;
+- (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated;
+- (id)initWithTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray<NSString *> *)otherButtonTitles;
+- (void)show;
+- (void)showWithDismission:(PSAlertViewDismission)dismission;
+@end
+
+@protocol PSAlertViewDelegate <NSObject>
+@optional
+- (void)PSAlertView:(PSAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
+- (void)PSAlertViewCancel:(PSAlertView *)alertView;
+- (void)willPresentPSAlertView:(PSAlertView *)alertView;
+- (void)didPresentPSAlertView:(PSAlertView *)alertView;
+- (void)PSAlertView:(PSAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex;
+- (void)PSAlertView:(PSAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex;
+- (BOOL)PSAlertViewShouldEnableFirstOtherButton:(PSAlertView *)alertView;
+@end
+
+@interface NSString (MD5)
+- (NSString*)MD5;
+@end

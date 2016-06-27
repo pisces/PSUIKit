@@ -261,22 +261,22 @@ static UIView *modalView;
 
 #pragma mark - Public class methods
 
-+ (PSAlertView *)alertViewWithContentView:(UIView *)contentView cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(PSAlertViewDismission)dismission otherButtonTitles:(NSString *)otherButtonTitles, ...
++ (PSAlertView *)alertViewWithContentView:(UIView *)contentView cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(PSAlertViewDismission)dismission otherButtonTitles:(NSArray<NSString *> *)otherButtonTitles
 {
-    return [[self class] alertViewWithTitle:nil contentView:contentView cancelButtonTitle:cancelButtonTitle dismission:dismission otherButtonTitles:otherButtonTitles, nil];
+    return [[self class] alertViewWithTitle:nil contentView:contentView cancelButtonTitle:cancelButtonTitle dismission:dismission otherButtonTitles:otherButtonTitles];
 }
 
-+ (PSAlertView *)alertViewWithMessage:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(PSAlertViewDismission)dismission otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION
++ (PSAlertView *)alertViewWithMessage:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(PSAlertViewDismission)dismission otherButtonTitles:(NSString *)otherButtonTitles:(NSArray<NSString *> *)otherButtonTitles
 {
-    return [[self class] alertViewWithTitle:nil message:message cancelButtonTitle:cancelButtonTitle dismission:dismission otherButtonTitles:otherButtonTitles, nil];
+    return [[self class] alertViewWithTitle:nil message:message cancelButtonTitle:cancelButtonTitle dismission:dismission otherButtonTitles:otherButtonTitles];
 }
 
-+ (PSAlertView *)alertViewWithTitle:(NSString *)title contentView:(UIView *)contentView cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(PSAlertViewDismission)dismission otherButtonTitles:(NSString *)otherButtonTitles, ...
++ (PSAlertView *)alertViewWithTitle:(NSString *)title contentView:(UIView *)contentView cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(PSAlertViewDismission)dismission otherButtonTitles:(NSArray<NSString *> *)otherButtonTitles
 {
     PSAlertViewDelegateObject *delegate = [[PSAlertViewDelegateObject alloc] init];
     delegate.dismissionBlock = dismission;
     
-    PSAlertView *alertView = [[PSAlertView alloc] initWithTitle:title message:nil delegate:delegate cancelButtonTitle:cancelButtonTitle otherButtonTitles:otherButtonTitles, nil];
+    PSAlertView *alertView = [[PSAlertView alloc] initWithTitle:title message:nil delegate:delegate cancelButtonTitle:cancelButtonTitle otherButtonTitles:otherButtonTitles];
     alertView.contentView = contentView;
     
     [alertView show];
@@ -284,12 +284,12 @@ static UIView *modalView;
     return alertView;
 }
 
-+ (PSAlertView *)alertViewWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(void(^)(PSAlertView *alertView, NSInteger buttonIndex, BOOL cancel))dismission otherButtonTitles:(NSString *)otherButtonTitles, ...
++ (PSAlertView *)alertViewWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(void(^)(PSAlertView *alertView, NSInteger buttonIndex, BOOL cancel))dismission otherButtonTitles:(NSArray<NSString *> *)otherButtonTitles
 {
     PSAlertViewDelegateObject *delegate = [[PSAlertViewDelegateObject alloc] init];
     delegate.dismissionBlock = dismission;
     
-    PSAlertView *alertView = [[PSAlertView alloc] initWithTitle:title message:message delegate:delegate cancelButtonTitle:cancelButtonTitle otherButtonTitles:otherButtonTitles, nil];
+    PSAlertView *alertView = [[PSAlertView alloc] initWithTitle:title message:message delegate:delegate cancelButtonTitle:cancelButtonTitle otherButtonTitles:otherButtonTitles];
     
     [alertView show];
     
@@ -369,7 +369,7 @@ static UIView *modalView;
     }
 }
 
-- (id)initWithTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...
+- (id)initWithTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray<NSString *> *)otherButtonTitles
 {
     self = [super init];
     
@@ -378,17 +378,13 @@ static UIView *modalView;
         self.title = title;
         self.message = message;
         
-        if (cancelButtonTitle)
+        if (cancelButtonTitle) {
             [buttonTitles addObject:cancelButtonTitle];
-        
-        va_list args;
-        va_start(args, otherButtonTitles);
-        for (NSString *arg=otherButtonTitles; arg!=nil; arg=va_arg(args, NSString*))
-        {
-            if (arg)
-                [buttonTitles addObject:arg];
         }
-        va_end(args);
+        
+        if (otherButtonTitles) {
+            [buttonTitles addObjectsFromArray:otherButtonTitles];
+        }
         
         self.delegate = delegate;
         self.buttonBar.numOfButtons = buttonTitles.count;
