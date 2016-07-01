@@ -10,4 +10,5 @@
 
 @interface PSButton : UIButton
 @property (nonatomic, strong) UIColor *highlightedBackgroundColor;
+- (void)setFont:(UIFont *)font forState:(UIControlState)state;
 @end

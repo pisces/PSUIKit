@@ -12,6 +12,7 @@
 #import "UIViewController+PSUIKit.h"
 
 @interface UIButton (org_apache_PSUIKit_UIButton)
+@property (nonatomic, readonly) NSMutableDictionary *fontDictionary;
 @property (nonatomic, readonly) NSMutableDictionary *resourceDictionary;
 - (void)setBackgroundColor:(UIColor *)backgroundColor cornerRadius:(CGFloat)cornerRadius forState:(UIControlState)state;
 - (void)setBackgroundColor:(UIColor *)backgroundColor borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth cornerRadius:(CGFloat)cornerRadius forState:(UIControlState)state;

@@ -34,25 +34,26 @@
     if (buttonTitleTextChanged)
     {
         buttonTitleTextChanged = NO;
-        self.actionButton.hidden = !self.buttonTitleText;
+        _actionButton.hidden = !_buttonTitleText;
         
-        [self.actionButton setTitle:self.buttonTitleText forState:UIControlStateNormal];
-        [self.actionButton.titleLabel sizeToFit];
+        [_actionButton setTitle:_buttonTitleText forState:UIControlStateNormal];
+        [_actionButton.titleLabel sizeToFit];
         
-        self.actionButton.width = MAX(120, self.actionButton.titleLabel.width + 40);
+        _actionButton.width = MAX(120, self.actionButton.titleLabel.width + 40);
     }
     
     if (descriptionTextChanged)
     {
         descriptionTextChanged = NO;
-        descriptionLabel.text = self.descriptionText;
+        _descriptionLabel.text = self.descriptionText;
     }
     
     if (imageChanged)
     {
         imageChanged = NO;
-        imageView.image = self.image;
-        imageView.size = self.image.size;
+        _imageView.image = _image;
+        _imageView.size = _image.size;
+        _imageView.hidden = _image == nil;
         
         [self layoutSubviews];
     }
@@ -60,7 +61,7 @@
     if (titleTextChanged)
     {
         titleTextChanged = NO;
-        titleLabel.text = self.titleText;
+        _titleLabel.text = _titleText;
     }
     
     if (isViewNeedsLayout)
@@ -79,6 +80,7 @@
 - (void)initProperties {
     [super initProperties];
     
+    _imagePosition = PSExceptionViewImagePositionBottom;
     _padding = CGPaddingMake(15, 24, 15, 0);
 }
 
@@ -86,31 +88,42 @@
 {
     [super layoutSubviews];
     
-    titleLabel.size = [titleLabel sizeThatFits:CGSizeMake(self.view.width - self.padding.left - self.padding.right, 0)];
-    descriptionLabel.size = [descriptionLabel sizeThatFits:CGSizeMake(self.view.width - self.padding.left - self.padding.right, 0)];
-    titleLabel.x = (self.view.width - titleLabel.width)/2;
-    titleLabel.y = self.padding.top;
-    descriptionLabel.x = (self.view.width - descriptionLabel.width)/2;
-    descriptionLabel.y = titleLabel.y + titleLabel.height + 10;
-    imageView.x = (self.view.width - imageView.width)/2;
-    imageView.y = descriptionLabel.y + descriptionLabel.height + 10;
-    self.actionButton.x = (self.view.width - self.actionButton.width)/2;
-    self.actionButton.y = (imageView.image ? imageView.y + imageView.height : imageView.y) + 10;
-    self.backgroundView.frame = self.view.bounds;
+    _titleLabel.size = [_titleLabel sizeThatFits:CGSizeMake(self.view.width - _padding.left - _padding.right, 0)];
+    _descriptionLabel.size = [_descriptionLabel sizeThatFits:CGSizeMake(self.view.width - _padding.left - _padding.right, 0)];
+    
+    _titleLabel.x = (self.view.width - _titleLabel.width)/2;
+    _descriptionLabel.x = (self.view.width - _descriptionLabel.width)/2;
+    _imageView.x = (self.view.width - _imageView.width)/2;
+    _actionButton.x = (self.view.width - _actionButton.width)/2;
+    
+    if (_imagePosition == PSExceptionViewImagePositionTop) {
+        _imageView.y = _padding.top;
+        _titleLabel.y = _imageView.image ? _imageView.bottom + 10 : _padding.top;
+        _descriptionLabel.y = _titleText ? _titleLabel.bottom + 8 : _titleLabel.bottom;
+        _actionButton.y = _descriptionLabel.bottom + 15;
+    } else if (_imagePosition == PSExceptionViewImagePositionBottom) {
+        _titleLabel.y = _padding.top;
+        _descriptionLabel.y = _titleText ? _titleLabel.bottom + 8 : _titleLabel.bottom;
+        _imageView.y = _descriptionLabel.bottom + 10;
+        _actionButton.y = (_imageView.image ? _imageView.bottom : _descriptionLabel.bottom) + 15;
+    }
+    
+    _backgroundView.frame = self.view.bounds;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    self.backgroundView.lineHeight = 0;
-    self.actionButton.hidden = !self.buttonTitleText;
-    descriptionLabel.text = self.descriptionText;
-    titleLabel.text = self.titleText;
+    _backgroundView.lineHeight = 0;
+    _actionButton.hidden = !_buttonTitleText;
+    _imageView.hidden = _image == nil;
+    _descriptionLabel.text = _descriptionText;
+    _titleLabel.text = _titleText;
     
-    [self.actionButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.actionButton setBackgroundColor:[UIColor colorWithRed:0.0 green:150/255.0 blue:1.0 alpha:1] cornerRadius:3 forState:UIControlStateNormal];
-    [self.actionButton setBackgroundColor:[UIColor colorWithRed:0.0 green:180/255.0 blue:1.0 alpha:1] cornerRadius:3 forState:UIControlStateHighlighted];
+    [_actionButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [_actionButton setBackgroundColor:[UIColor colorWithRed:0.0 green:150/255.0 blue:1.0 alpha:1] cornerRadius:3 forState:UIControlStateNormal];
+    [_actionButton setBackgroundColor:[UIColor colorWithRed:0.0 green:180/255.0 blue:1.0 alpha:1] cornerRadius:3 forState:UIControlStateHighlighted];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -216,8 +229,8 @@
 
 - (BOOL)checkVisibility
 {
-    if ([self.delegate respondsToSelector:@selector(exceptionViewShouldShowWithController:)] &&
-        ![self.delegate exceptionViewShouldShowWithController:self])
+    if ([_delegate respondsToSelector:@selector(exceptionViewShouldShowWithController:)] &&
+        ![_delegate exceptionViewShouldShowWithController:self])
     {
         [self.view removeFromSuperview];
         return NO;
@@ -225,8 +238,8 @@
     
     self.view.frame = CGRectMake(0, 0, self.superview.width, self.superview.height);
     
-    if ([self.delegate respondsToSelector:@selector(controller:willDisplayView:)])
-        [self.delegate controller:self willDisplayView:self.view];
+    if ([_delegate respondsToSelector:@selector(controller:willDisplayView:)])
+        [_delegate controller:self willDisplayView:self.view];
     
     [self.superview addSubview:self.view];
     
@@ -260,8 +273,8 @@
 
 - (IBAction)buttonClicked:(id)sender
 {
-    if ([self.delegate respondsToSelector:@selector(controller:buttonClicked:)])
-        [self.delegate controller:self buttonClicked:sender];
+    if ([_delegate respondsToSelector:@selector(controller:buttonClicked:)])
+        [_delegate controller:self buttonClicked:sender];
 }
 
 @end

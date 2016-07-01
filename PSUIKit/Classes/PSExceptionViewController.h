@@ -10,18 +10,23 @@
 
 @protocol PSExceptionViewControllerDelegate;
 
+enum {
+    PSExceptionViewImagePositionTop,
+    PSExceptionViewImagePositionBottom
+};
+typedef NSInteger PSExceptionViewImagePosition;
+
 @interface PSExceptionViewController : PSViewController
-{
-@protected
-    __weak IBOutlet UILabel *descriptionLabel;
-    __weak IBOutlet UILabel *titleLabel;
-    __weak IBOutlet UIImageView *imageView;
-}
+@property (nonatomic) NSInteger id;
 @property (nonatomic) CGPadding padding;
+@property (nonatomic) PSExceptionViewImagePosition imagePosition;
 @property (nonatomic, strong) NSString *buttonTitleText;
 @property (nonatomic, strong) NSString *descriptionText;
 @property (nonatomic, strong) NSString *titleText;
 @property (nonatomic, strong) UIImage *image;
+@property (nonatomic, weak, readonly) IBOutlet UILabel *descriptionLabel;
+@property (nonatomic, weak, readonly) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak, readonly) IBOutlet UIImageView *imageView;
 @property (nonatomic, weak) IBOutlet PSLinedBackgroundView *backgroundView;
 @property (nonatomic, weak) IBOutlet UIButton *actionButton;
 @property (nonatomic, weak) id<PSExceptionViewControllerDelegate> delegate;

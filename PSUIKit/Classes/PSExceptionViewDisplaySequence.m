@@ -21,13 +21,11 @@
 
 #pragma mark - Overridden: NSObject
 
-- (void)dealloc
-{
+- (void)dealloc {
     queue = nil;
 }
 
-- (id)init
-{
+- (id)init {
     self = [super init];
     
     if (self)
@@ -36,12 +34,10 @@
     return self;
 }
 
-- (id)initWithDelegate:(id<PSExceptionViewControllerDelegate>)delegate
-{
+- (id)initWithDelegate:(id<PSExceptionViewControllerDelegate>)delegate {
     self = [super init];
     
-    if (self)
-    {
+    if (self) {
         queue = [NSMutableArray array];
         self.delegate = delegate;
     }
@@ -55,8 +51,7 @@
 
 #pragma mark - Public getter/setter
 
-- (void)setDelegate:(id<PSExceptionViewControllerDelegate>)delegate
-{
+- (void)setDelegate:(id<PSExceptionViewControllerDelegate>)delegate {
     if ([delegate isEqual:_delegate])
         return;
     
@@ -68,8 +63,7 @@
 
 #pragma mark - Public methods
 
-- (void)addController:(PSExceptionViewController *)controller
-{
+- (void)addController:(PSExceptionViewController *)controller {
     if (controller) {
         controller.delegate = self.delegate;
         
@@ -77,49 +71,55 @@
     }
 }
 
-- (void)addControllers:(NSArray<PSExceptionViewController *> *)controllers
-{
-    for (id object in controllers)
-    {
+- (void)addControllers:(NSArray<PSExceptionViewController *> *)controllers {
+    for (id object in controllers) {
         if ([object isKindOfClass:[PSExceptionViewController class]])
             [self addController:object];
     }
 }
 
-- (void)clear
-{
-    for (PSExceptionViewController *controller in queue)
-        [controller.view removeFromSuperview];
+- (void)insertController:(PSExceptionViewController *)controller atIndex:(NSInteger)index {
+    if (controller) {
+        controller.delegate = self.delegate;
+        
+        [queue insertObject:controller atIndex:index];
+    }
 }
 
-- (BOOL)checkVisibility
-{
-    [self clear];
-    
-    for (PSExceptionViewController *controller in queue)
-    {
-        if ([controller checkVisibility])
-            return YES;
+- (void)clear {
+    for (PSExceptionViewController *controller in queue) {
+        [controller.view removeFromSuperview];
     }
     
-    return NO;
+    _showing = NO;
 }
 
-- (NSInteger)indexOfController:(PSExceptionViewController *)controller
-{
+- (BOOL)checkVisibility {
+    [self clear];
+    
+    for (PSExceptionViewController *controller in queue) {
+        if ([controller checkVisibility]) {
+            _showing = YES;
+            return _showing;
+        }
+    }
+    
+    return _showing;
+}
+
+- (NSInteger)indexOfController:(PSExceptionViewController *)controller {
     return [queue indexOfObject:controller];
 }
 
-- (void)removeController:(PSExceptionViewController *)controller
-{
+- (void)removeController:(PSExceptionViewController *)controller {
     [controller.view removeFromSuperview];
     [queue removeObject:controller];
 }
 
-- (void)removeAllController
-{
-    for (PSExceptionViewController *controller in queue)
+- (void)removeAllController {
+    for (PSExceptionViewController *controller in queue) {
         [controller.view removeFromSuperview];
+    }
     
     [queue removeAllObjects];
 }
@@ -130,15 +130,15 @@
 
 #pragma mark - Private methods
 
-- (void)delegateChanged
-{
+- (void)delegateChanged {
     if (!delegateChanged)
         return;
     
     delegateChanged = NO;
     
-    for (PSExceptionViewController *controller in queue)
+    for (PSExceptionViewController *controller in queue) {
         controller.delegate = self.delegate;
+    }
 }
 
 @end

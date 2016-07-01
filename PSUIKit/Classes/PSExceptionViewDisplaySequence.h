@@ -10,12 +10,14 @@
 
 @interface PSExceptionViewDisplaySequence : NSObject
 @property (nonatomic, weak) id<PSExceptionViewControllerDelegate> delegate;
+@property (nonatomic, readonly) BOOL showing;
 - (void)addControllers:(NSArray *)controllers;
 - (void)addController:(PSExceptionViewController *)controller;
 - (BOOL)checkVisibility;
 - (void)clear;
 - (id)initWithDelegate:(id<PSExceptionViewControllerDelegate>)delegate;
 - (NSInteger)indexOfController:(PSExceptionViewController *)controller;
+- (void)insertController:(PSExceptionViewController *)controller atIndex:(NSInteger)index;
 - (void)removeController:(PSExceptionViewController *)controller;
 - (void)removeAllController;
 @end

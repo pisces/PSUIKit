@@ -8,6 +8,7 @@
 //
 
 #import "PSButtonBar.h"
+#import "PSButton.h"
 
 // ================================================================================================
 //
@@ -321,7 +322,7 @@
     
     for (NSUInteger i=0; i<_numOfButtons; i++)
     {
-        UIButton *button = [UIButton buttonWithType:self.buttonType];
+        UIButton *button = [PSButton buttonWithType:self.buttonType];
         button.frame = CGRectMake([self xOffsetWithIndex:i], [self yOffsetWithIndex:i], _buttonWidth, _buttonHeight);
         button.userInteractionEnabled = YES;
         
@@ -569,7 +570,7 @@
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetLineWidth(context, 1);
+    CGContextSetLineWidth(context, 0.5);
     CGContextSetStrokeColorWithColor(context, self.lineColor.CGColor);
     
     [self drawHorizontalLineWithContext:context rect:rect];
