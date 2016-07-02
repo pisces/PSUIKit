@@ -8,7 +8,7 @@
 
 #import "GraphicsLayout.h"
 
-CGPadding CGPaddingMake(unsigned int left, unsigned int top, unsigned int right, unsigned int bottom)
+CGPadding CGPaddingMake(CGFloat left, CGFloat top, CGFloat right, CGFloat bottom)
 {
     CGPadding padding = {
         .left = left,
@@ -19,17 +19,17 @@ CGPadding CGPaddingMake(unsigned int left, unsigned int top, unsigned int right,
     return padding;
 }
 
-CGPadding CGPaddingMakeAll(unsigned int value)
+CGPadding CGPaddingMakeAll(CGFloat value)
 {
     return CGPaddingMake(value, value, value, value);
 }
 
-CGPadding CGPaddingMakeHorizontal(unsigned int left, unsigned int right)
+CGPadding CGPaddingMakeHorizontal(CGFloat left, CGFloat right)
 {
     return CGPaddingMake(left, 0, right, 0);
 }
 
-CGPadding CGPaddingMakeVertical(unsigned int top, unsigned int bottom)
+CGPadding CGPaddingMakeVertical(CGFloat top, CGFloat bottom)
 {
     return CGPaddingMake(0, top, 0, bottom);
 }

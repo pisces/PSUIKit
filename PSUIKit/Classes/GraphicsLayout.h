@@ -12,16 +12,16 @@
 #define PSUIKit_GraphicsLayout_h
 
 typedef struct {
-    unsigned int left;
-    unsigned int top;
-    unsigned int right;
-    unsigned int bottom;
+    CGFloat left;
+    CGFloat top;
+    CGFloat right;
+    CGFloat bottom;
 } CGPadding;
 
-CGPadding CGPaddingMake(unsigned int left, unsigned int top, unsigned int right, unsigned int bottom);
-CGPadding CGPaddingMakeAll(unsigned int value);
-CGPadding CGPaddingMakeHorizontal(unsigned int left, unsigned int right);
-CGPadding CGPaddingMakeVertical(unsigned int top, unsigned int bottom);
+CGPadding CGPaddingMake(CGFloat left, CGFloat top, CGFloat right, CGFloat bottom);
+CGPadding CGPaddingMakeAll(CGFloat value);
+CGPadding CGPaddingMakeHorizontal(CGFloat left, CGFloat right);
+CGPadding CGPaddingMakeVertical(CGFloat top, CGFloat bottom);
 BOOL CGPaddingEquals(CGPadding padding1, CGPadding padding2);
 BOOL CGPaddingZero(CGPadding padding);
 
