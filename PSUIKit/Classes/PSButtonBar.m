@@ -73,7 +73,7 @@
         
         [self deselectWithoutClearIndex];
         
-        if (self.toggle)
+        if (_toggle)
         {
             _selectedChild = [_buttons objectAtIndex:_selectedIndex];
             _selectedChild.userInteractionEnabled = NO;
@@ -84,8 +84,9 @@
     if (shouldRedrawSepertatorView)
     {
         shouldRedrawSepertatorView = NO;
-        sepertatorView.lineColor = self.seperatorColor;
-        sepertatorView.padding = self.seperatorPadding;
+        sepertatorView.lineColor = _seperatorColor;
+        sepertatorView.lineWidth = _seperatorLineWidth;
+        sepertatorView.padding = _seperatorPadding;
         
         [self updateSeperatorViewDisplay];
     }
@@ -96,13 +97,15 @@
     _alignment = PSButtonBarAlignmentHorizontal;
     _selectedIndex = -1;
     _horizontalGap = 0;
+    _seperatorLineWidth = 0.5;
     _verticalGap = 0;
     _padding = CGPaddingMake(0, 0, 0, 0);
     _seperatorColor = [UIColor clearColor];
     
     sepertatorView = [[PSButtonBarSeperatorView alloc] init];
-    sepertatorView.lineColor = self.seperatorColor;
-    sepertatorView.padding = self.seperatorPadding;
+    sepertatorView.lineColor = _seperatorColor;
+    sepertatorView.lineWidth = _seperatorLineWidth;
+    sepertatorView.padding = _seperatorPadding;
 }
 
 - (void)layoutSubviews
@@ -132,8 +135,8 @@
     if (![self.delegate respondsToSelector:@selector(buttonBar:buttonRender:buttonIndex:)])
         return;
     
-    for (NSUInteger i=0; i<self.buttons.count; i++)
-        [self.delegate buttonBar:self buttonRender:[self.buttons objectAtIndex:i] buttonIndex:i];
+    for (NSUInteger i=0; i<_buttons.count; i++)
+        [self.delegate buttonBar:self buttonRender:[_buttons objectAtIndex:i] buttonIndex:i];
 }
 
 - (void)deselect
@@ -146,7 +149,7 @@
 
 - (id<PSButtonBarDelegate>)delegate
 {
-    return self.delegateObject ? self.delegateObject : _delegate;
+    return _delegateObject ? _delegateObject : _delegate;
 }
 
 - (void)setAlignment:(PSButtonBarAlignment)alignment
@@ -237,6 +240,16 @@
     [self invalidateProperties];
 }
 
+- (void)setSeperatorLineWidth:(CGFloat)seperatorLineWidth {
+    if (seperatorLineWidth == _seperatorLineWidth)
+        return;
+    
+    _seperatorLineWidth = seperatorLineWidth;
+    shouldRedrawSepertatorView = YES;
+    
+    [self invalidateProperties];
+}
+
 - (void)setSeperatorPadding:(CGPadding)seperatorPadding
 {
     if (CGPaddingEquals(seperatorPadding, _seperatorPadding))
@@ -256,48 +269,48 @@
 
 - (CGFloat)calculatedButtonHeight
 {
-    if ((self.alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal &&
-        (self.alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
-        return (self.height - self.padding.top - self.padding.bottom - (self.verticalGap*(self.rowCount-1)))/self.rowCount;
+    if ((_alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal &&
+        (_alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
+        return (self.height - _padding.top - _padding.bottom - (_verticalGap*(_rowCount-1)))/_rowCount;
     
-    if ((self.alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
-        return (self.height - self.padding.top - self.padding.bottom - (self.verticalGap * (self.numOfButtons-1)))/self.numOfButtons;
+    if ((_alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
+        return (self.height - _padding.top - _padding.bottom - (_verticalGap * (_numOfButtons-1)))/_numOfButtons;
     
-    return self.height - self.padding.top - self.padding.bottom;
+    return self.height - _padding.top - _padding.bottom;
 }
 
 - (CGFloat)calculatedButtonWidth
 {
-    if ((self.alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal &&
-        (self.alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
-        return (self.width - self.padding.left - self.padding.right - (self.horizontalGap*(self.columnCount-1)))/self.columnCount;
+    if ((_alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal &&
+        (_alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
+        return (self.width - _padding.left - _padding.right - (_horizontalGap*(_columnCount-1)))/_columnCount;
     
-    if ((self.alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
-        return self.width - self.padding.left - self.padding.right;
+    if ((_alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
+        return self.width - _padding.left - _padding.right;
     
-    return (self.width - self.padding.left - self.padding.right - (self.horizontalGap * (self.numOfButtons-1)))/self.numOfButtons;
+    return (self.width - _padding.left - _padding.right - (_horizontalGap * (_numOfButtons-1)))/_numOfButtons;
 }
 
 - (NSInteger)calculatedColumnCount
 {
-    if ((self.alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal &&
-        (self.alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
-        return self.columnCount > 0 ? self.columnCount : self.numOfButtons;
+    if ((_alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal &&
+        (_alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
+        return _columnCount > 0 ? _columnCount : _numOfButtons;
     
-    if ((self.alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal)
-        return self.numOfButtons;
+    if ((_alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal)
+        return _numOfButtons;
     
     return 1;
 }
 
 - (NSInteger)calculatedRowCount
 {
-    if ((self.alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal &&
-        (self.alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
-        return ceilf((CGFloat) self.numOfButtons/self.columnCount);
+    if ((_alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal &&
+        (_alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
+        return ceilf((CGFloat) _numOfButtons/_columnCount);
     
-    if ((self.alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
-        return self.numOfButtons;
+    if ((_alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
+        return _numOfButtons;
     
     return 1;
 }
@@ -311,7 +324,7 @@
 
 - (void)createButtons
 {
-    if (self.buttons)
+    if (_buttons)
         return;
     
     _columnCount = self.calculatedColumnCount;
@@ -322,7 +335,7 @@
     
     for (NSUInteger i=0; i<_numOfButtons; i++)
     {
-        UIButton *button = [PSButton buttonWithType:self.buttonType];
+        UIButton *button = [PSButton buttonWithType:_buttonType];
         button.frame = CGRectMake([self xOffsetWithIndex:i], [self yOffsetWithIndex:i], _buttonWidth, _buttonHeight);
         button.userInteractionEnabled = YES;
         
@@ -380,9 +393,9 @@
     _buttonWidth = self.calculatedButtonWidth;
     _buttonHeight = self.calculatedButtonHeight;
     
-    for (NSUInteger i=0; i<self.buttons.count; i++)
+    for (NSUInteger i=0; i<_buttons.count; i++)
     {
-        UIButton *button = [self.buttons objectAtIndex:i];
+        UIButton *button = [_buttons objectAtIndex:i];
         button.frame = CGRectMake([self xOffsetWithIndex:i], [self yOffsetWithIndex:i], _buttonWidth, _buttonHeight);
         
         if ([self.delegate respondsToSelector:@selector(buttonBar:buttonResized:buttonIndex:)])
@@ -394,41 +407,41 @@
 
 - (void)updateSeperatorViewDisplay
 {
-    sepertatorView.columnCount = self.columnCount;
-    sepertatorView.rowCount = self.rowCount;
+    sepertatorView.columnCount = _columnCount;
+    sepertatorView.rowCount = _rowCount;
     
-    [sepertatorView setX:self.padding.left y:self.padding.top width:self.width - self.padding.left - self.padding.right height:self.height - self.padding.top - self.padding.bottom];
+    [sepertatorView setX:_padding.left y:_padding.top width:self.width - _padding.left - _padding.right height:self.height - _padding.top - _padding.bottom];
     [sepertatorView setNeedsDisplay];
 }
 
 - (CGFloat)xOffsetWithIndex:(NSInteger)index
 {
-    if ((self.alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal &&
-        (self.alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
+    if ((_alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal &&
+        (_alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
     {
-        NSInteger columnIndex = index%self.columnCount;
-        return self.padding.left + (columnIndex*self.buttonWidth) + (columnIndex*self.horizontalGap);
+        NSInteger columnIndex = index%_columnCount;
+        return _padding.left + (columnIndex*_buttonWidth) + (columnIndex*_horizontalGap);
     }
     
-    if ((self.alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
-        return self.padding.left;
+    if ((_alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
+        return _padding.left;
     
-    return self.padding.left + (index*self.buttonWidth) + (index*self.horizontalGap);
+    return _padding.left + (index*_buttonWidth) + (index*_horizontalGap);
 }
 
 - (CGFloat)yOffsetWithIndex:(NSInteger)index
 {
-    if ((self.alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal &&
-        (self.alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
+    if ((_alignment & PSButtonBarAlignmentHorizontal) == PSButtonBarAlignmentHorizontal &&
+        (_alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
     {
-        NSInteger rowIndex = floorf((CGFloat) index/self.columnCount);
-        return self.padding.top + (rowIndex*self.buttonHeight) + (rowIndex*self.verticalGap);
+        NSInteger rowIndex = floorf((CGFloat) index/_columnCount);
+        return _padding.top + (rowIndex*_buttonHeight) + (rowIndex*_verticalGap);
     }
     
-    if ((self.alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
-        return self.padding.top + (index*self.buttonHeight) + (index*self.verticalGap);
+    if ((_alignment & PSButtonBarAlignmentVertical) == PSButtonBarAlignmentVertical)
+        return _padding.top + (index*_buttonHeight) + (index*_verticalGap);
     
-    return self.padding.top;
+    return _padding.top;
 }
 
 #pragma mark - Private Button selector
@@ -436,9 +449,9 @@
 - (void)buttonTouchUpInside:(id)sender
 {
     if ([self.delegate respondsToSelector:@selector(buttonBar:buttonClicked:buttonIndex:)])
-        [self.delegate buttonBar:self buttonClicked:sender buttonIndex:(int) [self.buttons indexOfObject:sender]];
+        [self.delegate buttonBar:self buttonClicked:sender buttonIndex:(int) [_buttons indexOfObject:sender]];
     
-    if (!self.toggle)
+    if (!_toggle)
         return;
     
     @synchronized (self)
@@ -500,18 +513,18 @@
 
 - (void)clear
 {
-    self.render = NULL;
-    self.clicked = NULL;
-    self.resized = NULL;
-    self.selected = NULL;
+    _render = NULL;
+    _clicked = NULL;
+    _resized = NULL;
+    _selected = NULL;
 }
 
 - (void)render:(PSButtonBarDelegateBlock)render clicked:(PSButtonBarDelegateBlock)clicked resized:(PSButtonBarDelegateBlock)resized selected:(PSButtonBarDelegateBlock)selected
 {
-    self.render = render;
-    self.clicked = clicked;
-    self.resized = resized;
-    self.selected = selected;
+    _render = render;
+    _clicked = clicked;
+    _resized = resized;
+    _selected = selected;
 }
 
 // ================================================================================================
@@ -522,26 +535,26 @@
 
 - (void)buttonBar:(PSButtonBar *)buttonBar buttonClicked:(UIButton *)button buttonIndex:(NSUInteger)buttonIndex
 {
-    if (self.clicked)
-        self.clicked(button, buttonIndex);
+    if (_clicked)
+        _clicked(button, buttonIndex);
 }
 
 - (void)buttonBar:(PSButtonBar *)buttonBar buttonRender:(UIButton *)button buttonIndex:(NSUInteger)buttonIndex
 {
-    if (self.render)
-        self.render(button, buttonIndex);
+    if (_render)
+        _render(button, buttonIndex);
 }
 
 - (void)buttonBar:(PSButtonBar *)buttonBar buttonResized:(UIButton *)button buttonIndex:(NSUInteger)buttonIndex
 {
-    if (self.resized)
-        self.resized(button, buttonIndex);
+    if (_resized)
+        _resized(button, buttonIndex);
 }
 
 - (void)buttonBar:(PSButtonBar *)buttonBar buttonSelected:(UIButton *)button buttonIndex:(NSUInteger)buttonIndex
 {
-    if (self.selected)
-        self.selected(button, buttonIndex);
+    if (_selected)
+        _selected(button, buttonIndex);
 }
 
 @end
@@ -563,6 +576,7 @@
 - (void)initProperties
 {
     _lineColor = [UIColor clearColor];
+    _lineWidth = 0.5;
     self.backgroundColor = [UIColor clearColor];
     self.userInteractionEnabled = NO;
 }
@@ -570,8 +584,8 @@
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetLineWidth(context, 0.5);
-    CGContextSetStrokeColorWithColor(context, self.lineColor.CGColor);
+    CGContextSetLineWidth(context, _lineWidth);
+    CGContextSetStrokeColorWithColor(context, _lineColor.CGColor);
     
     [self drawHorizontalLineWithContext:context rect:rect];
     [self drawVerticalLineWithContext:context rect:rect];
@@ -585,34 +599,34 @@
 
 - (void)drawHorizontalLineWithContext:(CGContextRef)context rect:(CGRect)rect
 {
-    if (self.rowCount < 1)
+    if (_rowCount < 1)
         return;
     
-    CGContextSetLineWidth(context, 0.5);
+    CGContextSetLineWidth(context, _lineWidth);
     
-    CGFloat y = rect.size.height/self.rowCount;
+    CGFloat y = rect.size.height/_rowCount;
     
-    for (NSUInteger i=0; i<self.rowCount-1; i++)
+    for (NSUInteger i=0; i<_rowCount-1; i++)
     {
-        CGContextMoveToPoint(context, self.padding.left, (i+1) * y);
-        CGContextAddLineToPoint(context, rect.size.width - self.padding.right, (i+1) * y);
+        CGContextMoveToPoint(context, _padding.left, (i+1) * y);
+        CGContextAddLineToPoint(context, rect.size.width - _padding.right, (i+1) * y);
         CGContextStrokePath(context);
     }
 }
 
 - (void)drawVerticalLineWithContext:(CGContextRef)context rect:(CGRect)rect
 {
-    if (self.columnCount < 1)
+    if (_columnCount < 1)
         return;
     
-    CGContextSetLineWidth(context, 0.5);
+    CGContextSetLineWidth(context, _lineWidth);
     
-    CGFloat x = rect.size.width/self.columnCount;
+    CGFloat x = rect.size.width/_columnCount;
     
-    for (NSUInteger i=0; i<self.columnCount-1; i++)
+    for (NSUInteger i=0; i<_columnCount-1; i++)
     {
-        CGContextMoveToPoint(context, (i+1) * x, self.padding.top);
-        CGContextAddLineToPoint(context, (i+1) * x, rect.size.height - self.padding.bottom);
+        CGContextMoveToPoint(context, (i+1) * x, _padding.top);
+        CGContextAddLineToPoint(context, (i+1) * x, rect.size.height - _padding.bottom);
         CGContextStrokePath(context);
     }
 }

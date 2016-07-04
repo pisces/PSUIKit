@@ -43,6 +43,7 @@ typedef void (^PSButtonBarDelegateBlock)(UIButton *button, NSUInteger buttonInde
 @property (nonatomic, readonly) CGFloat buttonWidth;
 @property (nonatomic, readonly) CGFloat buttonHeight;
 @property (nonatomic) CGFloat horizontalGap;
+@property (nonatomic) CGFloat seperatorLineWidth;
 @property (nonatomic) CGFloat verticalGap;
 @property (nonatomic) UIButtonType buttonType;
 @property (nonatomic) CGPadding padding;
@@ -61,6 +62,7 @@ typedef void (^PSButtonBarDelegateBlock)(UIButton *button, NSUInteger buttonInde
 @interface PSButtonBarSeperatorView : PSView
 @property (nonatomic) NSUInteger columnCount;
 @property (nonatomic) NSUInteger rowCount;
+@property (nonatomic) CGFloat lineWidth;
 @property (nonatomic) CGPadding padding;
 @property (nonatomic, strong) UIColor *lineColor;
 @end

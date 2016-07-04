@@ -41,26 +41,26 @@
 {
     [super drawRect:rect];
     
-    UIColor *color1 = self.seperatorColors.count > 0 ? [self.seperatorColors objectAtIndex:0] : [UIColor clearColor];
-    UIColor *color2 = self.seperatorColors.count > 1 ? [self.seperatorColors objectAtIndex:1] : color1;
+    UIColor *color1 = _seperatorColors.count > 0 ? [_seperatorColors objectAtIndex:0] : [UIColor clearColor];
+    UIColor *color2 = _seperatorColors.count > 1 ? [_seperatorColors objectAtIndex:1] : color1;
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    if ((self.lineDrawPosition & LineDrawPositionTop) == LineDrawPositionTop)
+    if ((_lineDrawPosition & LineDrawPositionTop) == LineDrawPositionTop)
     {
         CGContextSetStrokeColorWithColor(context, color1.CGColor);
-        CGContextSetLineWidth(context, self.lineHeight);
-        CGContextMoveToPoint(context, self.linePadding.left, 0);
-        CGContextAddLineToPoint(context, rect.size.width - self.linePadding.right, 0);
+        CGContextSetLineWidth(context, _lineHeight);
+        CGContextMoveToPoint(context, _linePadding.left, 0);
+        CGContextAddLineToPoint(context, rect.size.width - _linePadding.right, 0);
         CGContextStrokePath(context);
     }
     
-    if ((self.lineDrawPosition & LineDrawPositionBottom) == LineDrawPositionBottom)
+    if ((_lineDrawPosition & LineDrawPositionBottom) == LineDrawPositionBottom)
     {
-        UIColor *color = self.lineDrawPosition == (LineDrawPositionBottom | LineDrawPositionTop) ? color2 : color1;
+        UIColor *color = _lineDrawPosition == (LineDrawPositionBottom | LineDrawPositionTop) ? color2 : color1;
         CGContextSetStrokeColorWithColor(context, color.CGColor);
-        CGContextSetLineWidth(context, self.lineHeight);
-        CGContextMoveToPoint(context, self.linePadding.left, rect.size.height);
-        CGContextAddLineToPoint(context, rect.size.width - self.linePadding.right, rect.size.height);
+        CGContextSetLineWidth(context, _lineHeight);
+        CGContextMoveToPoint(context, _linePadding.left, rect.size.height);
+        CGContextAddLineToPoint(context, rect.size.width - _linePadding.right, rect.size.height);
         CGContextStrokePath(context);
     }
 }
@@ -91,6 +91,15 @@
         return;
     
     _linePadding = linePadding;
+    
+    [self setNeedsDisplay];
+}
+
+- (void)setSeperatorColors:(NSArray *)seperatorColors {
+    if ([seperatorColors isEqualToArray:_seperatorColors])
+        return;
+    
+    _seperatorColors = seperatorColors;
     
     [self setNeedsDisplay];
 }
