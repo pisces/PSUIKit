@@ -49,8 +49,8 @@
     {
         CGContextSetStrokeColorWithColor(context, color1.CGColor);
         CGContextSetLineWidth(context, _lineHeight);
-        CGContextMoveToPoint(context, _linePadding.left, 0);
-        CGContextAddLineToPoint(context, rect.size.width - _linePadding.right, 0);
+        CGContextMoveToPoint(context, _linePadding.left, _linePadding.top);
+        CGContextAddLineToPoint(context, rect.size.width - _linePadding.right, _linePadding.top);
         CGContextStrokePath(context);
     }
     
@@ -59,8 +59,8 @@
         UIColor *color = _lineDrawPosition == (LineDrawPositionBottom | LineDrawPositionTop) ? color2 : color1;
         CGContextSetStrokeColorWithColor(context, color.CGColor);
         CGContextSetLineWidth(context, _lineHeight);
-        CGContextMoveToPoint(context, _linePadding.left, rect.size.height);
-        CGContextAddLineToPoint(context, rect.size.width - _linePadding.right, rect.size.height);
+        CGContextMoveToPoint(context, _linePadding.left, rect.size.height - _linePadding.bottom);
+        CGContextAddLineToPoint(context, rect.size.width - _linePadding.right, rect.size.height - _linePadding.bottom);
         CGContextStrokePath(context);
     }
 }
