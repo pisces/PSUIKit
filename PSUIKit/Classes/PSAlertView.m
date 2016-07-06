@@ -17,11 +17,6 @@
 //
 // ================================================================================================
 
-@interface PSAlertViewButtonBarLineView : PSView
-@property (nonatomic, strong) UIColor *color;
-@property (nonatomic, weak) PSButtonBar *target;
-@end
-
 @implementation PSAlertViewButtonBarLineView
 {
 @private
@@ -51,18 +46,18 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    CGFloat *rgb = (CGFloat *) CGColorGetComponents(self.color.CGColor);
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetRGBStrokeColor(context, rgb[0], rgb[1], rgb[2], rgb[3]);
+    CGContextSetStrokeColorWithColor(context, _color.CGColor);
+    CGContextSetLineWidth(context, 0.5);
     CGContextMoveToPoint(context, 0.0, 1.0);
     CGContextAddLineToPoint(context, rect.size.width, 1.0);
     CGContextStrokePath(context);
     
-    for (NSInteger i=1; i<self.target.numOfButtons; i++)
+    for (NSInteger i=1; i<_target.numOfButtons; i++)
     {
-        CGFloat x = i * self.target.buttonWidth;
+        CGFloat x = i * _target.buttonWidth;
         CGContextMoveToPoint(context, x, 1.0);
-        CGContextAddLineToPoint(context, x, self.target.buttonHeight);
+        CGContextAddLineToPoint(context, x, _target.buttonHeight);
         CGContextStrokePath(context);
     }
 }
@@ -72,14 +67,14 @@
     self = [super init];
     
     if (self)
-        self.target = target;
+        _target = target;
     
     return self;
 }
 
 - (void)initProperties
 {
-    self.color = defaultLineColor;
+    _color = defaultLineColor;
     self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     self.backgroundColor = [UIColor clearColor];
     self.userInteractionEnabled = NO;
@@ -129,13 +124,13 @@
 
 - (void)dealloc
 {
-    self.dismissionBlock = NULL;
+    _dismissionBlock = NULL;
 }
 
 - (void)PSAlertView:(PSAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    if (self.dismissionBlock)
-        self.dismissionBlock(alertView, buttonIndex, buttonIndex < 1);
+    if (_dismissionBlock)
+        _dismissionBlock(alertView, buttonIndex, buttonIndex < 1);
     
     objc_removeAssociatedObjects(alertView);
 }
@@ -151,7 +146,6 @@
 @interface PSAlertView ()
 @property (nonatomic, readonly) PSAlertView *lastAlertView;
 @property (nonatomic, readonly) NSString *instanceKey;
-@property (nonatomic, strong) PSButtonBar *buttonBar;
 @property (nonatomic, readonly) UIWindow *window;
 @end
 
@@ -160,7 +154,6 @@
 @private
     CGSize maximumMessageTextSize;
     NSMutableArray *buttonTitles;
-    PSAlertViewButtonBarLineView *buttonBarLineView;
 }
 
 static const CGFloat contentViewMinHeight = 50.0;
@@ -176,14 +169,14 @@ static UIView *modalView;
 
 - (void)dealloc
 {
-    [self.buttonBar removeFromSuperview];
-    [self.headerView removeFromSuperview];
-    [self.contentView removeFromSuperview];
-    [self.messageLabel removeFromSuperview];
-    [self.titleLabel removeFromSuperview];
-    [buttonBarLineView removeFromSuperview];
+    [_buttonBar removeFromSuperview];
+    [_headerView removeFromSuperview];
+    [_contentView removeFromSuperview];
+    [_messageLabel removeFromSuperview];
+    [_titleLabel removeFromSuperview];
+    [_buttonBarLineView removeFromSuperview];
     
-    buttonBarLineView = nil;
+    _buttonBarLineView = nil;
     buttonTitles = nil;
     _buttonBar = nil;
     _headerView = nil;
@@ -218,15 +211,15 @@ static UIView *modalView;
     _contentView = [[UIView alloc] init];
     _titleLabel = [[PSAttributedDivisionLabel alloc] init];
     _messageLabel = [[UILabel alloc] init];
-    buttonBarLineView = [[PSAlertViewButtonBarLineView alloc] initWithTarget:self.buttonBar];
+    _buttonBarLineView = [[PSAlertViewButtonBarLineView alloc] initWithTarget:_buttonBar];
     
     [self setProperties];
-    [self.headerView addSubview:self.titleLabel];
-    [self.contentView addSubview:self.messageLabel];
-    [self.buttonBar addSubview:buttonBarLineView];
-    [self addSubview:self.headerView];
-    [self addSubview:self.contentView];
-    [self addSubview:self.buttonBar];
+    [_headerView addSubview:_titleLabel];
+    [_contentView addSubview:_messageLabel];
+    [_buttonBar addSubview:_buttonBarLineView];
+    [self addSubview:_headerView];
+    [self addSubview:_contentView];
+    [self addSubview:_buttonBar];
 }
 
 - (void)setUpSubviews
@@ -235,23 +228,23 @@ static UIView *modalView;
     
     CGFloat alertViewWidth = self.window.width - 50;
     
-    maximumMessageTextSize = CGSizeMake(alertViewWidth - _contentPadding.left - _contentPadding.right, self.superview.height - 30 - self.headerViewHeight - self.buttonHeight);
+    maximumMessageTextSize = CGSizeMake(alertViewWidth - _contentPadding.left - _contentPadding.right, self.superview.height - 30 - _headerViewHeight - _buttonHeight);
     
-    if (self.messageLabel)
-        [GraphicsLayout heightFitByText:self.messageLabel maxWidth:maximumMessageTextSize.width];
+    if (_messageLabel)
+        [GraphicsLayout heightFitByText:_messageLabel maxWidth:maximumMessageTextSize.width];
     
-    self.messageLabel.width = maximumMessageTextSize.width;
-    self.headerView.width = self.buttonBar.width = alertViewWidth;
-    self.headerView.height = self.headerViewHeight;
-    self.contentView.width = self.messageLabel ? maximumMessageTextSize.width : (self.contentView.width > 0 ? self.contentView.width : maximumMessageTextSize.width);
-    self.contentView.height = self.messageLabel.height = self.contentViewHeight;
-    self.contentView.x = self.contentPadding.left;
-    self.contentView.y = self.headerView.height + self.contentPadding.top;
-    self.buttonBar.height = self.buttonHeight;
-    self.buttonBar.y = self.contentView.y + self.contentView.height + self.contentPadding.bottom;
-    buttonBarLineView.frame = self.buttonBar.bounds;
+    _messageLabel.width = maximumMessageTextSize.width;
+    _headerView.width = _buttonBar.width = alertViewWidth;
+    _headerView.height = _headerViewHeight;
+    _contentView.width = _messageLabel ? maximumMessageTextSize.width : (_contentView.width > 0 ? _contentView.width : maximumMessageTextSize.width);
+    _contentView.height = _messageLabel.height = self.contentViewHeight;
+    _contentView.x = _contentPadding.left;
+    _contentView.y = _headerView.height + _contentPadding.top;
+    _buttonBar.height = _buttonHeight;
+    _buttonBar.y = _contentView.y + _contentView.height + _contentPadding.bottom;
+    _buttonBarLineView.frame = _buttonBar.bounds;
     
-    self.size = CGSizeMake(alertViewWidth, self.headerView.height + self.contentView.height + self.contentPadding.top + self.contentPadding.bottom + self.buttonBar.height);
+    self.size = CGSizeMake(alertViewWidth, _headerView.height + _contentView.height + _contentPadding.top + _contentPadding.bottom + _buttonBar.height);
     self.center = self.superview.center;
 }
 
@@ -306,8 +299,8 @@ static UIView *modalView;
 
 - (CGFloat)contentViewHeight
 {
-    CGFloat innerHeight = self.messageLabel ? self.messageLabel.height : self.contentView.height;
-    return MIN(maximumMessageTextSize.height, MAX(contentViewMinHeight, self.contentPadding.top + innerHeight + self.contentPadding.bottom));
+    CGFloat innerHeight = _messageLabel ? _messageLabel.height : _contentView.height;
+    return MIN(maximumMessageTextSize.height, MAX(contentViewMinHeight, _contentPadding.top + innerHeight + _contentPadding.bottom));
 }
 
 - (void)setContentView:(UIView *)contentView
@@ -334,15 +327,15 @@ static UIView *modalView;
     self.alpha = 1;
     self.transform = CGAffineTransformMakeScale(1.0, 1.0);
     
-    if ([self.delegate respondsToSelector:@selector(PSAlertView:willDismissWithButtonIndex:)])
-        [self.delegate PSAlertView:self willDismissWithButtonIndex:buttonIndex];
+    if ([_delegate respondsToSelector:@selector(PSAlertView:willDismissWithButtonIndex:)])
+        [_delegate PSAlertView:self willDismissWithButtonIndex:buttonIndex];
     
     [alertViewStack removeObject:self];
     [repeatTestMap removeObjectForKey:self.instanceKey];
     
     void (^dismiss)(void) = ^void {
-        if ([self.delegate respondsToSelector:@selector(PSAlertView:didDismissWithButtonIndex:)])
-            [self.delegate PSAlertView:self didDismissWithButtonIndex:buttonIndex];
+        if ([_delegate respondsToSelector:@selector(PSAlertView:didDismissWithButtonIndex:)])
+            [_delegate PSAlertView:self didDismissWithButtonIndex:buttonIndex];
         
         if (alertViewStack.count < 1)
             [modalView removeFromSuperview];
@@ -375,8 +368,8 @@ static UIView *modalView;
     
     if (self)
     {
-        self.title = title;
-        self.message = message;
+        _title = title;
+        _message = message;
         
         if (cancelButtonTitle) {
             [buttonTitles addObject:cancelButtonTitle];
@@ -386,8 +379,8 @@ static UIView *modalView;
             [buttonTitles addObjectsFromArray:otherButtonTitles];
         }
         
-        self.delegate = delegate;
-        self.buttonBar.numOfButtons = buttonTitles.count;
+        _delegate = delegate;
+        _buttonBar.numOfButtons = buttonTitles.count;
     }
     
     return self;
@@ -402,29 +395,29 @@ static UIView *modalView;
     
     [self hideAlertViews];
     
-    if (!self.title)
+    if (!_title)
     {
-        [self.headerView removeFromSuperview];
-        self.headerView = nil;
+        [_headerView removeFromSuperview];
+        _headerView = nil;
     }
     
     if (buttonTitles.count < 1)
     {
-        [buttonBarLineView removeFromSuperview];
-        [self.buttonBar removeFromSuperview];
-        self.buttonBar = nil;
-        buttonBarLineView = nil;
+        [_buttonBarLineView removeFromSuperview];
+        [_buttonBar removeFromSuperview];
+        _buttonBar = nil;
+        _buttonBarLineView = nil;
     }
     
-    self.messageLabel.text = self.message;
-    self.titleLabel.text = self.title;
-    self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    _messageLabel.text = _message;
+    _titleLabel.text = _title;
+    _titleLabel.textAlignment = NSTextAlignmentCenter;
     
     self.alpha = 0;
     
-    if ([self.delegate respondsToSelector:@selector(PSAlertViewShouldEnableFirstOtherButton:)] &&
-        self.buttonBar.numOfButtons > 1)
-        ((UIButton *) [self.buttonBar.buttons objectAtIndex:1]).enabled = [self.delegate PSAlertViewShouldEnableFirstOtherButton:self];
+    if ([_delegate respondsToSelector:@selector(PSAlertViewShouldEnableFirstOtherButton:)] &&
+        _buttonBar.numOfButtons > 1)
+        ((UIButton *) [_buttonBar.buttons objectAtIndex:1]).enabled = [_delegate PSAlertViewShouldEnableFirstOtherButton:self];
     
     if (alertViewStack.count < 1)
     {
@@ -438,8 +431,8 @@ static UIView *modalView;
     [alertViewStack addObject:self];
     [repeatTestMap setObject:self forKey:key];
     
-    if ([self.delegate respondsToSelector:@selector(willPresentPSAlertView:)])
-        [self.delegate willPresentPSAlertView:self];
+    if ([_delegate respondsToSelector:@selector(willPresentPSAlertView:)])
+        [_delegate willPresentPSAlertView:self];
     
     self.transform = CGAffineTransformMakeScale(1.3, 1.3);
     
@@ -448,8 +441,8 @@ static UIView *modalView;
         self.alpha = 1;
         self.transform = CGAffineTransformMakeScale(1.0, 1.0);
     } completion:^(BOOL finished) {
-        if ([self.delegate respondsToSelector:@selector(didPresentPSAlertView:)])
-            [self.delegate didPresentPSAlertView:self];
+        if ([_delegate respondsToSelector:@selector(didPresentPSAlertView:)])
+            [_delegate didPresentPSAlertView:self];
     }];
 }
 
@@ -457,7 +450,7 @@ static UIView *modalView;
 {
     PSAlertViewDelegateObject *delegate = [[PSAlertViewDelegateObject alloc] init];
     delegate.dismissionBlock = dismission;
-    self.delegate = delegate;
+    _delegate = delegate;
     
     objc_setAssociatedObject(self, (__bridge const void *) @(delegate.hash), delegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
@@ -472,7 +465,7 @@ static UIView *modalView;
 
 - (NSString *)instanceKey
 {
-    return [(self.message ? self.message : @"").MD5 stringByAppendingFormat:@"::%@", self.title.MD5];
+    return [(_message ? _message : @"").MD5 stringByAppendingFormat:@"::%@", _title.MD5];
 }
 
 - (PSAlertView *)lastAlertView
@@ -511,8 +504,8 @@ static UIView *modalView;
     self.backgroundColor = [UIColor whiteColor];
     self.clipsToBounds = YES;
     self.layer.cornerRadius = 6.0f;
-    self.buttonBar.delegate = self;
-    buttonBarLineView.frame = self.buttonBar.bounds;
+    _buttonBar.delegate = self;
+    _buttonBarLineView.frame = _buttonBar.bounds;
     
     _titleLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _titleLabel.colors = @[[UIColor colorWithRed:30/255.0 green:40/255.0 blue:50/255.0 alpha:1]];
@@ -534,11 +527,11 @@ static UIView *modalView;
 
 - (void)buttonBar:(PSButtonBar *)buttonBar buttonClicked:(UIButton *)button buttonIndex:(NSUInteger)buttonIndex
 {
-    if ([self.delegate respondsToSelector:@selector(PSAlertView:clickedButtonAtIndex:)])
-        [self.delegate PSAlertView:self clickedButtonAtIndex:buttonIndex];
+    if ([_delegate respondsToSelector:@selector(PSAlertView:clickedButtonAtIndex:)])
+        [_delegate PSAlertView:self clickedButtonAtIndex:buttonIndex];
     
-    if (buttonIndex == 0 && [self.delegate respondsToSelector:@selector(PSAlertViewCancel:)])
-        [self.delegate PSAlertViewCancel:self];
+    if (buttonIndex == 0 && [_delegate respondsToSelector:@selector(PSAlertViewCancel:)])
+        [_delegate PSAlertViewCancel:self];
     
     [self dismissWithClickedButtonIndex:buttonIndex animated:YES];
 }
@@ -551,7 +544,7 @@ static UIView *modalView;
     [button setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithRed:244/255.0 green:246/255.0 blue:250/255.0 alpha:1]] forState:UIControlStateHighlighted];
     [button setTitle:[buttonTitles objectAtIndex:buttonIndex] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor colorWithRed:40/255.0 green:161/255.0 blue:255/255.0 alpha:1] forState:UIControlStateNormal];
-    [buttonBar bringSubviewToFront:buttonBarLineView];
+    [buttonBar bringSubviewToFront:_buttonBarLineView];
 }
 
 @end

@@ -17,6 +17,11 @@
 
 typedef void (^PSAlertViewDismission)(PSAlertView *alertView, NSInteger buttonIndex, BOOL cancel);
 
+@interface PSAlertViewButtonBarLineView : PSView
+@property (nonatomic, strong) UIColor *color;
+@property (nonatomic, weak) PSButtonBar *target;
+@end
+
 @interface PSAlertView : PSView <PSButtonBarDelegate>
 @property (nonatomic) CGFloat buttonHeight;
 @property (nonatomic) CGFloat headerViewHeight;
@@ -28,6 +33,8 @@ typedef void (^PSAlertViewDismission)(PSAlertView *alertView, NSInteger buttonIn
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, readonly) PSAttributedDivisionLabel *titleLabel;
 @property (nonatomic, readonly) UILabel *messageLabel;
+@property (nonatomic, readonly) PSButtonBar *buttonBar;
+@property (nonatomic, readonly) PSAlertViewButtonBarLineView *buttonBarLineView;
 @property (nonatomic, strong) id<PSAlertViewDelegate> delegate;
 + (PSAlertView *)alertViewWithContentView:(UIView *)contentView cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(PSAlertViewDismission)dismission otherButtonTitles:(NSArray<NSString *> *)otherButtonTitles;
 + (PSAlertView *)alertViewWithMessage:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle dismission:(PSAlertViewDismission)dismission otherButtonTitles:(NSArray<NSString *> *)otherButtonTitles;
