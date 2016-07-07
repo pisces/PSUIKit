@@ -37,30 +37,12 @@
 
 - (void)addLeftBarButtonItem:(UIBarButtonItem *)leftBarButtonItem
 {
-    if (leftBarButtonItem.customView && [self higherThanIOS7])
-    {
-        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-        negativeSpacer.width = -8;
-        [self setLeftBarButtonItems:[NSArray arrayWithObjects:negativeSpacer, leftBarButtonItem, nil]];
-    }
-    else
-    {
-        [self setLeftBarButtonItem:leftBarButtonItem];
-    }
+    [self setLeftBarButtonItem:leftBarButtonItem];
 }
 
 - (void)addRightBarButtonItem:(UIBarButtonItem *)rightBarButtonItem
 {
-    if (rightBarButtonItem.customView && [self higherThanIOS7])
-    {
-        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-        negativeSpacer.width = -8;
-        [self setRightBarButtonItems:[NSArray arrayWithObjects:negativeSpacer, rightBarButtonItem, nil]];
-    }
-    else
-    {
-        [self setRightBarButtonItem:rightBarButtonItem];
-    }
+    [self setRightBarButtonItem:rightBarButtonItem];
 }
 
 - (void)removeLeftBarButtonItem

@@ -21,10 +21,10 @@ typedef Byte PSButtonBarAlignment;
 
 @protocol PSButtonBarDelegate <NSObject>
 @optional
-- (void)buttonBar:(PSButtonBar*)buttonBar buttonRender:(UIButton *)button buttonIndex:(NSUInteger)buttonIndex;
-- (void)buttonBar:(PSButtonBar*)buttonBar buttonClicked:(UIButton *)button buttonIndex:(NSUInteger)buttonIndex;
-- (void)buttonBar:(PSButtonBar*)buttonBar buttonResized:(UIButton *)button buttonIndex:(NSUInteger)buttonIndex;
-- (void)buttonBar:(PSButtonBar*)buttonBar buttonSelected:(UIButton *)button buttonIndex:(NSUInteger)buttonIndex;
+- (void)buttonBar:(PSButtonBar*)buttonBar buttonRender:(UIButton *)button buttonIndex:(NSInteger)buttonIndex;
+- (void)buttonBar:(PSButtonBar*)buttonBar buttonClicked:(UIButton *)button buttonIndex:(NSInteger)buttonIndex;
+- (void)buttonBar:(PSButtonBar*)buttonBar buttonResized:(UIButton *)button buttonIndex:(NSInteger)buttonIndex;
+- (void)buttonBar:(PSButtonBar*)buttonBar buttonSelected:(UIButton *)button buttonIndex:(NSInteger)buttonIndex;
 @end
 
 @interface PSButtonBarDelegateObject : NSObject <PSButtonBarDelegate>
