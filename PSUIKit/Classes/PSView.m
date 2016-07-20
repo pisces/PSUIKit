@@ -55,6 +55,20 @@
     return self;
 }
 
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
+{
+    if (_allowsTouchesOutsideSubview) {
+        for (UIView *subview in self.subviews) {
+            CGPoint pointInSubview = [subview convertPoint:point fromView:self];
+            if ([subview pointInside:pointInSubview withEvent:event]) {
+                return YES;
+            }
+        }
+        return NO;
+    }
+    return [super pointInside:point withEvent:event];
+}
+
 // ================================================================================================
 //  Public
 // ================================================================================================

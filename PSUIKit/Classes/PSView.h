@@ -16,6 +16,7 @@
 @end
 
 @interface PSView : UIView <PSViewProtectedMethods>
+@property (nonatomic) BOOL allowsTouchesOutsideSubview;
 @property (nonatomic, readonly) BOOL appeared;
 @property (nonatomic) BOOL immediatelyUpdating;
 - (void)invalidateProperties;
