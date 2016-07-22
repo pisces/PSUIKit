@@ -15,6 +15,7 @@
 #import "PSButton.h"
 #import "PSButtonBar.h"
 #import "PSGridView.h"
+#import "PSLabel.h"
 #import "PSLinedBackgroundView.h"
 #import "PSPreloader.h"
 #import "PSRecycledScrollView.h"
