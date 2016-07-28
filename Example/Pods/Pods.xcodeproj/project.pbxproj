@@ -7,255 +7,255 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		041C57ECE26C28EB298509A7B5E040D1 /* PSExceptionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 733566DC5A23F88247C4B123BD4A7D40 /* PSExceptionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05ED455EE613A7954A33E040AB758A80 /* PSCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 68DE1C6A586308F19102B8162D0CA671 /* PSCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07321D37EAFE6BFDDC152FCC0514CDF1 /* ImagePopViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC7D52564AF156A73CA105A47DC814 /* ImagePopViewManager.m */; };
+		00A30FE4CCD0F25722123398D6AF152D /* UIApplication+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8053250279BF16B8E16F94FA31EAD297 /* UIApplication+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00F8A876A7AA95379DE72B8D880582A7 /* ImagePopViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1254CCBF3BE6C45D4F84C6F766043D41 /* ImagePopViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03F89AF0BA0163C3159ED0B4D69BFEA9 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BBB4910F7BD858E81BF0C56D8F69B52 /* base.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04C4258EBA6A16C576ED76B4A415ECCA /* UIThemeWhiteTranslucent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E59F18E35D39F32D65D5994FBA5C301 /* UIThemeWhiteTranslucent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04F0B609C50B49A7270FAD11E299775E /* PSPreloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0714104E52D6080181F0AE65BABC4 /* PSPreloader.m */; };
+		054279F0FE81CAC2E543E390C05D83C8 /* GraphicsLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D71CD57E1B91C9ADEBC0DB11E988980 /* GraphicsLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05C0D4861CC35593E20EA0BF696BFA02 /* PSAssetsGroupListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B5AAC78ECFAE4A57B07302FA8DCC82 /* PSAssetsGroupListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0863BCE54898161A929F20D5B101A6F5 /* PSGridViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A0161F366203B0915A84D4D843280A42 /* PSGridViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08C4A14B59F4D1A1CF03ABC146C08823 /* PSAssetsGroupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01FFAA3CE4B33E280BD423ED301437C3 /* PSAssetsGroupView.xib */; };
 		0A24C71FF94B040D408FCD826E5CDC2C /* loading_00012.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E4AAA5027B28E5A75ADE3C9090ED810 /* loading_00012.png */; };
 		0A577BC4260F98CD4222DC054248E233 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 41678977E62E33597D200BD5D27F35B8 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BE0B28B4E4BBB1F7F63A5A4B89047FC /* PSAssetsGroupListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C586C3D47D7491B1C001802C13CD1BD1 /* PSAssetsGroupListViewCell.m */; };
 		0C1260CBB233BA63AD301D9B65285042 /* Pods-PSUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7958E0998E8A465FDAED1AF879DCD /* Pods-PSUIKit_Tests-dummy.m */; };
 		0C628845078C70CE8B54E0CAAD875C2D /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4809BDEF54FBBD1AE2C4703066AB7263 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C9556DC57ACC50949FB9ECD12471E25 /* PSAssetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AF6B495BB056920127C974707BA86D /* PSAssetListViewController.m */; };
 		0C9C8A03450BE10E017A4316BE4B12B0 /* loading_00001.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC8E7CEB7B958E716EA628A7CA0033D /* loading_00001.png */; };
 		0D723CE1FDF427C37FF6F89AFB409C30 /* loading_00011.png in Resources */ = {isa = PBXBuildFile; fileRef = 7301431621CC84CBDCA476C45E9C3CE5 /* loading_00011.png */; };
+		0DB6A432116DC4DE2D6826FAB0D91587 /* UIViewControllerStack.h in Headers */ = {isa = PBXBuildFile; fileRef = E581493D6F2A57C1D6D9E10947E26947 /* UIViewControllerStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E3061DCC69EF041EA478E326B8AED03 /* PSCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 069EC0582A71CD7891A03B07727A1C83 /* PSCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E86E018F3E62B9F4853C6F38B2000F6 /* loading_00009.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0A979B70E6E36514EC182488DE68A /* loading_00009.png */; };
-		0F947A11081A603EAD455D970DC6D25F /* UIView+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9B6ED9874B47D789305E20B81FB2AE /* UIView+PSUIKit.m */; };
-		0FB5571A9BE2AC8E3A0DC0E6728BD90D /* PSViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE24AE9BCAB4BE0D64B85A33770FE7A /* PSViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0FCB97AD7702D23F124DA32F3682816A /* PSToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA1E1F519B25334BAD22FD9238F63E /* PSToastView.m */; };
 		0FCFFDDE988D04ECEE1E30E1CA5AC5C2 /* PSUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35E087F59239BAD8FBCF57D37B3A4598 /* PSUIKit.bundle */; };
-		0FEFF6D1C4F2B8755BFA6D877A178A10 /* PSExceptionViewDisplaySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D3B83D0EDC09891A9E4EED42146DA6 /* PSExceptionViewDisplaySequence.m */; };
-		1269449E92335712C8B3FAD6DEAFD2A3 /* PSAssetsGroupListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 362838D2CFE83A8C4E2BCF9077E26A67 /* PSAssetsGroupListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		142634936E56DA298BB3B5241448B9BD /* PSGridViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E90E0AC37DF0241F0A28429C6D17411F /* PSGridViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		152A70000FBA714CF81511A40B40CC04 /* PSImageAssetScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FF42F0FFB730F11335EB00C21016F92 /* PSImageAssetScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		104B88A0E7492AE33D1C36E9E8F388A4 /* PSTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728D0719861386239BD1B0E250804802 /* PSTabbarController.m */; };
+		11AC7AC754FBFA9557436AC541F1A3E0 /* PSLinedBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E8A64A72C624E5559B269CD4F6AA7B /* PSLinedBackgroundView.m */; };
+		1295A9D660E802ACAC487802ADF6E3B3 /* controls.h in Headers */ = {isa = PBXBuildFile; fileRef = FA05FD6BB76A1B4C7E8A690507AAF2D5 /* controls.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15F6DFC91DD83AD2669653B61459768A /* loading_00010.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6C67849AF52641E1D9C33AFBA724A2 /* loading_00010.png */; };
 		164B23D7BFC020AF9177908535B95DFE /* loading_00002.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F20F43F17DFF34D39210B9DDA52C8 /* loading_00002.png */; };
-		17AB702374A3F553C37F4F5162AF22D5 /* PSAssetListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEB219E9B3D2D863A49B79206036471 /* PSAssetListViewCell.m */; };
+		165FC73B30B4393CEAAD7DA656EA3255 /* PSAttributedDivisionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 107D0DAE96F42C6ED4A046E34FD88D53 /* PSAttributedDivisionLabel.m */; };
 		184EABFF59ACAAED2EB457CEB6579AF6 /* loading_00018.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D6FBE32D4E993B0E05B8E90F5F6E6D /* loading_00018.png */; };
 		189AE732EE01026170E414DE781C74BE /* UIMaskedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 67664F7770DDD38D5B06DCF6BDC1B38F /* UIMaskedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18DE54690B12989AC3E81EF959EF1836 /* ext.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A5605F1E37C9C508CAB731F0F83320 /* ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A45C949678368DCF8E6AF60C3E4520D /* PSExceptionViewDisplaySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C4AB6514EB8EA426290D471F3D47D0 /* PSExceptionViewDisplaySequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A563232DA7274FA840A0CEAE98CDD8A /* bg_toast_left_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3E84FF8D1DA61A82A27282665DF445D /* bg_toast_left_normal@2x.png */; };
 		1B087832F3CF96EE3CFD3926C814E4C4 /* CoreTextUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C37084396B6F47C014F2570EF25BA8 /* CoreTextUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1D42F438B57BB48DB38D2BA426DF21EB /* ActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CF561A6208DC52AF3F058919337533 /* ActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D464646EE83A205864053162BF80DB9 /* UITableView+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4864A48157108C11828898D439D1CC3D /* UITableView+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DC6A971D8769BA88786A5C6E87B4342 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9549788B3B94AA232630262C663D0F7E /* UIView+WebCacheOperation.m */; };
-		1DDE905303497A9DB937E38C5DACFAC3 /* Reachability+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E969A9AF18AACF00618E2847BB11861 /* Reachability+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DE11C8CAEDA9EA4C3F564868BCB75B1 /* bg_toast_right_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F60A8F3C54B2F31CBBE313E1A0C48 /* bg_toast_right_normal@2x.png */; };
-		1E8AEAFCF18BA4EC291A84A54F3E04B2 /* PSButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2249CAE3BF78E67F1AE8A159B43158FE /* PSButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EE222418570333BD7BD099989AA9BB3 /* PSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FB3F096F4AD9B508618ED28AB43BC3 /* PSCollectionViewCell.m */; };
-		1F2BBDA33BE01FFBB1312D20349946EC /* PSAssetsGroupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 69701362C909FB8836788EA89C347C97 /* PSAssetsGroupViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FBE6BA99B13146B26B9D94242DBDE83 /* OHASBasicMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B964B3321FAB36C72CA5A051783B328 /* OHASBasicMarkupParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2099B8013E440A51CAC252A53295F9EF /* UIThemeWhiteTranslucent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D7B67AA35E9F53552409F45AAFF00 /* UIThemeWhiteTranslucent.m */; };
 		230AD78D00D713BCEECE13B8C201B412 /* OHAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2822D6D8CA972D01C2EF12DFFDCA6B /* OHAttributedLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		24D15CDC2E0378C60B5E2DE765D536F3 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A26B88E71261F1D78F63CF044CE15C /* UIImage+MultiFormat.m */; };
-		26727FA5616038526C5C50F7CCDA5816 /* PSTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFDDE68116384C1EDC1C2D66D4DBF6C /* PSTabViewController.m */; };
 		26F209B6B823D03D7A515F615B3C712C /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD756899482B001FFD71BD48AA7F695 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2729ECA1744BA31C163BFFD4338B7AA9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2115E75F3164FDF31B18CACB71FD26 /* CoreText.framework */; };
 		2776BAF8E99A74B54AF6E82E520BB549 /* loading_00021.png in Resources */ = {isa = PBXBuildFile; fileRef = DE18E8D2964DAFC17C4BD3C1B532C439 /* loading_00021.png */; };
 		28C67D4E6FE2B6D160F12CFB507DDD07 /* Reachability-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D6A982F01EDCEBF27F9EF20680EC30 /* Reachability-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		295580DA15A87BBC6F5B0DE8F2F97200 /* ActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA3E3597C729F1541136BA191F248B5 /* ActivityIndicatorManager.m */; };
+		2923BB24FEFBE7976C0650B78F198D3D /* PopUpViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4B466C12273C77ABDA610F947A9D5 /* PopUpViewManager.m */; };
 		2B1D213E666C1D67CA20A713C208EFB5 /* loading_00017.png in Resources */ = {isa = PBXBuildFile; fileRef = A23A4E062C81D8A7A57323B6A5A1D819 /* loading_00017.png */; };
-		2D6421775569BBF8BCD52CCCA84150B1 /* UITableView+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 331892A1D3D8FE6A86428C63B2294713 /* UITableView+PSUIKit.m */; };
-		2D6480CE5489B1573BBC9837007ACB4E /* UIApplication+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D181CA3BC408F9DE501D9FC5E6F60D1 /* UIApplication+PSUIKit.m */; };
-		2F61180D8170C21E7C58ED5DB73C1DB3 /* PSNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 950341D965A2AF25293B5EFA093682C0 /* PSNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F93945CB6D46F39C97061E21ECD5D7E /* UIThemeDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA076141EE4E935F4321074697C2EB85 /* UIThemeDefaultStyle.m */; };
+		2CBC4ED03DF679A23F01DD76E2A4EBF1 /* UIApplication+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1ADB15C5FCDA898D76A5770AD24940 /* UIApplication+PSUIKit.m */; };
+		2D45BFD66BC5E5B61321B6804DF2149B /* PentagonChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C94736098FA474BACE94BC1FFBB5CF7A /* PentagonChart.m */; };
 		31603C7A10970EB49EC63D2222806781 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CBE9BDAD021D04E159B5483697B2C00 /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31696C973447EA74734A6557FDADB207 /* UIThemeWhiteTranslucent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6368850E2B0591B84D8F8EA346E909 /* UIThemeWhiteTranslucent.m */; };
+		319F837DF12C0FB321657EE0571D800F /* UIWindow+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AE233890CF3A24122073B7695E9494E /* UIWindow+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		337541BBAF34A63C43A19E3DE0D95A4C /* btn_common_con_blue_r6_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32644515692ABF826F8064EC370686C1 /* btn_common_con_blue_r6_normal@2x.png */; };
 		3443C3C65D860254BCAF79E57AE81B39 /* PSAssetListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4283C7B33DDDFC35C6514816D7BF2B8 /* PSAssetListView.xib */; };
 		34674E5AB1B85657B37D5BCFC9D0767B /* UIViewControllerMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FB178E15DD0B47DC66C04A80C87BB41B /* UIViewControllerMoveTransition.m */; };
 		348FAF4D2343A721ADCEEB86B66710C9 /* UIViewControllerFadeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FE7BD36AB130CD74915804E7860E5 /* UIViewControllerFadeTransition.m */; };
 		3514FB5DC2491DB400AB6600E48CB94F /* Pods-PSUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF168D1E8CD690171C8AF1023086760 /* Pods-PSUIKit_Example-dummy.m */; };
+		3610246C4176E5A89B0F2DAE1368DA14 /* PSTabbarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7994E6BE4A537C0414D76F0F3BB72AB5 /* PSTabbarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3705446B18DEA004113D20F89262B145 /* UIView+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EF3AE2231426C83306CD7B167402F7 /* UIView+PSUIKit.m */; };
+		38F7A662D70882A5B28E71BB5D619B98 /* PSGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B63EB871B2A0877E7E61E2D069860D /* PSGridView.m */; };
+		39CEDE8AA8AEFA36C7E36323A98790C0 /* PSBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = BD87D55A0ED521A5BD2D9D9415D554F2 /* PSBadge.m */; };
 		39E37C817F7E8AEEEDC44CE63EDBD602 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FE3C6FDFA9858D47C3FD7CE55DE8CA9 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C233DEABAA3E8B51BE14659355E8FD8 /* UIThemeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 896148E95A155039BD6FD32DB09D22D0 /* UIThemeBase.m */; };
-		3C8D2DFAEC164BB7AE84A004C09C79A2 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = 67DDCFF54738C7CE9FE1A20BFA14AC0D /* base.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D3FFFC02E57788AF1B5D5622A1E4897 /* UITableView+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C731EDEDC94A47923F1171A8F081B82 /* UITableView+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DD07D8C4CE575AA92E427E0A9D455BD /* UINavigationItem+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AE901A7460BE453EBCCEBB0A3F7CEF04 /* UINavigationItem+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DF04AB20D3BCDBCCEF8D4AD163B8473 /* UIButton+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 663A05C1997442F6F97B8EB6597FEE59 /* UIButton+PSUIKit.m */; };
-		3E75F56C74399F1FD5132883B078C1F4 /* PSButtonBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1953006C3C1B452E5E5789072A400FB1 /* PSButtonBar.m */; };
+		3F3A6D11648147719635A9AD41FDDA87 /* PSAssetsGroupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 33EFBF73198B6820E925549EDB426037 /* PSAssetsGroupViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F8634D2DA79EA9B8B3AF644D862779E /* PSUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D513DA5533E348722CACE94DCC253AD /* PSUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		407DB09C4AB6BA1AE40782C088207A32 /* PSButtonBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7334C867D830E8717B85AE6866D4A6EB /* PSButtonBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40E67050F1967A02AB036EBCDC4EC8F0 /* PSPreloader.h in Headers */ = {isa = PBXBuildFile; fileRef = CFA94634CBC4F52216AD83694238983D /* PSPreloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42F5E40E0091D903DFAA27ECFDBF770E /* PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822B76B42C35A873517EEB35A1AEDD2 /* PSUIKit.m */; };
+		4345C26DA9EE93ED338BFE2D992CEA60 /* PSExceptionViewDisplaySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E76FFF307E1CF78D24653F24F72647A /* PSExceptionViewDisplaySequence.m */; };
 		4368979B30DCAD0239A8D28D8321D8ED /* NSTextCheckingResult+ExtendedURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F766F7DB9B80915F0ED0EE0EC0266DF /* NSTextCheckingResult+ExtendedURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		440003C87BEF57268F99FC6CC504786C /* OHAttributedLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6647E3EC71DC0541D9C98FC2E85D08 /* OHAttributedLabel.framework */; };
 		4524C3D91E1BC2AB27DC145D51D7E462 /* UIViewControllerTransitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF768DACE7D42FF287FC2FA67E4EBCB /* UIViewControllerTransitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		454A6B9F17FC41C568CA2A937DCBFFCF /* PSActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 870D5A31F129EFFF17EF14A6060CA5C6 /* PSActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45918CE61FEF7A77676EE2E8C6E194E5 /* PSBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A4288A766E6298A98A9839A6304C22 /* PSBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46755E834F97470FBA43AF3FC6EE7894 /* PSViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9206378C3F32C7F31AF2660030130966 /* PSViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		483B6805C8107F5C58A226F635F0AEBD /* AnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A102957147B061DD2A4EBA54F3E7AB /* AnimatedTransition.m */; };
-		4A9BC24DAD2D67658DB2BD7D1169C5F6 /* PSImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3757396394A8C6BC6C04CCAD54C5706 /* PSImagePickerController.m */; };
+		48E03ED91B5240C6D196D546F2893106 /* UIAlertView+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B07DE1DD4C81A67A6F94EF16D49019C /* UIAlertView+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48F2E5B1006E166CA56809E0EC22D166 /* PSButtonBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 47027F8D8617F3D6A32A32DBE2A3275C /* PSButtonBar.m */; };
+		4C3E5335742C69C8359A762A0C42DBDA /* PSToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3323CB6B44935658CB8F89D9B9CFB /* PSToastView.m */; };
+		4DA470FD08AFE4BF8FB6C31344E72BA8 /* PSImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118A4A622BD5348EA05A8D9651D78F60 /* PSImagePickerController.m */; };
 		4E8C1E16E7E202C5B4534F3DD48A8529 /* AnimatedDragDropTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C8226A99DC83CC7668BCDC4887485D /* AnimatedDragDropTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E9D37AE267F2CD64F3FA8E075EA0B27 /* UIThemeWhiteTranslucent.h in Headers */ = {isa = PBXBuildFile; fileRef = BDC64C8E07FFC1BAF7FE99D773EAFDA9 /* UIThemeWhiteTranslucent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F18673B2CEBA0D8B140665155D86112 /* Reachability+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEFE27A5DB2E5ADAE50BF242D7D3CB0 /* Reachability+PSUIKit.m */; };
 		5005F4EB00DB46EA4BCF8D2782F29E11 /* OHTouchesGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = AD58367CB8FE358BD3413204E37D55AB /* OHTouchesGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		502B45EDBF48506B3FCA895D26B7F027 /* icon_navi_collection_back_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFD81436A39FD334BFF2616BF42C4E84 /* icon_navi_collection_back_selected@2x.png */; };
 		50481E3B23ACE6D45B57A1EB0E27D699 /* AnimatedMoveTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4224F4F6E4DA971CB6D1F62149D5331F /* AnimatedMoveTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5077CC43973E7F5C226EEA137F993AEB /* OHTouchesGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10EC050D746373A5B19FD1B6B6946630 /* OHTouchesGestureRecognizer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		528AFC0575AC7F3614725A3C0A54B5FD /* PSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B4E279F82ED69B483D3A8F2D4014ED /* PSLabel.m */; };
+		533A933F359E833C347BD8A9D4842C28 /* theme.h in Headers */ = {isa = PBXBuildFile; fileRef = FDDA86AE0716360A7C637E08D9B88DA2 /* theme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53A2C530F0182EEC50913AEF8ADDAE66 /* SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1970B232985BD0AFE9EC917D5DBD4B1E /* SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		541253C586882FD2861E53FD15EE49A5 /* PSGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09FB657CCC000CE62E9D0B048C6B5B22 /* PSGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		551D1B8B1892CC9DE1B45C1195519FE8 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C754FAD5067DB7CA4D6BAFD5620D56E /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		568BA318D33683C07830F38F114B0F85 /* GraphicsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB3E8565BC054B792DC66C47D922D43 /* GraphicsLayout.m */; };
+		57639C28B674D7875BA2489A1553CB5A /* UIThemeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2546ED2B554C9BDC8669ED2EC434B0 /* UIThemeBase.m */; };
 		57DA84230D5E2ECBFE47C4B8255852F4 /* OHASBasicHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 919F69D810A37FBE73FAD139F8539517 /* OHASBasicHTMLParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		580DE07C2C1767D8CCB09E1169CFEFF6 /* PSAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 889705903DC12CBE2A34ED37C10E0B4B /* PSAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5835099DFC16BEF65F322A583D6420EE /* PSPreloader.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83E35FF221EF593273B85729EB7A10 /* PSPreloader.m */; };
+		583BE385DDE0B0E9532973159FB7C9A7 /* ImagePopViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF923E4BE6483798DFDFF583AC34E93 /* ImagePopViewManager.m */; };
 		59F4976ED385BB4F27BB7FFED61CDF93 /* loading_00019.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E0E8C76E68A1148A191E46FE970815 /* loading_00019.png */; };
 		5A31AACDA16F2FF435F4FDE443499CA6 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AB12317CA42913507A3F4AAEA25BF8B9 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A4D9D2BA51D5E5EB21429CF9D808A0F /* loading_00022.png in Resources */ = {isa = PBXBuildFile; fileRef = 327FA58B83EB35F95D3E3B57B2CBD197 /* loading_00022.png */; };
-		5B9087C474F0B2F291B2254E4AF2B5D4 /* UIImage+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC350420528527761123F0BC4F86A4C /* UIImage+PSUIKit.m */; };
-		5BD0927D568D3B091697F75AF5F5A224 /* PSBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF19A93D34A7055372630FE29E9673 /* PSBadge.m */; };
 		5BDB7EA42AD9D5D7B24A568A3A2EBA22 /* UIViewControllerDragDropTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC44C38F9782EDEA05A6F288809150D /* UIViewControllerDragDropTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CF6390F475BFA7006C1D5E93C96E096 /* PSActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 27FFB079AD9022E749B8794460A9971F /* PSActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D36E3E71AF80A1173799B771B54DC25 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6A1CC57A0B5D2794AF6F21543082C3 /* SDWebImage.framework */; };
-		5DCC15ECC497102C1B4927FF184853EA /* PSBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 35EA642151B4A541F01959650963B2E7 /* PSBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ED367D3E94BA92E7FA1D114CCD457FD /* UIThemeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C4DAFC35CFB249530D591E07FBFBA68 /* UIThemeBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F1253CFE7AC601BF31AD5AD6D181141 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 6664B78669057459C22759A03EA5C207 /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FA44B60AA0A4B7377D5A66D286132EF /* PSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D299EB91A5719A927E80BF509E26B912 /* PSTableViewController.m */; };
-		603E18397B7EC15A6D337550D18D0CBD /* PSView.h in Headers */ = {isa = PBXBuildFile; fileRef = B975E95E2D944A7CFB7973AB44067396 /* PSView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F5DA356F5C6EE4CA0C7DC6828F920D9 /* UIViewControllerStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 26468BDF2347B63093BF7E3C7D07F95E /* UIViewControllerStack.m */; };
+		5FAFFADD72E4EB728B863A5D52105FA8 /* PSRecycledScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DE50B220077ACC066EC3D8E1CEDF47 /* PSRecycledScrollView.m */; };
 		60C00FD64E32EC2EBAFA9313E7531AD8 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301A407B0C02B70A717229DED96AD0DF /* Reachability.framework */; };
-		640DABBA0363413358965A44A048E76E /* PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C26D41D9DF7A4C1188463725A49690 /* PSUIKit.m */; };
-		64441EA33A39BC88FB0FD907B28F1535 /* UINavigationItem+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4585A7622E2E1CF6378F9CC6EFF4EA /* UINavigationItem+PSUIKit.m */; };
+		6509F4E9A6880C2036062579240E2900 /* UIViewController+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA4D283CE84E748471EEA6E65EE9BDD /* UIViewController+PSUIKit.m */; };
 		6549C0D14DE2C5CC01E13B9CB0E660EB /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 006C05A31A72AEC00D239B222B9AA40F /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6554AB9E870FB597A691A1FB3EE73A06 /* icon_navi_back_blue_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A411FD93F0608C664BF380B0E4954B8D /* icon_navi_back_blue_normal@2x.png */; };
+		6625DB3454E2FECCAB1B86AE9554EEF5 /* PentagonChart.h in Headers */ = {isa = PBXBuildFile; fileRef = FC93600C4E4BEDF5E8C5AF76EC11EC73 /* PentagonChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		674F3FF1ECD12CE74FC49E03BCDABD09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D2907F73A3CD8A25C4AF67FF3FCB2 /* Foundation.framework */; };
 		67A529306838E1B5826A58EDB348893F /* loading_00004.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C8D30650883FE49CCB7E722272B1296 /* loading_00004.png */; };
-		696CDB78D89467FB571A312A103E32EC /* PSAssetListViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF16E2C4E60FB54E9C7BA60C5AEBEE4 /* PSAssetListViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6806519E60CB4F9E996F2DDC7C47F1E4 /* PSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 414B6D8137B0C5ADA1348BFA79BCD047 /* PSLabel.m */; };
 		6AC0B29EA9F85F4D04A198013E8A687E /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = E22AE5F4B5AD445AC308C076E8E957F1 /* SDWebImageCompat.m */; };
-		6B4FDD25F1F237AF0DA56DE45DC8D519 /* PSAttributedDivisionLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 946184061136B4F1C820BEB11BE34E72 /* PSAttributedDivisionLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B8BEF802093861E09BF0C638BCCC75D /* AnimatedDragDropTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E7FD9D98D851BE946BC7A8B7B6E19 /* AnimatedDragDropTransition.m */; };
 		6BD403F34ECE6B355B61B93E167C9F41 /* UIMaskedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5CD6C65562D23ADCFBEF02B77C791B /* UIMaskedImageView.m */; };
 		6BEA2BB2C8C2F1E8DB10ADA0135D8A37 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FE42659EF23327F448A84AE15274B1 /* UIButton+WebCache.m */; };
-		6C18EA7587F53D80CB89C9B7BECB1B0A /* PSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1756337D870EA820C51AEB7C26DD22BC /* PSActionSheet.m */; };
 		6C22A67D7538C9319C562CBAB62C7B5A /* loading_00005.png in Resources */ = {isa = PBXBuildFile; fileRef = B129C3DDC0F7B85C8C18F0CF68A9DA1C /* loading_00005.png */; };
+		6CBEF08CE9BC81B3295B73635A5847BC /* PSToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E8AEAEA0104C8928C99F3F0AA1B7280 /* PSToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CF601599624B26C8C887F6B77DE2DB3 /* loading_00024.png in Resources */ = {isa = PBXBuildFile; fileRef = 800C0BEE4BCA77EB283077894F7D5B13 /* loading_00024.png */; };
-		6D5837DA8C6107B7485F93AA253897F3 /* charts.h in Headers */ = {isa = PBXBuildFile; fileRef = 03127768E1E758B217E832F14A2A4D37 /* charts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DDBDA319C37350EB271CC6393A20E67 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 09411E6A08B6C17392803B83E90FAEEB /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F542F3DB1775CC26A823594FA2B9ABD /* OHAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5439D6636303CF9A068E50594DF7688 /* OHAttributedLabel-dummy.m */; };
+		6F54DC808F1FED33E67A5AC20FF4937F /* UINavigationItem+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A72A122552BFE9FC01A3D785426CD782 /* UINavigationItem+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F9023F2FDAD623E7A0854609F97A26A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D2907F73A3CD8A25C4AF67FF3FCB2 /* Foundation.framework */; };
-		6FB4B996F4A7780F801D39185C8A392B /* theme.h in Headers */ = {isa = PBXBuildFile; fileRef = D82FF554680B8A82F0BF842C90FD0CD7 /* theme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		705EE6627D3ED4ABAC3875A6ADA81935 /* OHASMarkupParserBase.h in Headers */ = {isa = PBXBuildFile; fileRef = E95F230B727A8983D9BE6471AE2FCE2C /* OHASMarkupParserBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70BB3DC6E0131B89C92FA79A98856192 /* UIThemeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = B12C98F55450C94E2B9A0238ECCBAB53 /* UIThemeBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7086AE6DBA474253D3D9D7E8776C4DE3 /* PSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF266D0D176208689C1ABAC98FF0CAA4 /* PSCollectionViewCell.m */; };
 		7190A2A5DC58023DD5D2EB52B6BAF160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D2907F73A3CD8A25C4AF67FF3FCB2 /* Foundation.framework */; };
+		71DCC8C93BB5C0EF933414334BC1FE41 /* PSGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 78B0DC0030F88790E3B4B41BFCC6E123 /* PSGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7219E66120EFEF11F1D9D233BEDDC79F /* PSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF444DAA45B2E5ABB59778CD503D7B /* PSTableViewController.m */; };
 		726107DB3FABCE82CA5DB3574041F53C /* Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DDBA2CFF81A7CA4B2A6F7FF93B3C27 /* Reachability-dummy.m */; };
 		7282221D69B27786E99253FCEDAE88B0 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3D486A432D57F70AE4800CD0BB023 /* SDImageCache.m */; };
+		729A7E18EB0A4AF0AB11310D61F77C09 /* UIButton+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B1CFB1824FECF301467890E841AE6A0 /* UIButton+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		730741D1EB4E339AE93D8F77CC9E053B /* UIViewControllerTransitions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C3C75FCB2BE3FB6D0C6D4F2618E7CD /* UIViewControllerTransitions.framework */; };
-		73F551E94411814E65BA0DF2E224C9B2 /* UIViewController+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9EF7B535B22853B3F968D428ABAD30 /* UIViewController+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75263B4918447FF9FA30D74D14AE437E /* ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 752384A8E19692480B68761F4DBBAB26 /* ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76DCF688BF03957BEA1EB9CB05D75944 /* loading_00023.png in Resources */ = {isa = PBXBuildFile; fileRef = F3ADF2A2A7BBE975287F764A07BCFFC1 /* loading_00023.png */; };
+		777D009AD87FC913300FB327FBE1F607 /* PSExceptionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5627CDD0D48372CE997516F95A39A1B /* PSExceptionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77DF747428CBC34AC8F19302F9B1F843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D2907F73A3CD8A25C4AF67FF3FCB2 /* Foundation.framework */; };
-		790CAEF9B1020D52CD04C6658645E137 /* controls.h in Headers */ = {isa = PBXBuildFile; fileRef = 9729B8DAC2C3E135A7B88BD6BA83AB5A /* controls.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CD6B15288B0FC36D5D082417717F061 /* OHParagraphStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = AE22525FDF11CA869FBF836296423B70 /* OHParagraphStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D119C94CCD25375B0E1AF251E7454FE /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D404E61855DFEDAC9D404C3FE2E98B4E /* PSViewController.m */; };
-		80DA07D6E7A31FDE8AEC9845FF883CB9 /* PentagonChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B40121A5E86CBBBE7DA40CBCD98D6A2F /* PentagonChart.m */; };
-		82A8BC27F6E67E4A57F1515941FB2807 /* PSAssetListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37486FF92340BA08AF04D14923F2C08A /* PSAssetListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D221F7938CDD5C4B6082C0E80472084 /* PSAssetListViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 765F0E50F6BCB9EC232E23A57DC920BE /* PSAssetListViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E015C1FA380815938F04C8C408D5AF7 /* PSAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6915934E1713FE4383B5DE6731D32AEB /* PSAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81048B0C625BCDC419E2029D252D84E5 /* PSTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 27CFF922478750F227E42E3EE8C845F1 /* PSTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84070B5CFB8F70C3D249EC7A74A6171D /* charts.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F1F1580D4D9B0E811E1A7AD3A074A43 /* charts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84451787D6DFCD63BCA1B52A52A09534 /* Pods-PSUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 023F68FA32D2DE86862C73943D31AC01 /* Pods-PSUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86DEB45C83CCEA95C3B2A3B3FA10F2AA /* UIViewControllerTransitions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B42757B0A40E2CB1A0B798DCBB141 /* UIViewControllerTransitions-dummy.m */; };
 		870315CE49C86B521FF9E262F2CB81FD /* loading_00014.png in Resources */ = {isa = PBXBuildFile; fileRef = 393005E31424416D1A6503F061B9091B /* loading_00014.png */; };
 		872C718E3E671D4B62170972D9B8C9D2 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F0E051BDEE48F22F1F737EFCE1BF2 /* UIImageView+WebCache.m */; };
-		873CC551E3CE13BCC267CF78D392F3D2 /* UIWindow+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F2EE94D5FA19F2A3CB6D9EFA89BC5C1 /* UIWindow+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88150980EF29352481F04FE9E89D64E0 /* PopUpViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68014471DAFF61D4B5B4FF971BB334C5 /* PopUpViewManager.m */; };
-		883F74C0E2A42346348E47E384E2B3DD /* UIAlertView+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2190F04C619111B853A83DEB1ED1F6D5 /* UIAlertView+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8873DC8BB60B6E49A7E08BC4EA9E2B60 /* PSExceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DBA00CFB58390C1D9C69EECDC93384 /* PSExceptionViewController.m */; };
 		88F10038AC148EE2664112EE014BD2B8 /* loading_00020.png in Resources */ = {isa = PBXBuildFile; fileRef = F504D8362282C26C8EC182169FC28CC2 /* loading_00020.png */; };
-		8ACEC8D787C71F8DFE6A7B8FAE8C0D9C /* UIThemeDefaultStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E54E7331F13576E9C1FED7C82BBE2B /* UIThemeDefaultStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ADDB6A790F1AA17B44BEE340E0E6C81 /* PSAttributedDivisionLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = AFD2C1D810637F08FC7CD29F3E2EF8B7 /* PSAttributedDivisionLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BE98A0FCF4887158800AA2720E0A58E /* loading_00008.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EE09EF2E52B6E83791B56895FFBD4E /* loading_00008.png */; };
 		8D1160C4ECCBCA8619C1A912962B94BE /* loading_00003.png in Resources */ = {isa = PBXBuildFile; fileRef = AC04A9A5CB481468BD2C975787F712ED /* loading_00003.png */; };
 		8D81D941D5B735A29C4A43869BB85251 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 11344363AC26EB6AF3D38D814E718EFD /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E1F627D71509B625F7A154652739855 /* OHASBasicMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C03E228731E7FCCCCA2B198BCA04B53E /* OHASBasicMarkupParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E6AD3FEFF781FAF6B60A143843D2B4E /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6EF8B2DE6A86A51C61A7E74E82229E /* NSData+ImageContentType.m */; };
 		8E805086A26CDC18D2C59718E9C9902E /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = D8963D436354FC979F03897B0DF4CAE0 /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90ABE096FFC1EC066BA6FAA61AF17008 /* UIThemeDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 291DCBEF0745DBEE02AD95880C08628B /* UIThemeDefaultStyle.m */; };
+		9103112954EFB2D18E3C364172D310E3 /* PSExceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FF9D2FFB2DB8A16F9F7228E7B360F7 /* PSExceptionViewController.m */; };
 		914CC12C8D0B25D98BC5F623BA131297 /* AnimatedMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FF842916BB1888E6B6847A060CD8E827 /* AnimatedMoveTransition.m */; };
-		9341372DE2048B0450AEF730D8445828 /* PSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E805CA3939425A796154898636BD8 /* PSAlertView.m */; };
 		937E201BA775DA12A8D25349F390CD57 /* UIViewControllerMoveTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = DCAE4885225AD888F80C98084409BAA3 /* UIViewControllerMoveTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9386A4B020088C5A8306FFE820D869A4 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F29948205397FB0A163B095B9325AEE /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94EB4B4C60C35770E98AB83BE039F260 /* OHAttributedLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE7CD8922954727E540A4F8FF21B7E2 /* OHAttributedLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		997626D53338AD4CAD0EAF623201129C /* PSAssetsGroupListViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E706E26B348F3E9B5D82D04E2417BD /* PSAssetsGroupListViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		959CA8C879A3105DCDD1FB2AAB2A1E2C /* PSImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 832558D431C503658F7EBB19B8EB95C5 /* PSImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97D55504DA812362F163AD8D751F9CD9 /* UINavigationItem+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3681CF6F5042ED9225DF5E17F2367ECA /* UINavigationItem+PSUIKit.m */; };
 		99D76978A26CA86AEAE2B46E3F560145 /* OHAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AA56D6CEE5F95AA7CDF61F3C1D71CB /* OHAttributedLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BA2A00945FBE8F1FF611FE87F765D6B /* PSAssetListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B98E1B611B625C0EEFE37E73C5403D4 /* PSAssetListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C031F7DFB3EABC8E90DF28901770D2E /* AnimatedFadeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 868F4EB78D35408B8C4E735D00ECD962 /* AnimatedFadeTransition.m */; };
 		9C1EFF335DC2AD1FC770A1110A6BC0C3 /* loading_00000.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B20ACDA57777360F9E22C3E0B4B6355 /* loading_00000.png */; };
-		9C3FC81D4CEDF18DE1A9DB1ABAD55AB8 /* UIViewControllerStack.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D102BAFE1629F3AD163250BBAD87E6 /* UIViewControllerStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C8C5C05FFBBB49EAEA0F52618B3ABBC /* PSUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7483321093901C8B431FFBC4F4E0A8EC /* PSUIKit-dummy.m */; };
 		9CB15A7F78F68729AEEA189043AB6E64 /* icon_check_overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9252914D032B401F756DDA5473477153 /* icon_check_overlay@2x.png */; };
-		9D5C90865381B706D9F38AC2E94ACC79 /* PSTabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E62FFE56174588CA6DBFCAF94A3C522A /* PSTabViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DC2372358000259F0A5115BDE0E207D /* PSUIKit.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6AF660D2E28B71831553CED9215DCA3 /* PSUIKit.strings */; };
 		9E1635B37CACDA2E0B0FEFC9C687E09E /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F3B9DAAEA7CBD3BE33D4012DE65C4 /* SDWebImageDownloaderOperation.m */; };
 		9E3A58D9EDAAF72A2C215B70BF5BE938 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 024F7F4C6B47319B5207C2BE6EE6CC39 /* SDWebImageDownloader.m */; };
+		9E50C14CD6E34FA71AD8F0D1418FC61E /* UIImage+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E18EB1454D4403F0964666B219306B1F /* UIImage+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9ECA551FD9D313D0B132E813F7590CEF /* loading_00025.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ABA5A3D710B94A4CAD7462F16592DEB /* loading_00025.png */; };
 		A06E1B1A48A0D42CD083CFAB663C360C /* icon_navi_back_white_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 132FC5243F24DD0AF48223D013B41DD3 /* icon_navi_back_white_normal@2x.png */; };
-		A075E6626C578963C173BCF46F188692 /* PSUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D513DA5533E348722CACE94DCC253AD /* PSUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A09CC1A6F767BD6D229E9CD9B08BB930 /* icon_navi_collection_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B97F1A0552ED31999D0C967410E548D8 /* icon_navi_collection_back_normal@2x.png */; };
-		A1167C300C4D264746483375E6937372 /* PentagonChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 49F2C1497478E8EE388DA67C5B2C42C6 /* PentagonChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A17AF5E3763624DC3A77975B0922131B /* PSAssetListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EE823E65DDF567A858C027CC42E4DB8 /* PSAssetListViewCell.xib */; };
-		A4B117134578AAF4CFDE2D6702EA2D89 /* PSScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = DB191CCC66164BFBA1DC8ADD3F00827D /* PSScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A593086FD93BD4A2A26D1FDF26FA8ABF /* UIAlertView+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C1D8F25AACD8BA539AD2EDCDE09B90 /* UIAlertView+PSUIKit.m */; };
+		A335EC49E3D0D5FE5847AEB8956070C5 /* PSAssetListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA874547D7B8CA0460122DEC5D32E51 /* PSAssetListViewCell.m */; };
 		A6D14B2E6452C6E12E8301C64BC36BF8 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BB52115CAFAF8B758A2BC9BC3098E7 /* UIImage+GIF.m */; };
-		A80A0E0A6655EA86A67634DA1C00DDA8 /* UIView+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC101A816888252723DC586FEBD932A /* UIView+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A843DF150DB6E58576611F740657090A /* PSRecycledScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B21470E457533EFA0F181ECF9F66B63E /* PSRecycledScrollView.m */; };
+		A8366BA12C6892A0B4219CAC2A8118E3 /* PSAssetsGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A71C021AC752B462EFEA0755A74BDD /* PSAssetsGroupViewController.m */; };
+		AAB8A394A664384FB65E315196B7C200 /* PSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD52D5C8357F413129EEAF1BECE1567 /* PSNavigationController.m */; };
 		ABD8A1E1D3D15792EA8EE86E2F08DD69 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC63553D1747ECB4A85EDA55D1E2A6C /* SDWebImage-dummy.m */; };
 		AE4579B601EF3B2D64B9F7E4D0BBA7A1 /* PSExceptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18F91D54ADDE182FE802E3C37167296 /* PSExceptionView.xib */; };
 		B0B1B475C3FFEAC7C5F3EC74828AD9E3 /* icon_navi_back_blue_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778814329B859A4DE4AA81E9900EBB9 /* icon_navi_back_blue_selected@2x.png */; };
+		B0FC885AB01C56F37139280CD6102B23 /* PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A582DE357F1D32DA38C96916BC866E3 /* PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B20666AB707B3E2AD0016F211C5CB8C2 /* PSAssetsGroupListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 768AE2CD389CEB4D6829903DD5918D69 /* PSAssetsGroupListViewCell.xib */; };
+		B2368B85CA35E45A03104B3721F5FF2F /* ActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB00AE3FD1D383774B937F000E956E71 /* ActivityIndicatorManager.m */; };
 		B239191E0DEA2912A48552BC2FB74485 /* CoreTextUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FEC1FA4C301BEC9489577924AD774A /* CoreTextUtils.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		B267590CDD98031C8511A6F78E542803 /* UIViewControllerFadeTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 599A65A1F5753D6EB0CF0C16A01A8828 /* UIViewControllerFadeTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2CFD02444E3FA92906AC534B0CC5E6E /* UITableView+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D66C3D553C386D59BC9B4FAE97BEDE /* UITableView+PSUIKit.m */; };
 		B77869DBF70C9729B78625F80D1A01B6 /* AnimatedTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = A4650C097D6DA9D78BC1D73C62D9EBE2 /* AnimatedTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B81FE3ADAB67EED94A870C88EEAFC512 /* PSPreloader.h in Headers */ = {isa = PBXBuildFile; fileRef = F7312ABA3717ED4449E3890A58C2BEE2 /* PSPreloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB7D80EA7E2AFED1A62B5C8820EE18E6 /* PSAttributedDivisionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D30354A035B17A37916E5CAD3DE9050B /* PSAttributedDivisionLabel.m */; };
-		BBF8A82D927842FC41F2AFDC5B0B67C2 /* PSButtonBar.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E554E880C4D41A63F2C34B646D171C /* PSButtonBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE004984FA2B9D714FC212686736D3F9 /* UIViewController+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2D5476B64A473F06F4979F5E53A257 /* UIViewController+PSUIKit.m */; };
-		BE08B58CB066251C96F58EAC5AA73A82 /* PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A2D595B05E04F2A16408F0B74D7F8F /* PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B95E077F91686C9B1871A20A0A2C80C3 /* UIViewController+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 70356B8167B8827D09FBDECD34C72713 /* UIViewController+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB12CFFC2094309CBB3F92B79A678EED /* UIWindow+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DB1288B4D4E64A78E874476736FA2 /* UIWindow+PSUIKit.m */; };
+		BD2FE60AAB4C9601491321098233F1BA /* UIThemeDefaultStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = AD0B919CE0716A75DCB70ED7DCAA6536 /* UIThemeDefaultStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDEEFE2DB206069A2F6821DB2DDD895C /* PSImageAssetScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 556A914A3F56F6603F67052FC1FC8DBF /* PSImageAssetScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE3FE88D0DBB5F6EE439186E7290C736 /* PSAssetsGroupListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FBF625C5EDD8E07EEBB86F024CCEC6C /* PSAssetsGroupListView.xib */; };
+		BE9EDEE8A63D23E285D6FAE97134A5B7 /* PSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 946AB472483AC6C779C73B9AC1D02D01 /* PSActionSheet.m */; };
+		BF6225631C5D120E951BA2CB9727369E /* UIView+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B385CD1F2C5B4589457AE564EDD63EA4 /* UIView+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1281E161E420DDFC41C08A84718D19E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D2907F73A3CD8A25C4AF67FF3FCB2 /* Foundation.framework */; };
-		C13E947D34F2E4C7AB151514FC600E67 /* PSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A3A669053EC281A87EB192E553A736 /* PSView.m */; };
 		C1BE397EEF17F88ECD6AA8F14AED342F /* UIViewControllerTransitionsMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 1292E47D11E04B7B8447FBC7E9EEED6D /* UIViewControllerTransitionsMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C606044A9AD4B01BF67101CAD3A0DBAA /* PSAssetsGroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD253BEB597888D9F24902EA401B8790 /* PSAssetsGroupListViewController.m */; };
+		C25C2AA1FCA14A6CE976184A0F8E107D /* PSScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEA412850D6CC35F844B15A92C90C4B /* PSScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C63C6DEA0DD5745C815A3BF4DDB8C3E4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F936D11831C898904A7D0E5E47ED8A7F /* SystemConfiguration.framework */; };
-		C71EBAD7BFA1E0AF6A2CE10E5EB23834 /* PSImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = D9CB1AA2E1788B1434D5639FBBFBBD9E /* PSImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C77318E587451C13619383251B28BF2B /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C765733436F50E5C14D99FE45A09B88 /* SDWebImageManager.m */; };
+		C77E7FA3BE6A81924760C194F5112CC2 /* PSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2302C2A3C92DA1F4AA28802819B9D0BF /* PSTableViewCell.m */; };
 		C951BBAB8EEE76B02EC8147413884125 /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = E405EFCBB2AF440205CB56CD988A078B /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBAB5923A996E9993623A5A8F4CF7789 /* PSImageAssetScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3E87D3B4BEB68CC020971700780D82 /* PSImageAssetScrollView.m */; };
-		CBBE0807327C01BA3EE5F0F25B6EE346 /* UIViewControllerStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C012E65DC1B0EB3CE0FA9E0AD19FC920 /* UIViewControllerStack.m */; };
+		CAB1A1F36BB29B58776AE4AED8B36CBA /* PSView.m in Sources */ = {isa = PBXBuildFile; fileRef = D302F37F3E044058F5E45E829D184B17 /* PSView.m */; };
 		CBE8829352D3F39414B387FE6332CC07 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CF50D5CCC88DBC6E8B22D009F98D89 /* SDWebImageDecoder.m */; };
-		CC3ACBBD08A9DA08A5A4432BA8D045B5 /* PopUpViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C9DB8D4191BA38AD5E797E51F29328 /* PopUpViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDC9A38E2866A933B62E878EFB167378 /* PSAssetsGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AC5BCB4A17C6286B43A91DB0D2CDC7 /* PSAssetsGroupViewController.m */; };
 		CEA5B14AC58FCF13BE03031B0B216093 /* bg_toast_center_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6308D9BF8684531605FA6B58379016AE /* bg_toast_center_normal@2x.png */; };
+		CECBE12ECAD43EEC523D231AC462C255 /* PSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D017A884A24F2C5C879D8792F16549 /* PSScrollView.m */; };
 		CF08C0C76C6DB6DF97AA1ABE9C1D4DD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D2907F73A3CD8A25C4AF67FF3FCB2 /* Foundation.framework */; };
 		CF119973BAC97E1A90C4B640A7A62F93 /* OHASMarkupParserBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 089C4487CBA65FF824A7282EA862A4D7 /* OHASMarkupParserBase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CF62350385E65B083EFD308086FBDDA3 /* PSAssetsGroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD71704F92BDC7D782FF60046236D67D /* PSAssetsGroupListViewController.m */; };
+		D0012E02E000C8A057930FB0371148C9 /* PopUpViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C143BC9BA080AB96328542EF7711B8 /* PopUpViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0354BB3794BF211B492C13E091B820B /* UINavigationController+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C714A6B23D8C708DFC477B07D325A589 /* UINavigationController+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0B044F9987B129B6ECB5E149C475DF4 /* OHParagraphStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AD956AA9FB74610918F097194E50 /* OHParagraphStyle.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D10D7D6988CBF7046FE4094FC2D8666F /* UIViewControllerTransitions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 446FFD8A1A05E326ED4D7E35C08CBAF1 /* UIViewControllerTransitions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3F902FB3650489343F1F0457CA2BE32 /* PSLinedBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644D44E47E2191495EA37EFEBE4D67B /* PSLinedBackgroundView.m */; };
-		D68128A272CB9F75F0ADF2C35DA58D39 /* PSTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 51F2C90EC85988751E577BDE54EEBD1D /* PSTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AC655A19723A547582EF01BE97D24F /* UIImage+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2CD2C6126861AA9FA38DB1F0F848D /* UIImage+PSUIKit.m */; };
+		D37F295C1B058D78D3E27B6DBA03AC0B /* Reachability+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A500196CA06C8D00306781D1499771C /* Reachability+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D65C70BA32D5BCAD1CB953F4A1B32266 /* ActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F5851F49E5DF3DF6DFF2AAFA40135128 /* ActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D759D4A0F05AA8BC98F4FAFE888A05E8 /* UIAlertView+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D59A6C4583498EF28EFDEB34EEEC84F3 /* UIAlertView+PSUIKit.m */; };
+		D821EA6BF0364D9467249D00B36382DB /* PSAssetsGroupListViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BAC629A91471597F1EF43CF843E833BF /* PSAssetsGroupListViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D83C78D59B6FC50968F931CE2A2170CE /* UIViewControllerDragDropTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F1312577AD2609807247C446728BDA86 /* UIViewControllerDragDropTransition.m */; };
 		D8E210F5568631CE4BDC93000598E414 /* loading_00006.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EC890122D96F71C7EAA1401019B5C9 /* loading_00006.png */; };
-		D963D26D1A912C63C1F20D22EE513CAE /* PSGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB7C11BB078A681F301F4EBCC8DD135 /* PSGridView.m */; };
-		DD34BDE7AD1E1A698E2288C3AE0E273A /* UIImage+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 91D702D835527634471A756BC3BAEB6F /* UIImage+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DDBBF1E8C9F4EF6C5B3403C2DEC850C1 /* PSLinedBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88139BB5951901BA4668C92E5C18F23B /* PSLinedBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB440A9C0477BB476F19EC6047CD2567 /* PSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E266C016F3895D76148FA70824D228 /* PSAlertView.m */; };
+		DC27567D87C2B0C7B55CE45F151418F6 /* PSImageAssetScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D975228EB98155D7E95B42E1F7824650 /* PSImageAssetScrollView.m */; };
+		DE3A668994D6FD52449878D5694C7DB7 /* PSUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7483321093901C8B431FFBC4F4E0A8EC /* PSUIKit-dummy.m */; };
+		DF2F41FA927AF5D6631655FCB1FDBD70 /* PSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 646ED31F2E55786BC7B0ACCFFAC3C6E2 /* PSButton.m */; };
+		DF3542BD9BDBCF3B9CBEBE022BFEB7F9 /* PSRecycledScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 58F8A3C65F37B65F7E30125766675613 /* PSRecycledScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFC465DB2B61338EB229F5F001244D28 /* PSExceptionViewDisplaySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 952B20C601E2989500D170E2CF5EFECD /* PSExceptionViewDisplaySequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFF2A1E1EF423C77EB237681E621CA49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D2907F73A3CD8A25C4AF67FF3FCB2 /* Foundation.framework */; };
+		E123132E755A5C7B8A524C32007CAC26 /* PSAssetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3DC6CFED731DAEA8FE50CE437E400 /* PSAssetListViewController.m */; };
 		E267D77761969DA1C16F4569467E044C /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 40268E44591063D0B2A9268BBF4FC872 /* NSAttributedString+Attributes.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E403CA9435BCEC10BFEB9454BD9E19FA /* PSGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B991D86456DFF479C94676D21028273 /* PSGridViewCell.m */; };
-		E531668EAF0236CDE71359751B661C3B /* UIButton+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 925A730EE082A3C320017FD7D4BC1C67 /* UIButton+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E59EB2B03E273100E21FC6110868FAAC /* AbstractUIViewControllerTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A1894356521EE1B6F1290A48E2930B3 /* AbstractUIViewControllerTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5E5C472368EE7B9FE0DFD68C884E5AF /* loading_00013.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B51F69E7471E969B575C5240FB5402 /* loading_00013.png */; };
-		E60018CF3AAFDE0BD0F96A2D01483234 /* Reachability+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9481C518DAE481C5C5F7603C42A64E1A /* Reachability+PSUIKit.m */; };
 		E624E8B5EAD3A9D87558600DB90CB401 /* loading_00007.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C1CFC639AC05017AEE509190F4A8294 /* loading_00007.png */; };
-		E63CED3325E9DAADF8AEE84FAF622D7E /* PSRecycledScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEDEEA7D18F168E9755180FD52257AE /* PSRecycledScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E67134B2FAD171EBFBC04D50E15FF961 /* PSTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AC02170F36D3C1987D3B0D8CE2E56525 /* PSTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6FB0530E2D7F77CE9988849C965FF14 /* UINavigationController+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AFD107D8D98D9C3C479D574B6BCC53F /* UINavigationController+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E640E2B85B1BC84FB7484E3A9FAE39C9 /* PSNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 79AE9A0ADE13675AEDEE5B7D76620B03 /* PSNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E783D73635905CBC1E16E4718A97A81C /* PSLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 288B7072E401FAE4A6E8D9947B4782FC /* PSLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E83129317D222DB173FECD799B13502B /* PSView.h in Headers */ = {isa = PBXBuildFile; fileRef = 434C0E525C52C048E9C0942E8A4BBB3F /* PSView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8E43284CCD370284A312FEDB7E8F1FC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 725BDD6F387B0950302B7A39C7A84C17 /* Reachability.m */; };
 		E9C26F779CC9BF6E659E573FF92F7A4F /* NSAttributedString+Attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = D30146668ED11156E4C4CE774F5ACE6B /* NSAttributedString+Attributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBCE0A3CB73428F1475A042FE9095DC1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C7C7793FEAA586E56D144B2B803C5 /* ImageIO.framework */; };
-		EBD1ABE76A7DEFB039FD825B1790D089 /* UIWindow+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E63F0DD12E7C620D825BE56097A80D /* UIWindow+PSUIKit.m */; };
 		ECC52C6EAD5A78F442C7424AF95D2536 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 217C86EC44C0F20D7FEC2E4A897E9486 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED04C12F174876C8C35EC4DEF6A78BC7 /* Pods-PSUIKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B70D601081CB73E97A6B237736508EE6 /* Pods-PSUIKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDA2696B5F0234A3A7D9C0597D95D24B /* UIButton+PSUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B482208B5918D9F34599C32B7BDA8CCF /* UIButton+PSUIKit.m */; };
 		EE3CAC4E93722BF3EC82237CD3CCB8CC /* NSTextCheckingResult+ExtendedURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CA96B1ACF71E9FC5463D96369F54BC /* NSTextCheckingResult+ExtendedURL.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EFE46747D88E2D9291124004F07A1B88 /* GraphicsLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BB8F116D4344A7D00CAD6E82314E94D0 /* GraphicsLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F03ABAF75A1CDD42024077512548C84A /* PSToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = 949782E5E01921A5DFC4BDF3FD3CD3C1 /* PSToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F08979E3129B9C6BDFCEECF385FA0509 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C6A48DE8D7DC48120377C264E6091 /* UIImageView+HighlightedWebCache.m */; };
+		F0E2E7740A108A6EDF127DB555AA2672 /* PSLinedBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0546BBB7DC68B543252959C7D7373CAF /* PSLinedBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1A163C327E1AC76FE5F870DCDE21777 /* AbstractUIViewControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A92D5F500FEA86B1289774020FCC0886 /* AbstractUIViewControllerTransition.m */; };
 		F2E7760EA9FB80622F817F0D94D51F79 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = F19C5338A4A8D5E9D4637F016275AAFE /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3AC5942C5A0434782767A8D19AB041D /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B9ED75B0ACCA5566BAD789ABFFB2A9 /* SDWebImagePrefetcher.m */; };
-		F4B8D363D724E8A52DA05F2CAB5F2F40 /* PSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7ADE7620C3B984A95E27CE1FD777CA /* PSNavigationController.m */; };
-		F4FB686CE0876CCDD373EC2BEA720702 /* ImagePopViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AE062C0F630F3CD6D68CD29AECDE7119 /* ImagePopViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6177589B579CC4757E40F4F18003B99 /* loading_00016.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC3CA4EBB75CEC387C2185F35FEA896 /* loading_00016.png */; };
-		F709BE507BA613469CC4698579D4D92C /* PSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6C79B6A5D271A9C343F8923B519922 /* PSButton.m */; };
 		F9CEB36A74F43E8D7C0E3A3A41A10381 /* OHASBasicHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A43DA6FA60FDE1A7FD0C6D3F8731369 /* OHASBasicHTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF1FE694901583FD7E340E1ACEA022A /* UIApplication+PSUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B776990D07F4536F26C859A0759A1943 /* UIApplication+PSUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB16B86EBB1A53A1907A693926A04EBB /* icon_navi_close_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D82D118C5D70C293990299FF978CEFD /* icon_navi_close_normal@2x.png */; };
+		FBF0AAEB401D5D642C8D43DB437911F7 /* PSTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B2897BD846DE54C3C1AE1F69DDB4794F /* PSTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC740D63FD657B6ADFF95FEC6F422F74 /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A0EE28279471426B46991685F89CE7 /* PSViewController.m */; };
 		FD0B5D1B720231EFA986E68222473601 /* AnimatedFadeTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = F620A958727D9BC322145787A8E6CC79 /* AnimatedFadeTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD2B42FA997A23087D843A7E4EFB801E /* loading_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BAD92A20A7774EDC6F735BFFCEA4EC /* loading_error.png */; };
-		FDA6AE84AA10BF866289A4DC359D8147 /* PSAssetsGroupListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B245414AB5F1557BD8E8882950C746BA /* PSAssetsGroupListViewCell.m */; };
 		FDAC320783DC8E4AF2AD14CC02E7C555 /* loading_00015.png in Resources */ = {isa = PBXBuildFile; fileRef = 6565E7CF7682E97F3D865F0059C9370D /* loading_00015.png */; };
-		FE59144F4369393658287E0BAF4512EC /* PSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F0C764BBF18614E1F447FBCDBC1ECC /* PSScrollView.m */; };
-		FECC7325797CC5147A34195AD93F45CA /* PSLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = DF45D2E7476871E51197F150E9BD0182 /* PSLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEE4BFE96B87BE323A805260575ED7F8 /* PSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E025145265336532E034C655801986 /* PSTableViewCell.m */; };
-		FF0AA935933D3493168D97D8FA78E711 /* GraphicsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F0CF0C2CB8819540E7C8CC243AB4F6 /* GraphicsLayout.m */; };
+		FDD106EE7F16490B3182AFDE49C2FAA6 /* PSButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9895D6BEE8233415020BA0DA47864D81 /* PSButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF4A234B8B2778FE21E12B68B59FDCE8 /* PSGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B01302F7C14299599A88E97594D0F0 /* PSGridViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -336,49 +336,54 @@
 		01FFAA3CE4B33E280BD423ED301437C3 /* PSAssetsGroupView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PSAssetsGroupView.xib; sourceTree = "<group>"; };
 		023F68FA32D2DE86862C73943D31AC01 /* Pods-PSUIKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PSUIKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		024F7F4C6B47319B5207C2BE6EE6CC39 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
-		02AC5BCB4A17C6286B43A91DB0D2CDC7 /* PSAssetsGroupViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAssetsGroupViewController.m; sourceTree = "<group>"; };
-		03127768E1E758B217E832F14A2A4D37 /* charts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = charts.h; sourceTree = "<group>"; };
-		05E706E26B348F3E9B5D82D04E2417BD /* PSAssetsGroupListViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAssetsGroupListViewCell.h; sourceTree = "<group>"; };
+		0546BBB7DC68B543252959C7D7373CAF /* PSLinedBackgroundView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSLinedBackgroundView.h; sourceTree = "<group>"; };
+		069EC0582A71CD7891A03B07727A1C83 /* PSCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSCollectionViewCell.h; sourceTree = "<group>"; };
 		089C4487CBA65FF824A7282EA862A4D7 /* OHASMarkupParserBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHASMarkupParserBase.m; path = OHAttributedLabel/TagParsers/OHASMarkupParserBase.m; sourceTree = "<group>"; };
+		08C143BC9BA080AB96328542EF7711B8 /* PopUpViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PopUpViewManager.h; sourceTree = "<group>"; };
 		09411E6A08B6C17392803B83E90FAEEB /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
-		09FB657CCC000CE62E9D0B048C6B5B22 /* PSGridView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSGridView.h; sourceTree = "<group>"; };
+		0A500196CA06C8D00306781D1499771C /* Reachability+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability+PSUIKit.h"; sourceTree = "<group>"; };
 		0B20ACDA57777360F9E22C3E0B4B6355 /* loading_00000.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00000.png; sourceTree = "<group>"; };
-		0C6C79B6A5D271A9C343F8923B519922 /* PSButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSButton.m; sourceTree = "<group>"; };
-		0C7ADE7620C3B984A95E27CE1FD777CA /* PSNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSNavigationController.m; sourceTree = "<group>"; };
 		0CF768DACE7D42FF287FC2FA67E4EBCB /* UIViewControllerTransitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIViewControllerTransitions.h; path = UIViewControllerTransitions/Classes/UIViewControllerTransitions.h; sourceTree = "<group>"; };
+		0EA0714104E52D6080181F0AE65BABC4 /* PSPreloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSPreloader.m; sourceTree = "<group>"; };
 		0F272AF959F9FB99F47D7640B12C933D /* ResourceBundle-PSUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PSUIKit-Info.plist"; sourceTree = "<group>"; };
+		107D0DAE96F42C6ED4A046E34FD88D53 /* PSAttributedDivisionLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAttributedDivisionLabel.m; sourceTree = "<group>"; };
+		10D017A884A24F2C5C879D8792F16549 /* PSScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSScrollView.m; sourceTree = "<group>"; };
 		10EC050D746373A5B19FD1B6B6946630 /* OHTouchesGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHTouchesGestureRecognizer.m; path = OHAttributedLabel/Source/OHTouchesGestureRecognizer.m; sourceTree = "<group>"; };
 		11344363AC26EB6AF3D38D814E718EFD /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		11585329C36B1C462298C4D16CE21B60 /* OHAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHAttributedLabel.xcconfig; sourceTree = "<group>"; };
+		118A4A622BD5348EA05A8D9651D78F60 /* PSImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSImagePickerController.m; sourceTree = "<group>"; };
 		11D94FC2781EF13B4C54B92ABB5A70A1 /* OHAttributedLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHAttributedLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1254CCBF3BE6C45D4F84C6F766043D41 /* ImagePopViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ImagePopViewManager.h; sourceTree = "<group>"; };
 		1292E47D11E04B7B8447FBC7E9EEED6D /* UIViewControllerTransitionsMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIViewControllerTransitionsMacro.h; path = UIViewControllerTransitions/Classes/UIViewControllerTransitionsMacro.h; sourceTree = "<group>"; };
 		12BAD92A20A7774EDC6F735BFFCEA4EC /* loading_error.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_error.png; sourceTree = "<group>"; };
 		12D612EED4D40B072D930670A8FEEC31 /* OHAttributedLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OHAttributedLabel.modulemap; sourceTree = "<group>"; };
 		132FC5243F24DD0AF48223D013B41DD3 /* icon_navi_back_white_normal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "icon_navi_back_white_normal@2x.png"; sourceTree = "<group>"; };
-		16CF561A6208DC52AF3F058919337533 /* ActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorManager.h; sourceTree = "<group>"; };
 		16FEC1FA4C301BEC9489577924AD774A /* CoreTextUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoreTextUtils.m; path = OHAttributedLabel/PrivateUtils/CoreTextUtils.m; sourceTree = "<group>"; };
-		1756337D870EA820C51AEB7C26DD22BC /* PSActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSActionSheet.m; sourceTree = "<group>"; };
 		18AD9BAD40E085E784E88CAB9CB42E09 /* PSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PSUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1953006C3C1B452E5E5789072A400FB1 /* PSButtonBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSButtonBar.m; sourceTree = "<group>"; };
 		1970B232985BD0AFE9EC917D5DBD4B1E /* SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-umbrella.h"; sourceTree = "<group>"; };
+		1CA874547D7B8CA0460122DEC5D32E51 /* PSAssetListViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAssetListViewCell.m; sourceTree = "<group>"; };
 		1D08516CF72AC92E18338C0A9AA0EC4C /* Pods-PSUIKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PSUIKit_Example.modulemap"; sourceTree = "<group>"; };
-		1ECC7D52564AF156A73CA105A47DC814 /* ImagePopViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ImagePopViewManager.m; sourceTree = "<group>"; };
+		1DA3323CB6B44935658CB8F89D9B9CFB /* PSToastView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSToastView.m; sourceTree = "<group>"; };
+		1E76FFF307E1CF78D24653F24F72647A /* PSExceptionViewDisplaySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSExceptionViewDisplaySequence.m; sourceTree = "<group>"; };
 		1F2822D6D8CA972D01C2EF12DFFDCA6B /* OHAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHAttributedLabel.m; path = OHAttributedLabel/Source/OHAttributedLabel.m; sourceTree = "<group>"; };
 		1F766F7DB9B80915F0ED0EE0EC0266DF /* NSTextCheckingResult+ExtendedURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTextCheckingResult+ExtendedURL.h"; path = "OHAttributedLabel/Source/NSTextCheckingResult+ExtendedURL.h"; sourceTree = "<group>"; };
 		212570CD5CCF3E6CD52F67ED69297A88 /* UIViewControllerTransitions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIViewControllerTransitions.modulemap; sourceTree = "<group>"; };
 		217C86EC44C0F20D7FEC2E4A897E9486 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
-		2190F04C619111B853A83DEB1ED1F6D5 /* UIAlertView+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+PSUIKit.h"; sourceTree = "<group>"; };
 		21D6A982F01EDCEBF27F9EF20680EC30 /* Reachability-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-umbrella.h"; sourceTree = "<group>"; };
-		2249CAE3BF78E67F1AE8A159B43158FE /* PSButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSButton.h; sourceTree = "<group>"; };
+		2302C2A3C92DA1F4AA28802819B9D0BF /* PSTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSTableViewCell.m; sourceTree = "<group>"; };
 		24B9ED75B0ACCA5566BAD789ABFFB2A9 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
-		25FB3F096F4AD9B508618ED28AB43BC3 /* PSCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSCollectionViewCell.m; sourceTree = "<group>"; };
 		2607B30B27FB0CE157451BBEB9C5651B /* Pods_PSUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26468BDF2347B63093BF7E3C7D07F95E /* UIViewControllerStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerStack.m; sourceTree = "<group>"; };
 		2778814329B859A4DE4AA81E9900EBB9 /* icon_navi_back_blue_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "icon_navi_back_blue_selected@2x.png"; sourceTree = "<group>"; };
-		27FFB079AD9022E749B8794460A9971F /* PSActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSActionSheet.h; sourceTree = "<group>"; };
+		27CFF922478750F227E42E3EE8C845F1 /* PSTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSTableViewCell.h; sourceTree = "<group>"; };
+		288B7072E401FAE4A6E8D9947B4782FC /* PSLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSLabel.h; sourceTree = "<group>"; };
 		28DDBA2CFF81A7CA4B2A6F7FF93B3C27 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
+		291DCBEF0745DBEE02AD95880C08628B /* UIThemeDefaultStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIThemeDefaultStyle.m; sourceTree = "<group>"; };
 		2A1F3B9DAAEA7CBD3BE33D4012DE65C4 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		2A8B42757B0A40E2CB1A0B798DCBB141 /* UIViewControllerTransitions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewControllerTransitions-dummy.m"; sourceTree = "<group>"; };
-		2AA3E3597C729F1541136BA191F248B5 /* ActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicatorManager.m; sourceTree = "<group>"; };
+		2A8D7B67AA35E9F53552409F45AAFF00 /* UIThemeWhiteTranslucent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIThemeWhiteTranslucent.m; sourceTree = "<group>"; };
+		2AE233890CF3A24122073B7695E9494E /* UIWindow+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIWindow+PSUIKit.h"; sourceTree = "<group>"; };
+		2B07DE1DD4C81A67A6F94EF16D49019C /* UIAlertView+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+PSUIKit.h"; sourceTree = "<group>"; };
 		2C1CFC639AC05017AEE509190F4A8294 /* loading_00007.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00007.png; sourceTree = "<group>"; };
 		2C765733436F50E5C14D99FE45A09B88 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
 		2D513DA5533E348722CACE94DCC253AD /* PSUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSUIKit-umbrella.h"; sourceTree = "<group>"; };
@@ -389,237 +394,232 @@
 		3065BB52A104EA852302477D279614EC /* PSUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PSUIKit.modulemap; sourceTree = "<group>"; };
 		32644515692ABF826F8064EC370686C1 /* btn_common_con_blue_r6_normal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "btn_common_con_blue_r6_normal@2x.png"; sourceTree = "<group>"; };
 		327FA58B83EB35F95D3E3B57B2CBD197 /* loading_00022.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00022.png; sourceTree = "<group>"; };
-		32A3A669053EC281A87EB192E553A736 /* PSView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSView.m; sourceTree = "<group>"; };
 		32C37084396B6F47C014F2570EF25BA8 /* CoreTextUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoreTextUtils.h; path = OHAttributedLabel/PrivateUtils/CoreTextUtils.h; sourceTree = "<group>"; };
-		331892A1D3D8FE6A86428C63B2294713 /* UITableView+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PSUIKit.m"; sourceTree = "<group>"; };
-		353E805CA3939425A796154898636BD8 /* PSAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAlertView.m; sourceTree = "<group>"; };
+		33EFBF73198B6820E925549EDB426037 /* PSAssetsGroupViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAssetsGroupViewController.h; sourceTree = "<group>"; };
 		35E087F59239BAD8FBCF57D37B3A4598 /* PSUIKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSUIKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		35EA642151B4A541F01959650963B2E7 /* PSBadge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSBadge.h; sourceTree = "<group>"; };
-		362838D2CFE83A8C4E2BCF9077E26A67 /* PSAssetsGroupListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAssetsGroupListViewController.h; sourceTree = "<group>"; };
-		37486FF92340BA08AF04D14923F2C08A /* PSAssetListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAssetListViewController.h; sourceTree = "<group>"; };
+		3681CF6F5042ED9225DF5E17F2367ECA /* UINavigationItem+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+PSUIKit.m"; sourceTree = "<group>"; };
 		379C16935D5E3AEEB94EC10F2B4AFF7F /* Pods-PSUIKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PSUIKit_Example-resources.sh"; sourceTree = "<group>"; };
 		38EEE85E2E48BB245B17A29628522D65 /* UIViewControllerTransitions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewControllerTransitions-prefix.pch"; sourceTree = "<group>"; };
 		393005E31424416D1A6503F061B9091B /* loading_00014.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00014.png; sourceTree = "<group>"; };
+		3B1CFB1824FECF301467890E841AE6A0 /* UIButton+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+PSUIKit.h"; sourceTree = "<group>"; };
 		3B6A1CC57A0B5D2794AF6F21543082C3 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA00F461FF4EED0519D1C3DC0FB8C98 /* Pods-PSUIKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PSUIKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3C0F20F43F17DFF34D39210B9DDA52C8 /* loading_00002.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00002.png; sourceTree = "<group>"; };
-		3DFA1E1F519B25334BAD22FD9238F63E /* PSToastView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSToastView.m; sourceTree = "<group>"; };
-		3EE24AE9BCAB4BE0D64B85A33770FE7A /* PSViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
+		3CC4B466C12273C77ABDA610F947A9D5 /* PopUpViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PopUpViewManager.m; sourceTree = "<group>"; };
+		3CF923E4BE6483798DFDFF583AC34E93 /* ImagePopViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ImagePopViewManager.m; sourceTree = "<group>"; };
 		3F5CD6C65562D23ADCFBEF02B77C791B /* UIMaskedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIMaskedImageView.m; path = UIViewControllerTransitions/Classes/UIMaskedImageView.m; sourceTree = "<group>"; };
 		40268E44591063D0B2A9268BBF4FC872 /* NSAttributedString+Attributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+Attributes.m"; path = "OHAttributedLabel/Source/NSAttributedString+Attributes.m"; sourceTree = "<group>"; };
-		40E025145265336532E034C655801986 /* PSTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSTableViewCell.m; sourceTree = "<group>"; };
+		40E266C016F3895D76148FA70824D228 /* PSAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAlertView.m; sourceTree = "<group>"; };
+		414B6D8137B0C5ADA1348BFA79BCD047 /* PSLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSLabel.m; sourceTree = "<group>"; };
 		41678977E62E33597D200BD5D27F35B8 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
 		4224F4F6E4DA971CB6D1F62149D5331F /* AnimatedMoveTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnimatedMoveTransition.h; path = UIViewControllerTransitions/Classes/AnimatedMoveTransition.h; sourceTree = "<group>"; };
 		422C809647F32B10DBDFCC6F5B2C85FC /* Reachability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Reachability.modulemap; sourceTree = "<group>"; };
+		434C0E525C52C048E9C0942E8A4BBB3F /* PSView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSView.h; sourceTree = "<group>"; };
 		446FFD8A1A05E326ED4D7E35C08CBAF1 /* UIViewControllerTransitions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewControllerTransitions-umbrella.h"; sourceTree = "<group>"; };
 		45296F6CFAE4F58B422C75A8C7A43925 /* Pods-PSUIKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PSUIKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		46EE09EF2E52B6E83791B56895FFBD4E /* loading_00008.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00008.png; sourceTree = "<group>"; };
+		47027F8D8617F3D6A32A32DBE2A3275C /* PSButtonBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSButtonBar.m; sourceTree = "<group>"; };
 		4809BDEF54FBBD1AE2C4703066AB7263 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
-		49F2C1497478E8EE388DA67C5B2C42C6 /* PentagonChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PentagonChart.h; sourceTree = "<group>"; };
+		4864A48157108C11828898D439D1CC3D /* UITableView+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+PSUIKit.h"; sourceTree = "<group>"; };
 		4A43DA6FA60FDE1A7FD0C6D3F8731369 /* OHASBasicHTMLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHASBasicHTMLParser.h; path = OHAttributedLabel/TagParsers/OHASBasicHTMLParser.h; sourceTree = "<group>"; };
-		4A9EF7B535B22853B3F968D428ABAD30 /* UIViewController+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PSUIKit.h"; sourceTree = "<group>"; };
-		4AEDEEA7D18F168E9755180FD52257AE /* PSRecycledScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSRecycledScrollView.h; sourceTree = "<group>"; };
-		4B991D86456DFF479C94676D21028273 /* PSGridViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSGridViewCell.m; sourceTree = "<group>"; };
-		4C731EDEDC94A47923F1171A8F081B82 /* UITableView+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+PSUIKit.h"; sourceTree = "<group>"; };
 		4C754FAD5067DB7CA4D6BAFD5620D56E /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
-		4E969A9AF18AACF00618E2847BB11861 /* Reachability+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability+PSUIKit.h"; sourceTree = "<group>"; };
 		4F29948205397FB0A163B095B9325AEE /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		4FFDDE68116384C1EDC1C2D66D4DBF6C /* PSTabViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSTabViewController.m; sourceTree = "<group>"; };
-		51F2C90EC85988751E577BDE54EEBD1D /* PSTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSTableViewCell.h; sourceTree = "<group>"; };
+		4FA4D283CE84E748471EEA6E65EE9BDD /* UIViewController+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PSUIKit.m"; sourceTree = "<group>"; };
+		556A914A3F56F6603F67052FC1FC8DBF /* PSImageAssetScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSImageAssetScrollView.h; sourceTree = "<group>"; };
 		55C8226A99DC83CC7668BCDC4887485D /* AnimatedDragDropTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnimatedDragDropTransition.h; path = UIViewControllerTransitions/Classes/AnimatedDragDropTransition.h; sourceTree = "<group>"; };
+		5822B76B42C35A873517EEB35A1AEDD2 /* PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSUIKit.m; sourceTree = "<group>"; };
+		588DB1288B4D4E64A78E874476736FA2 /* UIWindow+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+PSUIKit.m"; sourceTree = "<group>"; };
+		58F8A3C65F37B65F7E30125766675613 /* PSRecycledScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSRecycledScrollView.h; sourceTree = "<group>"; };
 		599A65A1F5753D6EB0CF0C16A01A8828 /* UIViewControllerFadeTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIViewControllerFadeTransition.h; path = UIViewControllerTransitions/Classes/UIViewControllerFadeTransition.h; sourceTree = "<group>"; };
 		5B1F0E051BDEE48F22F1F737EFCE1BF2 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		5BC63553D1747ECB4A85EDA55D1E2A6C /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		5BEF444DAA45B2E5ABB59778CD503D7B /* PSTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSTableViewController.m; sourceTree = "<group>"; };
 		5C8D30650883FE49CCB7E722272B1296 /* loading_00004.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00004.png; sourceTree = "<group>"; };
-		5CC101A816888252723DC586FEBD932A /* UIView+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+PSUIKit.h"; sourceTree = "<group>"; };
 		5D82D118C5D70C293990299FF978CEFD /* icon_navi_close_normal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "icon_navi_close_normal@2x.png"; sourceTree = "<group>"; };
+		5DEA412850D6CC35F844B15A92C90C4B /* PSScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSScrollView.h; sourceTree = "<group>"; };
 		5ED396BD4A6B4E4F80E57003AD79D406 /* Pods-PSUIKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PSUIKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		600453FDAE74D78830FBEB2FDC61E591 /* PSUIKit.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = PSUIKit.strings; path = ko.lproj/PSUIKit.strings; sourceTree = "<group>"; };
-		61E63F0DD12E7C620D825BE56097A80D /* UIWindow+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+PSUIKit.m"; sourceTree = "<group>"; };
 		624C7C7793FEAA586E56D144B2B803C5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		62D3B83D0EDC09891A9E4EED42146DA6 /* PSExceptionViewDisplaySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSExceptionViewDisplaySequence.m; sourceTree = "<group>"; };
 		62FE42659EF23327F448A84AE15274B1 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
 		6308D9BF8684531605FA6B58379016AE /* bg_toast_center_normal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "bg_toast_center_normal@2x.png"; sourceTree = "<group>"; };
 		635C6364B363595721ACF9C5E5178FA4 /* OHAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
-		64CF19A93D34A7055372630FE29E9673 /* PSBadge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSBadge.m; sourceTree = "<group>"; };
+		646ED31F2E55786BC7B0ACCFFAC3C6E2 /* PSButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSButton.m; sourceTree = "<group>"; };
 		6530EBB0B66946AB0DEB5A1B45458369 /* UIViewControllerTransitions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIViewControllerTransitions.xcconfig; sourceTree = "<group>"; };
 		6565E7CF7682E97F3D865F0059C9370D /* loading_00015.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00015.png; sourceTree = "<group>"; };
-		663A05C1997442F6F97B8EB6597FEE59 /* UIButton+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PSUIKit.m"; sourceTree = "<group>"; };
 		6664B78669057459C22759A03EA5C207 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
 		67664F7770DDD38D5B06DCF6BDC1B38F /* UIMaskedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIMaskedImageView.h; path = UIViewControllerTransitions/Classes/UIMaskedImageView.h; sourceTree = "<group>"; };
-		67DDCFF54738C7CE9FE1A20BFA14AC0D /* base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
-		68014471DAFF61D4B5B4FF971BB334C5 /* PopUpViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PopUpViewManager.m; sourceTree = "<group>"; };
-		68DE1C6A586308F19102B8162D0CA671 /* PSCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSCollectionViewCell.h; sourceTree = "<group>"; };
+		6915934E1713FE4383B5DE6731D32AEB /* PSAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAlertView.h; sourceTree = "<group>"; };
 		691C16DB48B72D5F0752E8147D0C49EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69701362C909FB8836788EA89C347C97 /* PSAssetsGroupViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAssetsGroupViewController.h; sourceTree = "<group>"; };
+		6B98E1B611B625C0EEFE37E73C5403D4 /* PSAssetListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAssetListViewController.h; sourceTree = "<group>"; };
 		6CE0A979B70E6E36514EC182488DE68A /* loading_00009.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00009.png; sourceTree = "<group>"; };
-		6D181CA3BC408F9DE501D9FC5E6F60D1 /* UIApplication+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+PSUIKit.m"; sourceTree = "<group>"; };
 		6D311A70643A76D0E7209FFAF79CB311 /* Pods-PSUIKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PSUIKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E8AEAEA0104C8928C99F3F0AA1B7280 /* PSToastView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSToastView.h; sourceTree = "<group>"; };
+		6F1F1580D4D9B0E811E1A7AD3A074A43 /* charts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = charts.h; sourceTree = "<group>"; };
+		70356B8167B8827D09FBDECD34C72713 /* UIViewController+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PSUIKit.h"; sourceTree = "<group>"; };
 		70D13E68373FA9FC99546E7C4BCB8336 /* PSUIKit.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = PSUIKit.strings; path = en.lproj/PSUIKit.strings; sourceTree = "<group>"; };
 		70EC890122D96F71C7EAA1401019B5C9 /* loading_00006.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00006.png; sourceTree = "<group>"; };
 		725BDD6F387B0950302B7A39C7A84C17 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		728D0719861386239BD1B0E250804802 /* PSTabbarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSTabbarController.m; sourceTree = "<group>"; };
 		7301431621CC84CBDCA476C45E9C3CE5 /* loading_00011.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00011.png; sourceTree = "<group>"; };
-		733566DC5A23F88247C4B123BD4A7D40 /* PSExceptionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSExceptionViewController.h; sourceTree = "<group>"; };
+		7334C867D830E8717B85AE6866D4A6EB /* PSButtonBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSButtonBar.h; sourceTree = "<group>"; };
 		7483321093901C8B431FFBC4F4E0A8EC /* PSUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PSUIKit-dummy.m"; sourceTree = "<group>"; };
+		752384A8E19692480B68761F4DBBAB26 /* ext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ext.h; sourceTree = "<group>"; };
+		765F0E50F6BCB9EC232E23A57DC920BE /* PSAssetListViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAssetListViewCell.h; sourceTree = "<group>"; };
 		768AE2CD389CEB4D6829903DD5918D69 /* PSAssetsGroupListViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PSAssetsGroupListViewCell.xib; sourceTree = "<group>"; };
 		76C7AD956AA9FB74610918F097194E50 /* OHParagraphStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHParagraphStyle.m; path = OHAttributedLabel/Source/OHParagraphStyle.m; sourceTree = "<group>"; };
 		77A102957147B061DD2A4EBA54F3E7AB /* AnimatedTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnimatedTransition.m; path = UIViewControllerTransitions/Classes/AnimatedTransition.m; sourceTree = "<group>"; };
+		77A3DC6CFED731DAEA8FE50CE437E400 /* PSAssetListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAssetListViewController.m; sourceTree = "<group>"; };
+		78B0DC0030F88790E3B4B41BFCC6E123 /* PSGridView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSGridView.h; sourceTree = "<group>"; };
+		7994E6BE4A537C0414D76F0F3BB72AB5 /* PSTabbarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSTabbarController.h; sourceTree = "<group>"; };
+		79AE9A0ADE13675AEDEE5B7D76620B03 /* PSNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSNavigationController.h; sourceTree = "<group>"; };
 		7A1894356521EE1B6F1290A48E2930B3 /* AbstractUIViewControllerTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractUIViewControllerTransition.h; path = UIViewControllerTransitions/Classes/AbstractUIViewControllerTransition.h; sourceTree = "<group>"; };
 		7B8C6A48DE8D7DC48120377C264E6091 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
 		7CBE9BDAD021D04E159B5483697B2C00 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
-		7CC350420528527761123F0BC4F86A4C /* UIImage+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PSUIKit.m"; sourceTree = "<group>"; };
-		7F2EE94D5FA19F2A3CB6D9EFA89BC5C1 /* UIWindow+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIWindow+PSUIKit.h"; sourceTree = "<group>"; };
 		7FE3C6FDFA9858D47C3FD7CE55DE8CA9 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
 		800C0BEE4BCA77EB283077894F7D5B13 /* loading_00024.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00024.png; sourceTree = "<group>"; };
 		8050ACD5A434E2284C6C2EEAB0B2AB7F /* Pods-PSUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PSUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8053250279BF16B8E16F94FA31EAD297 /* UIApplication+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIApplication+PSUIKit.h"; sourceTree = "<group>"; };
+		832558D431C503658F7EBB19B8EB95C5 /* PSImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSImagePickerController.h; sourceTree = "<group>"; };
 		8472A580FD9D71EF6786B5F0638F6024 /* Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-prefix.pch"; sourceTree = "<group>"; };
-		8644D44E47E2191495EA37EFEBE4D67B /* PSLinedBackgroundView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSLinedBackgroundView.m; sourceTree = "<group>"; };
 		868F4EB78D35408B8C4E735D00ECD962 /* AnimatedFadeTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnimatedFadeTransition.m; path = UIViewControllerTransitions/Classes/AnimatedFadeTransition.m; sourceTree = "<group>"; };
-		88139BB5951901BA4668C92E5C18F23B /* PSLinedBackgroundView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSLinedBackgroundView.h; sourceTree = "<group>"; };
-		889705903DC12CBE2A34ED37C10E0B4B /* PSAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAlertView.h; sourceTree = "<group>"; };
-		896148E95A155039BD6FD32DB09D22D0 /* UIThemeBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIThemeBase.m; sourceTree = "<group>"; };
+		86FF9D2FFB2DB8A16F9F7228E7B360F7 /* PSExceptionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSExceptionViewController.m; sourceTree = "<group>"; };
+		870D5A31F129EFFF17EF14A6060CA5C6 /* PSActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSActionSheet.h; sourceTree = "<group>"; };
 		8ABA5A3D710B94A4CAD7462F16592DEB /* loading_00025.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00025.png; sourceTree = "<group>"; };
-		8AFD107D8D98D9C3C479D574B6BCC53F /* UINavigationController+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PSUIKit.h"; sourceTree = "<group>"; };
 		8B964B3321FAB36C72CA5A051783B328 /* OHASBasicMarkupParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHASBasicMarkupParser.m; path = OHAttributedLabel/TagParsers/OHASBasicMarkupParser.m; sourceTree = "<group>"; };
 		8BD756899482B001FFD71BD48AA7F695 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
-		8C3E87D3B4BEB68CC020971700780D82 /* PSImageAssetScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSImageAssetScrollView.m; sourceTree = "<group>"; };
-		8C4585A7622E2E1CF6378F9CC6EFF4EA /* UINavigationItem+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+PSUIKit.m"; sourceTree = "<group>"; };
 		8D617AFE7C939A57E4E83EF6CEE67828 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DCC1ECF077B44015582F2C6F33F86C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E4AAA5027B28E5A75ADE3C9090ED810 /* loading_00012.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00012.png; sourceTree = "<group>"; };
-		8FF42F0FFB730F11335EB00C21016F92 /* PSImageAssetScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSImageAssetScrollView.h; sourceTree = "<group>"; };
 		919F69D810A37FBE73FAD139F8539517 /* OHASBasicHTMLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHASBasicHTMLParser.m; path = OHAttributedLabel/TagParsers/OHASBasicHTMLParser.m; sourceTree = "<group>"; };
-		91D702D835527634471A756BC3BAEB6F /* UIImage+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+PSUIKit.h"; sourceTree = "<group>"; };
+		9206378C3F32C7F31AF2660030130966 /* PSViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
 		9252914D032B401F756DDA5473477153 /* icon_check_overlay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "icon_check_overlay@2x.png"; sourceTree = "<group>"; };
-		925A730EE082A3C320017FD7D4BC1C67 /* UIButton+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+PSUIKit.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		946184061136B4F1C820BEB11BE34E72 /* PSAttributedDivisionLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAttributedDivisionLabel.h; sourceTree = "<group>"; };
-		9481C518DAE481C5C5F7603C42A64E1A /* Reachability+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability+PSUIKit.m"; sourceTree = "<group>"; };
-		949782E5E01921A5DFC4BDF3FD3CD3C1 /* PSToastView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSToastView.h; sourceTree = "<group>"; };
+		93B63EB871B2A0877E7E61E2D069860D /* PSGridView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSGridView.m; sourceTree = "<group>"; };
+		946AB472483AC6C779C73B9AC1D02D01 /* PSActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSActionSheet.m; sourceTree = "<group>"; };
 		94A26B88E71261F1D78F63CF044CE15C /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		94AA56D6CEE5F95AA7CDF61F3C1D71CB /* OHAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHAttributedLabel.h; path = OHAttributedLabel/Source/OHAttributedLabel.h; sourceTree = "<group>"; };
-		950341D965A2AF25293B5EFA093682C0 /* PSNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSNavigationController.h; sourceTree = "<group>"; };
+		952B20C601E2989500D170E2CF5EFECD /* PSExceptionViewDisplaySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSExceptionViewDisplaySequence.h; sourceTree = "<group>"; };
 		9549788B3B94AA232630262C663D0F7E /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		957D8493BFEAD9E463D27FB9419EEA9E /* Pods_PSUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		96B4E279F82ED69B483D3A8F2D4014ED /* PSLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSLabel.m; sourceTree = "<group>"; };
-		9729B8DAC2C3E135A7B88BD6BA83AB5A /* controls.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = controls.h; sourceTree = "<group>"; };
+		95DE50B220077ACC066EC3D8E1CEDF47 /* PSRecycledScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSRecycledScrollView.m; sourceTree = "<group>"; };
 		98212D768262B1B8904633D31B69B3F0 /* Reachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.xcconfig; sourceTree = "<group>"; };
+		9895D6BEE8233415020BA0DA47864D81 /* PSButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSButton.h; sourceTree = "<group>"; };
+		98A0EE28279471426B46991685F89CE7 /* PSViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
+		98A4288A766E6298A98A9839A6304C22 /* PSBadge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSBadge.h; sourceTree = "<group>"; };
 		99092FE31EF181198F06EB36362A68BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A45F171945F4493A63AEC651528AEB2 /* UIViewControllerTransitions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIViewControllerTransitions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A582DE357F1D32DA38C96916BC866E3 /* PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSUIKit.h; sourceTree = "<group>"; };
 		9B6EF8B2DE6A86A51C61A7E74E82229E /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		9BBB4910F7BD858E81BF0C56D8F69B52 /* base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
 		9C1A20C8F58F905E6DDFD91D2D5AC365 /* Pods-PSUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PSUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9C4DAFC35CFB249530D591E07FBFBA68 /* UIThemeBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIThemeBase.h; sourceTree = "<group>"; };
 		9CF168D1E8CD690171C8AF1023086760 /* Pods-PSUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PSUIKit_Example-dummy.m"; sourceTree = "<group>"; };
+		9D71CD57E1B91C9ADEBC0DB11E988980 /* GraphicsLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GraphicsLayout.h; sourceTree = "<group>"; };
 		9E1E7FD9D98D851BE946BC7A8B7B6E19 /* AnimatedDragDropTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnimatedDragDropTransition.m; path = UIViewControllerTransitions/Classes/AnimatedDragDropTransition.m; sourceTree = "<group>"; };
+		9E59F18E35D39F32D65D5994FBA5C301 /* UIThemeWhiteTranslucent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIThemeWhiteTranslucent.h; sourceTree = "<group>"; };
 		9EC44C38F9782EDEA05A6F288809150D /* UIViewControllerDragDropTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIViewControllerDragDropTransition.h; path = UIViewControllerTransitions/Classes/UIViewControllerDragDropTransition.h; sourceTree = "<group>"; };
 		9EE823E65DDF567A858C027CC42E4DB8 /* PSAssetListViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PSAssetListViewCell.xib; sourceTree = "<group>"; };
-		9EEB219E9B3D2D863A49B79206036471 /* PSAssetListViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAssetListViewCell.m; sourceTree = "<group>"; };
+		A0161F366203B0915A84D4D843280A42 /* PSGridViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSGridViewCell.h; sourceTree = "<group>"; };
+		A0E8A64A72C624E5559B269CD4F6AA7B /* PSLinedBackgroundView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSLinedBackgroundView.m; sourceTree = "<group>"; };
 		A18F91D54ADDE182FE802E3C37167296 /* PSExceptionView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PSExceptionView.xib; sourceTree = "<group>"; };
 		A1E0E8C76E68A1148A191E46FE970815 /* loading_00019.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00019.png; sourceTree = "<group>"; };
 		A21389E1EED3E6123798602DA30FC39B /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
 		A233522F4A4B47C6547C53EFA55D50AC /* Pods-PSUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PSUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A23A4E062C81D8A7A57323B6A5A1D819 /* loading_00017.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00017.png; sourceTree = "<group>"; };
+		A2A71C021AC752B462EFEA0755A74BDD /* PSAssetsGroupViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAssetsGroupViewController.m; sourceTree = "<group>"; };
 		A3E84FF8D1DA61A82A27282665DF445D /* bg_toast_left_normal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "bg_toast_left_normal@2x.png"; sourceTree = "<group>"; };
 		A3ED69C9BD5E70649660795DE34100B7 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
-		A3F0CF0C2CB8819540E7C8CC243AB4F6 /* GraphicsLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GraphicsLayout.m; sourceTree = "<group>"; };
 		A411FD93F0608C664BF380B0E4954B8D /* icon_navi_back_blue_normal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "icon_navi_back_blue_normal@2x.png"; sourceTree = "<group>"; };
 		A4650C097D6DA9D78BC1D73C62D9EBE2 /* AnimatedTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnimatedTransition.h; path = UIViewControllerTransitions/Classes/AnimatedTransition.h; sourceTree = "<group>"; };
 		A4CF50D5CCC88DBC6E8B22D009F98D89 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
-		A4E554E880C4D41A63F2C34B646D171C /* PSButtonBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSButtonBar.h; sourceTree = "<group>"; };
 		A5B51F69E7471E969B575C5240FB5402 /* loading_00013.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00013.png; sourceTree = "<group>"; };
 		A6BB52115CAFAF8B758A2BC9BC3098E7 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
-		A6C26D41D9DF7A4C1188463725A49690 /* PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSUIKit.m; sourceTree = "<group>"; };
-		A6C4AB6514EB8EA426290D471F3D47D0 /* PSExceptionViewDisplaySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSExceptionViewDisplaySequence.h; sourceTree = "<group>"; };
+		A72A122552BFE9FC01A3D785426CD782 /* UINavigationItem+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+PSUIKit.h"; sourceTree = "<group>"; };
 		A92D5F500FEA86B1289774020FCC0886 /* AbstractUIViewControllerTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractUIViewControllerTransition.m; path = UIViewControllerTransitions/Classes/AbstractUIViewControllerTransition.m; sourceTree = "<group>"; };
 		A9A9EB3BBAD593317C273FD9ED654680 /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SDWebImage.modulemap; sourceTree = "<group>"; };
 		A9CA96B1ACF71E9FC5463D96369F54BC /* NSTextCheckingResult+ExtendedURL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTextCheckingResult+ExtendedURL.m"; path = "OHAttributedLabel/Source/NSTextCheckingResult+ExtendedURL.m"; sourceTree = "<group>"; };
+		AAC2CD2C6126861AA9FA38DB1F0F848D /* UIImage+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PSUIKit.m"; sourceTree = "<group>"; };
+		AB00AE3FD1D383774B937F000E956E71 /* ActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicatorManager.m; sourceTree = "<group>"; };
 		AB12317CA42913507A3F4AAEA25BF8B9 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
-		AC02170F36D3C1987D3B0D8CE2E56525 /* PSTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSTableViewController.h; sourceTree = "<group>"; };
 		AC04A9A5CB481468BD2C975787F712ED /* loading_00003.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00003.png; sourceTree = "<group>"; };
-		AC83E35FF221EF593273B85729EB7A10 /* PSPreloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSPreloader.m; sourceTree = "<group>"; };
+		AD0B919CE0716A75DCB70ED7DCAA6536 /* UIThemeDefaultStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIThemeDefaultStyle.h; sourceTree = "<group>"; };
 		AD2115E75F3164FDF31B18CACB71FD26 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		AD58367CB8FE358BD3413204E37D55AB /* OHTouchesGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHTouchesGestureRecognizer.h; path = OHAttributedLabel/Source/OHTouchesGestureRecognizer.h; sourceTree = "<group>"; };
 		AD756826D7554BBE1037C00D84DEEBF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE062C0F630F3CD6D68CD29AECDE7119 /* ImagePopViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ImagePopViewManager.h; sourceTree = "<group>"; };
 		AE22525FDF11CA869FBF836296423B70 /* OHParagraphStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHParagraphStyle.h; path = OHAttributedLabel/Source/OHParagraphStyle.h; sourceTree = "<group>"; };
-		AE901A7460BE453EBCCEBB0A3F7CEF04 /* UINavigationItem+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+PSUIKit.h"; sourceTree = "<group>"; };
+		AF2546ED2B554C9BDC8669ED2EC434B0 /* UIThemeBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIThemeBase.m; sourceTree = "<group>"; };
 		AF48E6E5CF5B36EB19E69DFCE3625F1E /* PSUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSUIKit-prefix.pch"; sourceTree = "<group>"; };
 		AF6647E3EC71DC0541D9C98FC2E85D08 /* OHAttributedLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHAttributedLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6C67849AF52641E1D9C33AFBA724A2 /* loading_00010.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00010.png; sourceTree = "<group>"; };
-		AF9B6ED9874B47D789305E20B81FB2AE /* UIView+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+PSUIKit.m"; sourceTree = "<group>"; };
+		AFD2C1D810637F08FC7CD29F3E2EF8B7 /* PSAttributedDivisionLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAttributedDivisionLabel.h; sourceTree = "<group>"; };
 		AFF85C860A0AA3395EE40BD21746B7C2 /* Pods-PSUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PSUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B0D102BAFE1629F3AD163250BBAD87E6 /* UIViewControllerStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIViewControllerStack.h; sourceTree = "<group>"; };
 		B129C3DDC0F7B85C8C18F0CF68A9DA1C /* loading_00005.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00005.png; sourceTree = "<group>"; };
-		B12C98F55450C94E2B9A0238ECCBAB53 /* UIThemeBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIThemeBase.h; sourceTree = "<group>"; };
-		B21470E457533EFA0F181ECF9F66B63E /* PSRecycledScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSRecycledScrollView.m; sourceTree = "<group>"; };
-		B245414AB5F1557BD8E8882950C746BA /* PSAssetsGroupListViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAssetsGroupListViewCell.m; sourceTree = "<group>"; };
-		B40121A5E86CBBBE7DA40CBCD98D6A2F /* PentagonChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PentagonChart.m; sourceTree = "<group>"; };
+		B2897BD846DE54C3C1AE1F69DDB4794F /* PSTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSTableViewController.h; sourceTree = "<group>"; };
+		B385CD1F2C5B4589457AE564EDD63EA4 /* UIView+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+PSUIKit.h"; sourceTree = "<group>"; };
+		B482208B5918D9F34599C32B7BDA8CCF /* UIButton+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PSUIKit.m"; sourceTree = "<group>"; };
 		B5D3D486A432D57F70AE4800CD0BB023 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
 		B5D6FBE32D4E993B0E05B8E90F5F6E6D /* loading_00018.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00018.png; sourceTree = "<group>"; };
 		B70D601081CB73E97A6B237736508EE6 /* Pods-PSUIKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PSUIKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		B776990D07F4536F26C859A0759A1943 /* UIApplication+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIApplication+PSUIKit.h"; sourceTree = "<group>"; };
 		B88025D2B00438F8953DA1EBB41E76F1 /* Pods-PSUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PSUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B975E95E2D944A7CFB7973AB44067396 /* PSView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSView.h; sourceTree = "<group>"; };
+		B8D66C3D553C386D59BC9B4FAE97BEDE /* UITableView+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PSUIKit.m"; sourceTree = "<group>"; };
 		B97F1A0552ED31999D0C967410E548D8 /* icon_navi_collection_back_normal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "icon_navi_collection_back_normal@2x.png"; sourceTree = "<group>"; };
-		BB8F116D4344A7D00CAD6E82314E94D0 /* GraphicsLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GraphicsLayout.h; sourceTree = "<group>"; };
+		BAC629A91471597F1EF43CF843E833BF /* PSAssetsGroupListViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAssetsGroupListViewCell.h; sourceTree = "<group>"; };
 		BBC8E7CEB7B958E716EA628A7CA0033D /* loading_00001.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00001.png; sourceTree = "<group>"; };
-		BD253BEB597888D9F24902EA401B8790 /* PSAssetsGroupListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAssetsGroupListViewController.m; sourceTree = "<group>"; };
-		BDC64C8E07FFC1BAF7FE99D773EAFDA9 /* UIThemeWhiteTranslucent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIThemeWhiteTranslucent.h; sourceTree = "<group>"; };
+		BD71704F92BDC7D782FF60046236D67D /* PSAssetsGroupListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAssetsGroupListViewController.m; sourceTree = "<group>"; };
+		BD87D55A0ED521A5BD2D9D9415D554F2 /* PSBadge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSBadge.m; sourceTree = "<group>"; };
 		BF6D2907F73A3CD8A25C4AF67FF3FCB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		C012E65DC1B0EB3CE0FA9E0AD19FC920 /* UIViewControllerStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerStack.m; sourceTree = "<group>"; };
 		C03E228731E7FCCCCA2B198BCA04B53E /* OHASBasicMarkupParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHASBasicMarkupParser.h; path = OHAttributedLabel/TagParsers/OHASBasicMarkupParser.h; sourceTree = "<group>"; };
+		C2B01302F7C14299599A88E97594D0F0 /* PSGridViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSGridViewCell.m; sourceTree = "<group>"; };
 		C5439D6636303CF9A068E50594DF7688 /* OHAttributedLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHAttributedLabel-dummy.m"; sourceTree = "<group>"; };
-		C6C9DB8D4191BA38AD5E797E51F29328 /* PopUpViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PopUpViewManager.h; sourceTree = "<group>"; };
+		C586C3D47D7491B1C001802C13CD1BD1 /* PSAssetsGroupListViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAssetsGroupListViewCell.m; sourceTree = "<group>"; };
+		C714A6B23D8C708DFC477B07D325A589 /* UINavigationController+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PSUIKit.h"; sourceTree = "<group>"; };
 		C785CE61B965DCA610C520373FCA6CFD /* Pods-PSUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PSUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CDB7C11BB078A681F301F4EBCC8DD135 /* PSGridView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSGridView.m; sourceTree = "<group>"; };
+		C94736098FA474BACE94BC1FFBB5CF7A /* PentagonChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PentagonChart.m; sourceTree = "<group>"; };
+		CB1ADB15C5FCDA898D76A5770AD24940 /* UIApplication+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+PSUIKit.m"; sourceTree = "<group>"; };
+		CDEFE27A5DB2E5ADAE50BF242D7D3CB0 /* Reachability+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability+PSUIKit.m"; sourceTree = "<group>"; };
+		CF266D0D176208689C1ABAC98FF0CAA4 /* PSCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSCollectionViewCell.m; sourceTree = "<group>"; };
+		CFA94634CBC4F52216AD83694238983D /* PSPreloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSPreloader.h; sourceTree = "<group>"; };
 		CFF784F5E6968739137C41E6157EB703 /* Pods-PSUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PSUIKit_Tests.modulemap"; sourceTree = "<group>"; };
-		D299EB91A5719A927E80BF509E26B912 /* PSTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSTableViewController.m; sourceTree = "<group>"; };
+		D0B5AAC78ECFAE4A57B07302FA8DCC82 /* PSAssetsGroupListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAssetsGroupListViewController.h; sourceTree = "<group>"; };
 		D30146668ED11156E4C4CE774F5ACE6B /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+Attributes.h"; path = "OHAttributedLabel/Source/NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
-		D30354A035B17A37916E5CAD3DE9050B /* PSAttributedDivisionLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAttributedDivisionLabel.m; sourceTree = "<group>"; };
-		D404E61855DFEDAC9D404C3FE2E98B4E /* PSViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
+		D302F37F3E044058F5E45E829D184B17 /* PSView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSView.m; sourceTree = "<group>"; };
 		D4283C7B33DDDFC35C6514816D7BF2B8 /* PSAssetListView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PSAssetListView.xib; sourceTree = "<group>"; };
-		D4AF6B495BB056920127C974707BA86D /* PSAssetListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSAssetListViewController.m; sourceTree = "<group>"; };
 		D4C3C75FCB2BE3FB6D0C6D4F2618E7CD /* UIViewControllerTransitions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIViewControllerTransitions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7A5605F1E37C9C508CAB731F0F83320 /* ext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ext.h; sourceTree = "<group>"; };
-		D82FF554680B8A82F0BF842C90FD0CD7 /* theme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = theme.h; sourceTree = "<group>"; };
+		D59A6C4583498EF28EFDEB34EEEC84F3 /* UIAlertView+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+PSUIKit.m"; sourceTree = "<group>"; };
 		D8963D436354FC979F03897B0DF4CAE0 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
-		D9CB1AA2E1788B1434D5639FBBFBBD9E /* PSImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSImagePickerController.h; sourceTree = "<group>"; };
-		DA6368850E2B0591B84D8F8EA346E909 /* UIThemeWhiteTranslucent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIThemeWhiteTranslucent.m; sourceTree = "<group>"; };
+		D975228EB98155D7E95B42E1F7824650 /* PSImageAssetScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSImageAssetScrollView.m; sourceTree = "<group>"; };
 		DAB7958E0998E8A465FDAED1AF879DCD /* Pods-PSUIKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PSUIKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		DAF16E2C4E60FB54E9C7BA60C5AEBEE4 /* PSAssetListViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSAssetListViewCell.h; sourceTree = "<group>"; };
-		DB191CCC66164BFBA1DC8ADD3F00827D /* PSScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSScrollView.h; sourceTree = "<group>"; };
 		DB414D32A503DE346ED66BA45CB8F36B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC3CA4EBB75CEC387C2185F35FEA896 /* loading_00016.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00016.png; sourceTree = "<group>"; };
-		DC2D5476B64A473F06F4979F5E53A257 /* UIViewController+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PSUIKit.m"; sourceTree = "<group>"; };
 		DCAE4885225AD888F80C98084409BAA3 /* UIViewControllerMoveTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIViewControllerMoveTransition.h; path = UIViewControllerTransitions/Classes/UIViewControllerMoveTransition.h; sourceTree = "<group>"; };
 		DE18E8D2964DAFC17C4BD3C1B532C439 /* loading_00021.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00021.png; sourceTree = "<group>"; };
 		DE264DFB69DC04941DA7EE0081DD8F72 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF45D2E7476871E51197F150E9BD0182 /* PSLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSLabel.h; sourceTree = "<group>"; };
 		DFD81436A39FD334BFF2616BF42C4E84 /* icon_navi_collection_back_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "icon_navi_collection_back_selected@2x.png"; sourceTree = "<group>"; };
+		E18EB1454D4403F0964666B219306B1F /* UIImage+PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+PSUIKit.h"; sourceTree = "<group>"; };
 		E22AE5F4B5AD445AC308C076E8E957F1 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
-		E3757396394A8C6BC6C04CCAD54C5706 /* PSImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSImagePickerController.m; sourceTree = "<group>"; };
 		E405EFCBB2AF440205CB56CD988A078B /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
-		E5C1D8F25AACD8BA539AD2EDCDE09B90 /* UIAlertView+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+PSUIKit.m"; sourceTree = "<group>"; };
-		E5DBA00CFB58390C1D9C69EECDC93384 /* PSExceptionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSExceptionViewController.m; sourceTree = "<group>"; };
-		E62FFE56174588CA6DBFCAF94A3C522A /* PSTabViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSTabViewController.h; sourceTree = "<group>"; };
+		E4EF3AE2231426C83306CD7B167402F7 /* UIView+PSUIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+PSUIKit.m"; sourceTree = "<group>"; };
+		E581493D6F2A57C1D6D9E10947E26947 /* UIViewControllerStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIViewControllerStack.h; sourceTree = "<group>"; };
 		E7BBC3D6E6E013308DBFBCF43A8BB13F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8E54E7331F13576E9C1FED7C82BBE2B /* UIThemeDefaultStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIThemeDefaultStyle.h; sourceTree = "<group>"; };
-		E8F0C764BBF18614E1F447FBCDBC1ECC /* PSScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSScrollView.m; sourceTree = "<group>"; };
-		E90E0AC37DF0241F0A28429C6D17411F /* PSGridViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSGridViewCell.h; sourceTree = "<group>"; };
 		E95F230B727A8983D9BE6471AE2FCE2C /* OHASMarkupParserBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHASMarkupParserBase.h; path = OHAttributedLabel/TagParsers/OHASMarkupParserBase.h; sourceTree = "<group>"; };
 		EA4FE7BD36AB130CD74915804E7860E5 /* UIViewControllerFadeTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIViewControllerFadeTransition.m; path = UIViewControllerTransitions/Classes/UIViewControllerFadeTransition.m; sourceTree = "<group>"; };
+		EAB3E8565BC054B792DC66C47D922D43 /* GraphicsLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GraphicsLayout.m; sourceTree = "<group>"; };
+		EBD52D5C8357F413129EEAF1BECE1567 /* PSNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSNavigationController.m; sourceTree = "<group>"; };
 		EBE7CD8922954727E540A4F8FF21B7E2 /* OHAttributedLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHAttributedLabel-umbrella.h"; sourceTree = "<group>"; };
 		F1312577AD2609807247C446728BDA86 /* UIViewControllerDragDropTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIViewControllerDragDropTransition.m; path = UIViewControllerTransitions/Classes/UIViewControllerDragDropTransition.m; sourceTree = "<group>"; };
 		F19C5338A4A8D5E9D4637F016275AAFE /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
 		F3ADF2A2A7BBE975287F764A07BCFFC1 /* loading_00023.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00023.png; sourceTree = "<group>"; };
 		F42BB7E6D52C93B2B49FEA42B6C5D00E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F504D8362282C26C8EC182169FC28CC2 /* loading_00020.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = loading_00020.png; sourceTree = "<group>"; };
-		F5A2D595B05E04F2A16408F0B74D7F8F /* PSUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSUIKit.h; sourceTree = "<group>"; };
+		F5627CDD0D48372CE997516F95A39A1B /* PSExceptionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSExceptionViewController.h; sourceTree = "<group>"; };
+		F5851F49E5DF3DF6DFF2AAFA40135128 /* ActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorManager.h; sourceTree = "<group>"; };
 		F620A958727D9BC322145787A8E6CC79 /* AnimatedFadeTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnimatedFadeTransition.h; path = UIViewControllerTransitions/Classes/AnimatedFadeTransition.h; sourceTree = "<group>"; };
 		F6AD2FD853D21677570F8CB9BC586760 /* Pods-PSUIKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PSUIKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F7312ABA3717ED4449E3890A58C2BEE2 /* PSPreloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSPreloader.h; sourceTree = "<group>"; };
 		F936D11831C898904A7D0E5E47ED8A7F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		FA076141EE4E935F4321074697C2EB85 /* UIThemeDefaultStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIThemeDefaultStyle.m; sourceTree = "<group>"; };
+		FA05FD6BB76A1B4C7E8A690507AAF2D5 /* controls.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = controls.h; sourceTree = "<group>"; };
 		FB178E15DD0B47DC66C04A80C87BB41B /* UIViewControllerMoveTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIViewControllerMoveTransition.m; path = UIViewControllerTransitions/Classes/UIViewControllerMoveTransition.m; sourceTree = "<group>"; };
+		FC93600C4E4BEDF5E8C5AF76EC11EC73 /* PentagonChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PentagonChart.h; sourceTree = "<group>"; };
+		FDDA86AE0716360A7C637E08D9B88DA2 /* theme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = theme.h; sourceTree = "<group>"; };
 		FF842916BB1888E6B6847A060CD8E827 /* AnimatedMoveTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnimatedMoveTransition.m; path = UIViewControllerTransitions/Classes/AnimatedMoveTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -700,7 +700,7 @@
 		1B5EB5DEE15091C9159A8668A76C9A5B /* PSUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				B7A89B79FA685E3ED81407229467C688 /* Classes */,
+				61CAC6FF786DB5BE53F155B6C189DDD9 /* Classes */,
 			);
 			path = PSUIKit;
 			sourceTree = "<group>";
@@ -795,6 +795,119 @@
 				9549788B3B94AA232630262C663D0F7E /* UIView+WebCacheOperation.m */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		61CAC6FF786DB5BE53F155B6C189DDD9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5851F49E5DF3DF6DFF2AAFA40135128 /* ActivityIndicatorManager.h */,
+				AB00AE3FD1D383774B937F000E956E71 /* ActivityIndicatorManager.m */,
+				9BBB4910F7BD858E81BF0C56D8F69B52 /* base.h */,
+				6F1F1580D4D9B0E811E1A7AD3A074A43 /* charts.h */,
+				FA05FD6BB76A1B4C7E8A690507AAF2D5 /* controls.h */,
+				752384A8E19692480B68761F4DBBAB26 /* ext.h */,
+				9D71CD57E1B91C9ADEBC0DB11E988980 /* GraphicsLayout.h */,
+				EAB3E8565BC054B792DC66C47D922D43 /* GraphicsLayout.m */,
+				1254CCBF3BE6C45D4F84C6F766043D41 /* ImagePopViewManager.h */,
+				3CF923E4BE6483798DFDFF583AC34E93 /* ImagePopViewManager.m */,
+				FC93600C4E4BEDF5E8C5AF76EC11EC73 /* PentagonChart.h */,
+				C94736098FA474BACE94BC1FFBB5CF7A /* PentagonChart.m */,
+				08C143BC9BA080AB96328542EF7711B8 /* PopUpViewManager.h */,
+				3CC4B466C12273C77ABDA610F947A9D5 /* PopUpViewManager.m */,
+				870D5A31F129EFFF17EF14A6060CA5C6 /* PSActionSheet.h */,
+				946AB472483AC6C779C73B9AC1D02D01 /* PSActionSheet.m */,
+				6915934E1713FE4383B5DE6731D32AEB /* PSAlertView.h */,
+				40E266C016F3895D76148FA70824D228 /* PSAlertView.m */,
+				765F0E50F6BCB9EC232E23A57DC920BE /* PSAssetListViewCell.h */,
+				1CA874547D7B8CA0460122DEC5D32E51 /* PSAssetListViewCell.m */,
+				6B98E1B611B625C0EEFE37E73C5403D4 /* PSAssetListViewController.h */,
+				77A3DC6CFED731DAEA8FE50CE437E400 /* PSAssetListViewController.m */,
+				BAC629A91471597F1EF43CF843E833BF /* PSAssetsGroupListViewCell.h */,
+				C586C3D47D7491B1C001802C13CD1BD1 /* PSAssetsGroupListViewCell.m */,
+				D0B5AAC78ECFAE4A57B07302FA8DCC82 /* PSAssetsGroupListViewController.h */,
+				BD71704F92BDC7D782FF60046236D67D /* PSAssetsGroupListViewController.m */,
+				33EFBF73198B6820E925549EDB426037 /* PSAssetsGroupViewController.h */,
+				A2A71C021AC752B462EFEA0755A74BDD /* PSAssetsGroupViewController.m */,
+				AFD2C1D810637F08FC7CD29F3E2EF8B7 /* PSAttributedDivisionLabel.h */,
+				107D0DAE96F42C6ED4A046E34FD88D53 /* PSAttributedDivisionLabel.m */,
+				98A4288A766E6298A98A9839A6304C22 /* PSBadge.h */,
+				BD87D55A0ED521A5BD2D9D9415D554F2 /* PSBadge.m */,
+				9895D6BEE8233415020BA0DA47864D81 /* PSButton.h */,
+				646ED31F2E55786BC7B0ACCFFAC3C6E2 /* PSButton.m */,
+				7334C867D830E8717B85AE6866D4A6EB /* PSButtonBar.h */,
+				47027F8D8617F3D6A32A32DBE2A3275C /* PSButtonBar.m */,
+				069EC0582A71CD7891A03B07727A1C83 /* PSCollectionViewCell.h */,
+				CF266D0D176208689C1ABAC98FF0CAA4 /* PSCollectionViewCell.m */,
+				F5627CDD0D48372CE997516F95A39A1B /* PSExceptionViewController.h */,
+				86FF9D2FFB2DB8A16F9F7228E7B360F7 /* PSExceptionViewController.m */,
+				952B20C601E2989500D170E2CF5EFECD /* PSExceptionViewDisplaySequence.h */,
+				1E76FFF307E1CF78D24653F24F72647A /* PSExceptionViewDisplaySequence.m */,
+				78B0DC0030F88790E3B4B41BFCC6E123 /* PSGridView.h */,
+				93B63EB871B2A0877E7E61E2D069860D /* PSGridView.m */,
+				A0161F366203B0915A84D4D843280A42 /* PSGridViewCell.h */,
+				C2B01302F7C14299599A88E97594D0F0 /* PSGridViewCell.m */,
+				556A914A3F56F6603F67052FC1FC8DBF /* PSImageAssetScrollView.h */,
+				D975228EB98155D7E95B42E1F7824650 /* PSImageAssetScrollView.m */,
+				832558D431C503658F7EBB19B8EB95C5 /* PSImagePickerController.h */,
+				118A4A622BD5348EA05A8D9651D78F60 /* PSImagePickerController.m */,
+				288B7072E401FAE4A6E8D9947B4782FC /* PSLabel.h */,
+				414B6D8137B0C5ADA1348BFA79BCD047 /* PSLabel.m */,
+				0546BBB7DC68B543252959C7D7373CAF /* PSLinedBackgroundView.h */,
+				A0E8A64A72C624E5559B269CD4F6AA7B /* PSLinedBackgroundView.m */,
+				79AE9A0ADE13675AEDEE5B7D76620B03 /* PSNavigationController.h */,
+				EBD52D5C8357F413129EEAF1BECE1567 /* PSNavigationController.m */,
+				CFA94634CBC4F52216AD83694238983D /* PSPreloader.h */,
+				0EA0714104E52D6080181F0AE65BABC4 /* PSPreloader.m */,
+				58F8A3C65F37B65F7E30125766675613 /* PSRecycledScrollView.h */,
+				95DE50B220077ACC066EC3D8E1CEDF47 /* PSRecycledScrollView.m */,
+				5DEA412850D6CC35F844B15A92C90C4B /* PSScrollView.h */,
+				10D017A884A24F2C5C879D8792F16549 /* PSScrollView.m */,
+				7994E6BE4A537C0414D76F0F3BB72AB5 /* PSTabbarController.h */,
+				728D0719861386239BD1B0E250804802 /* PSTabbarController.m */,
+				27CFF922478750F227E42E3EE8C845F1 /* PSTableViewCell.h */,
+				2302C2A3C92DA1F4AA28802819B9D0BF /* PSTableViewCell.m */,
+				B2897BD846DE54C3C1AE1F69DDB4794F /* PSTableViewController.h */,
+				5BEF444DAA45B2E5ABB59778CD503D7B /* PSTableViewController.m */,
+				6E8AEAEA0104C8928C99F3F0AA1B7280 /* PSToastView.h */,
+				1DA3323CB6B44935658CB8F89D9B9CFB /* PSToastView.m */,
+				9A582DE357F1D32DA38C96916BC866E3 /* PSUIKit.h */,
+				5822B76B42C35A873517EEB35A1AEDD2 /* PSUIKit.m */,
+				434C0E525C52C048E9C0942E8A4BBB3F /* PSView.h */,
+				D302F37F3E044058F5E45E829D184B17 /* PSView.m */,
+				9206378C3F32C7F31AF2660030130966 /* PSViewController.h */,
+				98A0EE28279471426B46991685F89CE7 /* PSViewController.m */,
+				0A500196CA06C8D00306781D1499771C /* Reachability+PSUIKit.h */,
+				CDEFE27A5DB2E5ADAE50BF242D7D3CB0 /* Reachability+PSUIKit.m */,
+				FDDA86AE0716360A7C637E08D9B88DA2 /* theme.h */,
+				2B07DE1DD4C81A67A6F94EF16D49019C /* UIAlertView+PSUIKit.h */,
+				D59A6C4583498EF28EFDEB34EEEC84F3 /* UIAlertView+PSUIKit.m */,
+				8053250279BF16B8E16F94FA31EAD297 /* UIApplication+PSUIKit.h */,
+				CB1ADB15C5FCDA898D76A5770AD24940 /* UIApplication+PSUIKit.m */,
+				3B1CFB1824FECF301467890E841AE6A0 /* UIButton+PSUIKit.h */,
+				B482208B5918D9F34599C32B7BDA8CCF /* UIButton+PSUIKit.m */,
+				E18EB1454D4403F0964666B219306B1F /* UIImage+PSUIKit.h */,
+				AAC2CD2C6126861AA9FA38DB1F0F848D /* UIImage+PSUIKit.m */,
+				C714A6B23D8C708DFC477B07D325A589 /* UINavigationController+PSUIKit.h */,
+				A72A122552BFE9FC01A3D785426CD782 /* UINavigationItem+PSUIKit.h */,
+				3681CF6F5042ED9225DF5E17F2367ECA /* UINavigationItem+PSUIKit.m */,
+				4864A48157108C11828898D439D1CC3D /* UITableView+PSUIKit.h */,
+				B8D66C3D553C386D59BC9B4FAE97BEDE /* UITableView+PSUIKit.m */,
+				9C4DAFC35CFB249530D591E07FBFBA68 /* UIThemeBase.h */,
+				AF2546ED2B554C9BDC8669ED2EC434B0 /* UIThemeBase.m */,
+				AD0B919CE0716A75DCB70ED7DCAA6536 /* UIThemeDefaultStyle.h */,
+				291DCBEF0745DBEE02AD95880C08628B /* UIThemeDefaultStyle.m */,
+				9E59F18E35D39F32D65D5994FBA5C301 /* UIThemeWhiteTranslucent.h */,
+				2A8D7B67AA35E9F53552409F45AAFF00 /* UIThemeWhiteTranslucent.m */,
+				B385CD1F2C5B4589457AE564EDD63EA4 /* UIView+PSUIKit.h */,
+				E4EF3AE2231426C83306CD7B167402F7 /* UIView+PSUIKit.m */,
+				70356B8167B8827D09FBDECD34C72713 /* UIViewController+PSUIKit.h */,
+				4FA4D283CE84E748471EEA6E65EE9BDD /* UIViewController+PSUIKit.m */,
+				E581493D6F2A57C1D6D9E10947E26947 /* UIViewControllerStack.h */,
+				26468BDF2347B63093BF7E3C7D07F95E /* UIViewControllerStack.m */,
+				2AE233890CF3A24122073B7695E9494E /* UIWindow+PSUIKit.h */,
+				588DB1288B4D4E64A78E874476736FA2 /* UIWindow+PSUIKit.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		69B69B41D4CFE19AE4E8F9C4DE7FC157 /* img */ = {
@@ -986,119 +1099,6 @@
 			path = "Target Support Files/Pods-PSUIKit_Tests";
 			sourceTree = "<group>";
 		};
-		B7A89B79FA685E3ED81407229467C688 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				16CF561A6208DC52AF3F058919337533 /* ActivityIndicatorManager.h */,
-				2AA3E3597C729F1541136BA191F248B5 /* ActivityIndicatorManager.m */,
-				67DDCFF54738C7CE9FE1A20BFA14AC0D /* base.h */,
-				03127768E1E758B217E832F14A2A4D37 /* charts.h */,
-				9729B8DAC2C3E135A7B88BD6BA83AB5A /* controls.h */,
-				D7A5605F1E37C9C508CAB731F0F83320 /* ext.h */,
-				BB8F116D4344A7D00CAD6E82314E94D0 /* GraphicsLayout.h */,
-				A3F0CF0C2CB8819540E7C8CC243AB4F6 /* GraphicsLayout.m */,
-				AE062C0F630F3CD6D68CD29AECDE7119 /* ImagePopViewManager.h */,
-				1ECC7D52564AF156A73CA105A47DC814 /* ImagePopViewManager.m */,
-				49F2C1497478E8EE388DA67C5B2C42C6 /* PentagonChart.h */,
-				B40121A5E86CBBBE7DA40CBCD98D6A2F /* PentagonChart.m */,
-				C6C9DB8D4191BA38AD5E797E51F29328 /* PopUpViewManager.h */,
-				68014471DAFF61D4B5B4FF971BB334C5 /* PopUpViewManager.m */,
-				27FFB079AD9022E749B8794460A9971F /* PSActionSheet.h */,
-				1756337D870EA820C51AEB7C26DD22BC /* PSActionSheet.m */,
-				889705903DC12CBE2A34ED37C10E0B4B /* PSAlertView.h */,
-				353E805CA3939425A796154898636BD8 /* PSAlertView.m */,
-				DAF16E2C4E60FB54E9C7BA60C5AEBEE4 /* PSAssetListViewCell.h */,
-				9EEB219E9B3D2D863A49B79206036471 /* PSAssetListViewCell.m */,
-				37486FF92340BA08AF04D14923F2C08A /* PSAssetListViewController.h */,
-				D4AF6B495BB056920127C974707BA86D /* PSAssetListViewController.m */,
-				05E706E26B348F3E9B5D82D04E2417BD /* PSAssetsGroupListViewCell.h */,
-				B245414AB5F1557BD8E8882950C746BA /* PSAssetsGroupListViewCell.m */,
-				362838D2CFE83A8C4E2BCF9077E26A67 /* PSAssetsGroupListViewController.h */,
-				BD253BEB597888D9F24902EA401B8790 /* PSAssetsGroupListViewController.m */,
-				69701362C909FB8836788EA89C347C97 /* PSAssetsGroupViewController.h */,
-				02AC5BCB4A17C6286B43A91DB0D2CDC7 /* PSAssetsGroupViewController.m */,
-				946184061136B4F1C820BEB11BE34E72 /* PSAttributedDivisionLabel.h */,
-				D30354A035B17A37916E5CAD3DE9050B /* PSAttributedDivisionLabel.m */,
-				35EA642151B4A541F01959650963B2E7 /* PSBadge.h */,
-				64CF19A93D34A7055372630FE29E9673 /* PSBadge.m */,
-				2249CAE3BF78E67F1AE8A159B43158FE /* PSButton.h */,
-				0C6C79B6A5D271A9C343F8923B519922 /* PSButton.m */,
-				A4E554E880C4D41A63F2C34B646D171C /* PSButtonBar.h */,
-				1953006C3C1B452E5E5789072A400FB1 /* PSButtonBar.m */,
-				68DE1C6A586308F19102B8162D0CA671 /* PSCollectionViewCell.h */,
-				25FB3F096F4AD9B508618ED28AB43BC3 /* PSCollectionViewCell.m */,
-				733566DC5A23F88247C4B123BD4A7D40 /* PSExceptionViewController.h */,
-				E5DBA00CFB58390C1D9C69EECDC93384 /* PSExceptionViewController.m */,
-				A6C4AB6514EB8EA426290D471F3D47D0 /* PSExceptionViewDisplaySequence.h */,
-				62D3B83D0EDC09891A9E4EED42146DA6 /* PSExceptionViewDisplaySequence.m */,
-				09FB657CCC000CE62E9D0B048C6B5B22 /* PSGridView.h */,
-				CDB7C11BB078A681F301F4EBCC8DD135 /* PSGridView.m */,
-				E90E0AC37DF0241F0A28429C6D17411F /* PSGridViewCell.h */,
-				4B991D86456DFF479C94676D21028273 /* PSGridViewCell.m */,
-				8FF42F0FFB730F11335EB00C21016F92 /* PSImageAssetScrollView.h */,
-				8C3E87D3B4BEB68CC020971700780D82 /* PSImageAssetScrollView.m */,
-				D9CB1AA2E1788B1434D5639FBBFBBD9E /* PSImagePickerController.h */,
-				E3757396394A8C6BC6C04CCAD54C5706 /* PSImagePickerController.m */,
-				DF45D2E7476871E51197F150E9BD0182 /* PSLabel.h */,
-				96B4E279F82ED69B483D3A8F2D4014ED /* PSLabel.m */,
-				88139BB5951901BA4668C92E5C18F23B /* PSLinedBackgroundView.h */,
-				8644D44E47E2191495EA37EFEBE4D67B /* PSLinedBackgroundView.m */,
-				950341D965A2AF25293B5EFA093682C0 /* PSNavigationController.h */,
-				0C7ADE7620C3B984A95E27CE1FD777CA /* PSNavigationController.m */,
-				F7312ABA3717ED4449E3890A58C2BEE2 /* PSPreloader.h */,
-				AC83E35FF221EF593273B85729EB7A10 /* PSPreloader.m */,
-				4AEDEEA7D18F168E9755180FD52257AE /* PSRecycledScrollView.h */,
-				B21470E457533EFA0F181ECF9F66B63E /* PSRecycledScrollView.m */,
-				DB191CCC66164BFBA1DC8ADD3F00827D /* PSScrollView.h */,
-				E8F0C764BBF18614E1F447FBCDBC1ECC /* PSScrollView.m */,
-				51F2C90EC85988751E577BDE54EEBD1D /* PSTableViewCell.h */,
-				40E025145265336532E034C655801986 /* PSTableViewCell.m */,
-				AC02170F36D3C1987D3B0D8CE2E56525 /* PSTableViewController.h */,
-				D299EB91A5719A927E80BF509E26B912 /* PSTableViewController.m */,
-				E62FFE56174588CA6DBFCAF94A3C522A /* PSTabViewController.h */,
-				4FFDDE68116384C1EDC1C2D66D4DBF6C /* PSTabViewController.m */,
-				949782E5E01921A5DFC4BDF3FD3CD3C1 /* PSToastView.h */,
-				3DFA1E1F519B25334BAD22FD9238F63E /* PSToastView.m */,
-				F5A2D595B05E04F2A16408F0B74D7F8F /* PSUIKit.h */,
-				A6C26D41D9DF7A4C1188463725A49690 /* PSUIKit.m */,
-				B975E95E2D944A7CFB7973AB44067396 /* PSView.h */,
-				32A3A669053EC281A87EB192E553A736 /* PSView.m */,
-				3EE24AE9BCAB4BE0D64B85A33770FE7A /* PSViewController.h */,
-				D404E61855DFEDAC9D404C3FE2E98B4E /* PSViewController.m */,
-				4E969A9AF18AACF00618E2847BB11861 /* Reachability+PSUIKit.h */,
-				9481C518DAE481C5C5F7603C42A64E1A /* Reachability+PSUIKit.m */,
-				D82FF554680B8A82F0BF842C90FD0CD7 /* theme.h */,
-				2190F04C619111B853A83DEB1ED1F6D5 /* UIAlertView+PSUIKit.h */,
-				E5C1D8F25AACD8BA539AD2EDCDE09B90 /* UIAlertView+PSUIKit.m */,
-				B776990D07F4536F26C859A0759A1943 /* UIApplication+PSUIKit.h */,
-				6D181CA3BC408F9DE501D9FC5E6F60D1 /* UIApplication+PSUIKit.m */,
-				925A730EE082A3C320017FD7D4BC1C67 /* UIButton+PSUIKit.h */,
-				663A05C1997442F6F97B8EB6597FEE59 /* UIButton+PSUIKit.m */,
-				91D702D835527634471A756BC3BAEB6F /* UIImage+PSUIKit.h */,
-				7CC350420528527761123F0BC4F86A4C /* UIImage+PSUIKit.m */,
-				8AFD107D8D98D9C3C479D574B6BCC53F /* UINavigationController+PSUIKit.h */,
-				AE901A7460BE453EBCCEBB0A3F7CEF04 /* UINavigationItem+PSUIKit.h */,
-				8C4585A7622E2E1CF6378F9CC6EFF4EA /* UINavigationItem+PSUIKit.m */,
-				4C731EDEDC94A47923F1171A8F081B82 /* UITableView+PSUIKit.h */,
-				331892A1D3D8FE6A86428C63B2294713 /* UITableView+PSUIKit.m */,
-				B12C98F55450C94E2B9A0238ECCBAB53 /* UIThemeBase.h */,
-				896148E95A155039BD6FD32DB09D22D0 /* UIThemeBase.m */,
-				E8E54E7331F13576E9C1FED7C82BBE2B /* UIThemeDefaultStyle.h */,
-				FA076141EE4E935F4321074697C2EB85 /* UIThemeDefaultStyle.m */,
-				BDC64C8E07FFC1BAF7FE99D773EAFDA9 /* UIThemeWhiteTranslucent.h */,
-				DA6368850E2B0591B84D8F8EA346E909 /* UIThemeWhiteTranslucent.m */,
-				5CC101A816888252723DC586FEBD932A /* UIView+PSUIKit.h */,
-				AF9B6ED9874B47D789305E20B81FB2AE /* UIView+PSUIKit.m */,
-				4A9EF7B535B22853B3F968D428ABAD30 /* UIViewController+PSUIKit.h */,
-				DC2D5476B64A473F06F4979F5E53A257 /* UIViewController+PSUIKit.m */,
-				B0D102BAFE1629F3AD163250BBAD87E6 /* UIViewControllerStack.h */,
-				C012E65DC1B0EB3CE0FA9E0AD19FC920 /* UIViewControllerStack.m */,
-				7F2EE94D5FA19F2A3CB6D9EFA89BC5C1 /* UIWindow+PSUIKit.h */,
-				61E63F0DD12E7C620D825BE56097A80D /* UIWindow+PSUIKit.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		B91D67A6F983C7B920622694A3FF4355 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1229,6 +1229,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		58E0A5A58049BFF869BE2CAE4E6C5481 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C70BA32D5BCAD1CB953F4A1B32266 /* ActivityIndicatorManager.h in Headers */,
+				03F89AF0BA0163C3159ED0B4D69BFEA9 /* base.h in Headers */,
+				84070B5CFB8F70C3D249EC7A74A6171D /* charts.h in Headers */,
+				1295A9D660E802ACAC487802ADF6E3B3 /* controls.h in Headers */,
+				75263B4918447FF9FA30D74D14AE437E /* ext.h in Headers */,
+				054279F0FE81CAC2E543E390C05D83C8 /* GraphicsLayout.h in Headers */,
+				00F8A876A7AA95379DE72B8D880582A7 /* ImagePopViewManager.h in Headers */,
+				6625DB3454E2FECCAB1B86AE9554EEF5 /* PentagonChart.h in Headers */,
+				D0012E02E000C8A057930FB0371148C9 /* PopUpViewManager.h in Headers */,
+				454A6B9F17FC41C568CA2A937DCBFFCF /* PSActionSheet.h in Headers */,
+				7E015C1FA380815938F04C8C408D5AF7 /* PSAlertView.h in Headers */,
+				7D221F7938CDD5C4B6082C0E80472084 /* PSAssetListViewCell.h in Headers */,
+				9BA2A00945FBE8F1FF611FE87F765D6B /* PSAssetListViewController.h in Headers */,
+				D821EA6BF0364D9467249D00B36382DB /* PSAssetsGroupListViewCell.h in Headers */,
+				05C0D4861CC35593E20EA0BF696BFA02 /* PSAssetsGroupListViewController.h in Headers */,
+				3F3A6D11648147719635A9AD41FDDA87 /* PSAssetsGroupViewController.h in Headers */,
+				8ADDB6A790F1AA17B44BEE340E0E6C81 /* PSAttributedDivisionLabel.h in Headers */,
+				45918CE61FEF7A77676EE2E8C6E194E5 /* PSBadge.h in Headers */,
+				FDD106EE7F16490B3182AFDE49C2FAA6 /* PSButton.h in Headers */,
+				407DB09C4AB6BA1AE40782C088207A32 /* PSButtonBar.h in Headers */,
+				0E3061DCC69EF041EA478E326B8AED03 /* PSCollectionViewCell.h in Headers */,
+				777D009AD87FC913300FB327FBE1F607 /* PSExceptionViewController.h in Headers */,
+				DFC465DB2B61338EB229F5F001244D28 /* PSExceptionViewDisplaySequence.h in Headers */,
+				71DCC8C93BB5C0EF933414334BC1FE41 /* PSGridView.h in Headers */,
+				0863BCE54898161A929F20D5B101A6F5 /* PSGridViewCell.h in Headers */,
+				BDEEFE2DB206069A2F6821DB2DDD895C /* PSImageAssetScrollView.h in Headers */,
+				959CA8C879A3105DCDD1FB2AAB2A1E2C /* PSImagePickerController.h in Headers */,
+				E783D73635905CBC1E16E4718A97A81C /* PSLabel.h in Headers */,
+				F0E2E7740A108A6EDF127DB555AA2672 /* PSLinedBackgroundView.h in Headers */,
+				E640E2B85B1BC84FB7484E3A9FAE39C9 /* PSNavigationController.h in Headers */,
+				40E67050F1967A02AB036EBCDC4EC8F0 /* PSPreloader.h in Headers */,
+				DF3542BD9BDBCF3B9CBEBE022BFEB7F9 /* PSRecycledScrollView.h in Headers */,
+				C25C2AA1FCA14A6CE976184A0F8E107D /* PSScrollView.h in Headers */,
+				3610246C4176E5A89B0F2DAE1368DA14 /* PSTabbarController.h in Headers */,
+				81048B0C625BCDC419E2029D252D84E5 /* PSTableViewCell.h in Headers */,
+				FBF0AAEB401D5D642C8D43DB437911F7 /* PSTableViewController.h in Headers */,
+				6CBEF08CE9BC81B3295B73635A5847BC /* PSToastView.h in Headers */,
+				3F8634D2DA79EA9B8B3AF644D862779E /* PSUIKit-umbrella.h in Headers */,
+				B0FC885AB01C56F37139280CD6102B23 /* PSUIKit.h in Headers */,
+				E83129317D222DB173FECD799B13502B /* PSView.h in Headers */,
+				46755E834F97470FBA43AF3FC6EE7894 /* PSViewController.h in Headers */,
+				D37F295C1B058D78D3E27B6DBA03AC0B /* Reachability+PSUIKit.h in Headers */,
+				533A933F359E833C347BD8A9D4842C28 /* theme.h in Headers */,
+				48E03ED91B5240C6D196D546F2893106 /* UIAlertView+PSUIKit.h in Headers */,
+				00A30FE4CCD0F25722123398D6AF152D /* UIApplication+PSUIKit.h in Headers */,
+				729A7E18EB0A4AF0AB11310D61F77C09 /* UIButton+PSUIKit.h in Headers */,
+				9E50C14CD6E34FA71AD8F0D1418FC61E /* UIImage+PSUIKit.h in Headers */,
+				D0354BB3794BF211B492C13E091B820B /* UINavigationController+PSUIKit.h in Headers */,
+				6F54DC808F1FED33E67A5AC20FF4937F /* UINavigationItem+PSUIKit.h in Headers */,
+				1D464646EE83A205864053162BF80DB9 /* UITableView+PSUIKit.h in Headers */,
+				5ED367D3E94BA92E7FA1D114CCD457FD /* UIThemeBase.h in Headers */,
+				BD2FE60AAB4C9601491321098233F1BA /* UIThemeDefaultStyle.h in Headers */,
+				04C4258EBA6A16C576ED76B4A415ECCA /* UIThemeWhiteTranslucent.h in Headers */,
+				BF6225631C5D120E951BA2CB9727369E /* UIView+PSUIKit.h in Headers */,
+				B95E077F91686C9B1871A20A0A2C80C3 /* UIViewController+PSUIKit.h in Headers */,
+				0DB6A432116DC4DE2D6826FAB0D91587 /* UIViewControllerStack.h in Headers */,
+				319F837DF12C0FB321657EE0571D800F /* UIWindow+PSUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EC3D246ADD11B4A826E2A08DA6CFD4C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1294,70 +1358,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6327658C4612884957F5BFCA9C63A79 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1D42F438B57BB48DB38D2BA426DF21EB /* ActivityIndicatorManager.h in Headers */,
-				3C8D2DFAEC164BB7AE84A004C09C79A2 /* base.h in Headers */,
-				6D5837DA8C6107B7485F93AA253897F3 /* charts.h in Headers */,
-				790CAEF9B1020D52CD04C6658645E137 /* controls.h in Headers */,
-				18DE54690B12989AC3E81EF959EF1836 /* ext.h in Headers */,
-				EFE46747D88E2D9291124004F07A1B88 /* GraphicsLayout.h in Headers */,
-				F4FB686CE0876CCDD373EC2BEA720702 /* ImagePopViewManager.h in Headers */,
-				A1167C300C4D264746483375E6937372 /* PentagonChart.h in Headers */,
-				CC3ACBBD08A9DA08A5A4432BA8D045B5 /* PopUpViewManager.h in Headers */,
-				5CF6390F475BFA7006C1D5E93C96E096 /* PSActionSheet.h in Headers */,
-				580DE07C2C1767D8CCB09E1169CFEFF6 /* PSAlertView.h in Headers */,
-				696CDB78D89467FB571A312A103E32EC /* PSAssetListViewCell.h in Headers */,
-				82A8BC27F6E67E4A57F1515941FB2807 /* PSAssetListViewController.h in Headers */,
-				997626D53338AD4CAD0EAF623201129C /* PSAssetsGroupListViewCell.h in Headers */,
-				1269449E92335712C8B3FAD6DEAFD2A3 /* PSAssetsGroupListViewController.h in Headers */,
-				1F2BBDA33BE01FFBB1312D20349946EC /* PSAssetsGroupViewController.h in Headers */,
-				6B4FDD25F1F237AF0DA56DE45DC8D519 /* PSAttributedDivisionLabel.h in Headers */,
-				5DCC15ECC497102C1B4927FF184853EA /* PSBadge.h in Headers */,
-				1E8AEAFCF18BA4EC291A84A54F3E04B2 /* PSButton.h in Headers */,
-				BBF8A82D927842FC41F2AFDC5B0B67C2 /* PSButtonBar.h in Headers */,
-				05ED455EE613A7954A33E040AB758A80 /* PSCollectionViewCell.h in Headers */,
-				041C57ECE26C28EB298509A7B5E040D1 /* PSExceptionViewController.h in Headers */,
-				1A45C949678368DCF8E6AF60C3E4520D /* PSExceptionViewDisplaySequence.h in Headers */,
-				541253C586882FD2861E53FD15EE49A5 /* PSGridView.h in Headers */,
-				142634936E56DA298BB3B5241448B9BD /* PSGridViewCell.h in Headers */,
-				152A70000FBA714CF81511A40B40CC04 /* PSImageAssetScrollView.h in Headers */,
-				C71EBAD7BFA1E0AF6A2CE10E5EB23834 /* PSImagePickerController.h in Headers */,
-				FECC7325797CC5147A34195AD93F45CA /* PSLabel.h in Headers */,
-				DDBBF1E8C9F4EF6C5B3403C2DEC850C1 /* PSLinedBackgroundView.h in Headers */,
-				2F61180D8170C21E7C58ED5DB73C1DB3 /* PSNavigationController.h in Headers */,
-				B81FE3ADAB67EED94A870C88EEAFC512 /* PSPreloader.h in Headers */,
-				E63CED3325E9DAADF8AEE84FAF622D7E /* PSRecycledScrollView.h in Headers */,
-				A4B117134578AAF4CFDE2D6702EA2D89 /* PSScrollView.h in Headers */,
-				D68128A272CB9F75F0ADF2C35DA58D39 /* PSTableViewCell.h in Headers */,
-				E67134B2FAD171EBFBC04D50E15FF961 /* PSTableViewController.h in Headers */,
-				9D5C90865381B706D9F38AC2E94ACC79 /* PSTabViewController.h in Headers */,
-				F03ABAF75A1CDD42024077512548C84A /* PSToastView.h in Headers */,
-				A075E6626C578963C173BCF46F188692 /* PSUIKit-umbrella.h in Headers */,
-				BE08B58CB066251C96F58EAC5AA73A82 /* PSUIKit.h in Headers */,
-				603E18397B7EC15A6D337550D18D0CBD /* PSView.h in Headers */,
-				0FB5571A9BE2AC8E3A0DC0E6728BD90D /* PSViewController.h in Headers */,
-				1DDE905303497A9DB937E38C5DACFAC3 /* Reachability+PSUIKit.h in Headers */,
-				6FB4B996F4A7780F801D39185C8A392B /* theme.h in Headers */,
-				883F74C0E2A42346348E47E384E2B3DD /* UIAlertView+PSUIKit.h in Headers */,
-				FAF1FE694901583FD7E340E1ACEA022A /* UIApplication+PSUIKit.h in Headers */,
-				E531668EAF0236CDE71359751B661C3B /* UIButton+PSUIKit.h in Headers */,
-				DD34BDE7AD1E1A698E2288C3AE0E273A /* UIImage+PSUIKit.h in Headers */,
-				E6FB0530E2D7F77CE9988849C965FF14 /* UINavigationController+PSUIKit.h in Headers */,
-				3DD07D8C4CE575AA92E427E0A9D455BD /* UINavigationItem+PSUIKit.h in Headers */,
-				3D3FFFC02E57788AF1B5D5622A1E4897 /* UITableView+PSUIKit.h in Headers */,
-				70BB3DC6E0131B89C92FA79A98856192 /* UIThemeBase.h in Headers */,
-				8ACEC8D787C71F8DFE6A7B8FAE8C0D9C /* UIThemeDefaultStyle.h in Headers */,
-				4E9D37AE267F2CD64F3FA8E075EA0B27 /* UIThemeWhiteTranslucent.h in Headers */,
-				A80A0E0A6655EA86A67634DA1C00DDA8 /* UIView+PSUIKit.h in Headers */,
-				73F551E94411814E65BA0DF2E224C9B2 /* UIViewController+PSUIKit.h in Headers */,
-				9C3FC81D4CEDF18DE1A9DB1ABAD55AB8 /* UIViewControllerStack.h in Headers */,
-				873CC551E3CE13BCC267CF78D392F3D2 /* UIWindow+PSUIKit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1365,10 +1365,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72C1812B77BB6B2A5E50ACAC8FD2BE61 /* Build configuration list for PBXNativeTarget "PSUIKit" */;
 			buildPhases = (
-				AAE0E90BCB613E520A4B71F2D3D1C2A3 /* Sources */,
+				1CD71F393E6BE911ADE5989E8FD0B63F /* Sources */,
 				864830F0079D6793251CDDA71286870A /* Frameworks */,
 				8C0530690D207AB3957CF35628341872 /* Resources */,
-				F6327658C4612884957F5BFCA9C63A79 /* Headers */,
+				58E0A5A58049BFF869BE2CAE4E6C5481 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1612,6 +1612,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CD71F393E6BE911ADE5989E8FD0B63F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2368B85CA35E45A03104B3721F5FF2F /* ActivityIndicatorManager.m in Sources */,
+				568BA318D33683C07830F38F114B0F85 /* GraphicsLayout.m in Sources */,
+				583BE385DDE0B0E9532973159FB7C9A7 /* ImagePopViewManager.m in Sources */,
+				2D45BFD66BC5E5B61321B6804DF2149B /* PentagonChart.m in Sources */,
+				2923BB24FEFBE7976C0650B78F198D3D /* PopUpViewManager.m in Sources */,
+				BE9EDEE8A63D23E285D6FAE97134A5B7 /* PSActionSheet.m in Sources */,
+				DB440A9C0477BB476F19EC6047CD2567 /* PSAlertView.m in Sources */,
+				A335EC49E3D0D5FE5847AEB8956070C5 /* PSAssetListViewCell.m in Sources */,
+				E123132E755A5C7B8A524C32007CAC26 /* PSAssetListViewController.m in Sources */,
+				0BE0B28B4E4BBB1F7F63A5A4B89047FC /* PSAssetsGroupListViewCell.m in Sources */,
+				CF62350385E65B083EFD308086FBDDA3 /* PSAssetsGroupListViewController.m in Sources */,
+				A8366BA12C6892A0B4219CAC2A8118E3 /* PSAssetsGroupViewController.m in Sources */,
+				165FC73B30B4393CEAAD7DA656EA3255 /* PSAttributedDivisionLabel.m in Sources */,
+				39CEDE8AA8AEFA36C7E36323A98790C0 /* PSBadge.m in Sources */,
+				DF2F41FA927AF5D6631655FCB1FDBD70 /* PSButton.m in Sources */,
+				48F2E5B1006E166CA56809E0EC22D166 /* PSButtonBar.m in Sources */,
+				7086AE6DBA474253D3D9D7E8776C4DE3 /* PSCollectionViewCell.m in Sources */,
+				9103112954EFB2D18E3C364172D310E3 /* PSExceptionViewController.m in Sources */,
+				4345C26DA9EE93ED338BFE2D992CEA60 /* PSExceptionViewDisplaySequence.m in Sources */,
+				38F7A662D70882A5B28E71BB5D619B98 /* PSGridView.m in Sources */,
+				FF4A234B8B2778FE21E12B68B59FDCE8 /* PSGridViewCell.m in Sources */,
+				DC27567D87C2B0C7B55CE45F151418F6 /* PSImageAssetScrollView.m in Sources */,
+				4DA470FD08AFE4BF8FB6C31344E72BA8 /* PSImagePickerController.m in Sources */,
+				6806519E60CB4F9E996F2DDC7C47F1E4 /* PSLabel.m in Sources */,
+				11AC7AC754FBFA9557436AC541F1A3E0 /* PSLinedBackgroundView.m in Sources */,
+				AAB8A394A664384FB65E315196B7C200 /* PSNavigationController.m in Sources */,
+				04F0B609C50B49A7270FAD11E299775E /* PSPreloader.m in Sources */,
+				5FAFFADD72E4EB728B863A5D52105FA8 /* PSRecycledScrollView.m in Sources */,
+				CECBE12ECAD43EEC523D231AC462C255 /* PSScrollView.m in Sources */,
+				104B88A0E7492AE33D1C36E9E8F388A4 /* PSTabbarController.m in Sources */,
+				C77E7FA3BE6A81924760C194F5112CC2 /* PSTableViewCell.m in Sources */,
+				7219E66120EFEF11F1D9D233BEDDC79F /* PSTableViewController.m in Sources */,
+				4C3E5335742C69C8359A762A0C42DBDA /* PSToastView.m in Sources */,
+				DE3A668994D6FD52449878D5694C7DB7 /* PSUIKit-dummy.m in Sources */,
+				42F5E40E0091D903DFAA27ECFDBF770E /* PSUIKit.m in Sources */,
+				CAB1A1F36BB29B58776AE4AED8B36CBA /* PSView.m in Sources */,
+				FC740D63FD657B6ADFF95FEC6F422F74 /* PSViewController.m in Sources */,
+				4F18673B2CEBA0D8B140665155D86112 /* Reachability+PSUIKit.m in Sources */,
+				D759D4A0F05AA8BC98F4FAFE888A05E8 /* UIAlertView+PSUIKit.m in Sources */,
+				2CBC4ED03DF679A23F01DD76E2A4EBF1 /* UIApplication+PSUIKit.m in Sources */,
+				EDA2696B5F0234A3A7D9C0597D95D24B /* UIButton+PSUIKit.m in Sources */,
+				D1AC655A19723A547582EF01BE97D24F /* UIImage+PSUIKit.m in Sources */,
+				97D55504DA812362F163AD8D751F9CD9 /* UINavigationItem+PSUIKit.m in Sources */,
+				B2CFD02444E3FA92906AC534B0CC5E6E /* UITableView+PSUIKit.m in Sources */,
+				57639C28B674D7875BA2489A1553CB5A /* UIThemeBase.m in Sources */,
+				90ABE096FFC1EC066BA6FAA61AF17008 /* UIThemeDefaultStyle.m in Sources */,
+				2099B8013E440A51CAC252A53295F9EF /* UIThemeWhiteTranslucent.m in Sources */,
+				3705446B18DEA004113D20F89262B145 /* UIView+PSUIKit.m in Sources */,
+				6509F4E9A6880C2036062579240E2900 /* UIViewController+PSUIKit.m in Sources */,
+				5F5DA356F5C6EE4CA0C7DC6828F920D9 /* UIViewControllerStack.m in Sources */,
+				BB12CFFC2094309CBB3F92B79A678EED /* UIWindow+PSUIKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		312F8826FBB57CAF217F7E1514AED8B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1673,64 +1731,6 @@
 				F08979E3129B9C6BDFCEECF385FA0509 /* UIImageView+HighlightedWebCache.m in Sources */,
 				872C718E3E671D4B62170972D9B8C9D2 /* UIImageView+WebCache.m in Sources */,
 				1DC6A971D8769BA88786A5C6E87B4342 /* UIView+WebCacheOperation.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AAE0E90BCB613E520A4B71F2D3D1C2A3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				295580DA15A87BBC6F5B0DE8F2F97200 /* ActivityIndicatorManager.m in Sources */,
-				FF0AA935933D3493168D97D8FA78E711 /* GraphicsLayout.m in Sources */,
-				07321D37EAFE6BFDDC152FCC0514CDF1 /* ImagePopViewManager.m in Sources */,
-				80DA07D6E7A31FDE8AEC9845FF883CB9 /* PentagonChart.m in Sources */,
-				88150980EF29352481F04FE9E89D64E0 /* PopUpViewManager.m in Sources */,
-				6C18EA7587F53D80CB89C9B7BECB1B0A /* PSActionSheet.m in Sources */,
-				9341372DE2048B0450AEF730D8445828 /* PSAlertView.m in Sources */,
-				17AB702374A3F553C37F4F5162AF22D5 /* PSAssetListViewCell.m in Sources */,
-				0C9556DC57ACC50949FB9ECD12471E25 /* PSAssetListViewController.m in Sources */,
-				FDA6AE84AA10BF866289A4DC359D8147 /* PSAssetsGroupListViewCell.m in Sources */,
-				C606044A9AD4B01BF67101CAD3A0DBAA /* PSAssetsGroupListViewController.m in Sources */,
-				CDC9A38E2866A933B62E878EFB167378 /* PSAssetsGroupViewController.m in Sources */,
-				BB7D80EA7E2AFED1A62B5C8820EE18E6 /* PSAttributedDivisionLabel.m in Sources */,
-				5BD0927D568D3B091697F75AF5F5A224 /* PSBadge.m in Sources */,
-				F709BE507BA613469CC4698579D4D92C /* PSButton.m in Sources */,
-				3E75F56C74399F1FD5132883B078C1F4 /* PSButtonBar.m in Sources */,
-				1EE222418570333BD7BD099989AA9BB3 /* PSCollectionViewCell.m in Sources */,
-				8873DC8BB60B6E49A7E08BC4EA9E2B60 /* PSExceptionViewController.m in Sources */,
-				0FEFF6D1C4F2B8755BFA6D877A178A10 /* PSExceptionViewDisplaySequence.m in Sources */,
-				D963D26D1A912C63C1F20D22EE513CAE /* PSGridView.m in Sources */,
-				E403CA9435BCEC10BFEB9454BD9E19FA /* PSGridViewCell.m in Sources */,
-				CBAB5923A996E9993623A5A8F4CF7789 /* PSImageAssetScrollView.m in Sources */,
-				4A9BC24DAD2D67658DB2BD7D1169C5F6 /* PSImagePickerController.m in Sources */,
-				528AFC0575AC7F3614725A3C0A54B5FD /* PSLabel.m in Sources */,
-				D3F902FB3650489343F1F0457CA2BE32 /* PSLinedBackgroundView.m in Sources */,
-				F4B8D363D724E8A52DA05F2CAB5F2F40 /* PSNavigationController.m in Sources */,
-				5835099DFC16BEF65F322A583D6420EE /* PSPreloader.m in Sources */,
-				A843DF150DB6E58576611F740657090A /* PSRecycledScrollView.m in Sources */,
-				FE59144F4369393658287E0BAF4512EC /* PSScrollView.m in Sources */,
-				FEE4BFE96B87BE323A805260575ED7F8 /* PSTableViewCell.m in Sources */,
-				5FA44B60AA0A4B7377D5A66D286132EF /* PSTableViewController.m in Sources */,
-				26727FA5616038526C5C50F7CCDA5816 /* PSTabViewController.m in Sources */,
-				0FCB97AD7702D23F124DA32F3682816A /* PSToastView.m in Sources */,
-				9C8C5C05FFBBB49EAEA0F52618B3ABBC /* PSUIKit-dummy.m in Sources */,
-				640DABBA0363413358965A44A048E76E /* PSUIKit.m in Sources */,
-				C13E947D34F2E4C7AB151514FC600E67 /* PSView.m in Sources */,
-				7D119C94CCD25375B0E1AF251E7454FE /* PSViewController.m in Sources */,
-				E60018CF3AAFDE0BD0F96A2D01483234 /* Reachability+PSUIKit.m in Sources */,
-				A593086FD93BD4A2A26D1FDF26FA8ABF /* UIAlertView+PSUIKit.m in Sources */,
-				2D6480CE5489B1573BBC9837007ACB4E /* UIApplication+PSUIKit.m in Sources */,
-				3DF04AB20D3BCDBCCEF8D4AD163B8473 /* UIButton+PSUIKit.m in Sources */,
-				5B9087C474F0B2F291B2254E4AF2B5D4 /* UIImage+PSUIKit.m in Sources */,
-				64441EA33A39BC88FB0FD907B28F1535 /* UINavigationItem+PSUIKit.m in Sources */,
-				2D6421775569BBF8BCD52CCCA84150B1 /* UITableView+PSUIKit.m in Sources */,
-				3C233DEABAA3E8B51BE14659355E8FD8 /* UIThemeBase.m in Sources */,
-				2F93945CB6D46F39C97061E21ECD5D7E /* UIThemeDefaultStyle.m in Sources */,
-				31696C973447EA74734A6557FDADB207 /* UIThemeWhiteTranslucent.m in Sources */,
-				0F947A11081A603EAD455D970DC6D25F /* UIView+PSUIKit.m in Sources */,
-				BE004984FA2B9D714FC212686736D3F9 /* UIViewController+PSUIKit.m in Sources */,
-				CBBE0807327C01BA3EE5F0F25B6EE346 /* UIViewControllerStack.m in Sources */,
-				EBD1ABE76A7DEFB039FD825B1790D089 /* UIWindow+PSUIKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,11 @@
 #import "PSViewController.h"
 #import "PSButtonBar.h"
 
+typedef NS_ENUM(NSInteger, PSTabbarPosition) {
+    PSTabbarPositionTop = 1,
+    PSTabbarPositionBottom
+};
+
 @class PSTabbarController;
 
 @protocol PSTabbarControllerDataSource <NSObject>
@@ -22,10 +27,12 @@
 @end
 
 @interface PSTabbarController : PSViewController
+@property (nonatomic) BOOL pagingEnabled;
+@property (nonatomic) NSInteger selectedIndex;
 @property (nonatomic) CGFloat buttonBarHeight;
+@property (nonatomic) PSTabbarPosition tabbarPosition;
 @property (nonnull, nonatomic, readonly) PSButtonBar *buttonBar;
-@property (nonnull, nonatomic, readonly) UIView *containerView;
+@property (nonnull, nonatomic, readonly) UIScrollView *containerView;
 @property (nullable, nonatomic, weak) IBOutlet id<PSTabbarControllerDataSource> dataSource;
 @property (nullable, nonatomic, weak) IBOutlet id<PSTabbarControllerDelegate> delegate;
-- (void)reloadData;
 @end

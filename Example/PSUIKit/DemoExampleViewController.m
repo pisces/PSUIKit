@@ -9,7 +9,7 @@
 #import "DemoExampleViewController.h"
 #import "CustomExampleTheme.h"
 
-@interface DemoExampleViewController () <PSTabViewControllerDataSource, PSTabViewControllerDelegate>
+@interface DemoExampleViewController () <PSTabbarControllerDataSource, PSTabbarControllerDelegate>
 @property (nonatomic, weak) IBOutlet UIButton *retryButton;
 @end
 
@@ -97,8 +97,8 @@
             [self runPSAttributedDivisionLabel];
             break;
             
-        case ExampleTypePSTabViewController:
-            [self runPSTabViewController];
+        case ExampleTypePSTabbarController:
+            [self runPSTabbarController];
             break;
             
         default:
@@ -202,14 +202,15 @@
     });
 }
 
-- (void)runPSTabViewController {
-    PSTabViewController *controller = [[PSTabViewController alloc] init];
+- (void)runPSTabbarController {
+    PSTabbarController *controller = [[PSTabbarController alloc] init];
     controller.dataSource = self;
     controller.delegate = self;
+    controller.pagingEnabled = YES;
+    controller.tabbarPosition = PSTabbarPositionBottom;
     
     [self addChildViewController:controller];
     [self.view addSubview:controller.view];
-    [controller reloadData];
 }
 
 - (void)runPSToastView {
@@ -259,17 +260,19 @@
 
 #pragma mark - PSTabViewController data source
 
-- (NSArray<UIViewController *> * _Nonnull)childViewControllersWithController:(PSTabViewController * _Nonnull)controller {
+- (NSArray<UIViewController *> * _Nonnull)childViewControllersWithController:(PSTabbarController * _Nonnull)controller {
     UIViewController *firstController = [[UIViewController alloc] init];
+    firstController.title = @"First";
     firstController.view.backgroundColor = [UIColor yellowColor];
     
     UIViewController *secondController = [[UIViewController alloc] init];
+    secondController.title = @"Second";
     secondController.view.backgroundColor = [UIColor greenColor];
     
     return @[firstController, secondController];
 }
 
-- (void)controller:(PSTabViewController * _Nonnull)controller renderWithTab:(UIButton * _Nonnull)tab tabIndex:(NSInteger)tabIndex {
+- (void)controller:(PSTabbarController * _Nonnull)controller renderWithTab:(UIButton * _Nonnull)tab tabIndex:(NSInteger)tabIndex {
     
 }
 
