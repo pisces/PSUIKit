@@ -6,7 +6,7 @@
 //  Copyright (c) 2016 Steve Kim. All rights reserved.
 //
 
-#import <PSUIKit/PSUIKit.h>
+@import PSUIKit;
 #import "DemoViewController.h"
 #import "DemoExampleViewController.h"
 

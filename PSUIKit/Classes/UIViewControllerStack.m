@@ -255,6 +255,8 @@
         [targetView addSubview:_selectedViewController.view];
     }
     
+    _selectedViewController.view.frame = [self viewFrameWithIndex:_selectedIndex];
+    
     if ([_selectedViewController respondsToSelector:@selector(viewDidBecomeFirstResponder)])
         [_selectedViewController performSelector:@selector(viewDidBecomeFirstResponder)];
 }

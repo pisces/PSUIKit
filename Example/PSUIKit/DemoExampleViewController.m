@@ -9,7 +9,7 @@
 #import "DemoExampleViewController.h"
 #import "CustomExampleTheme.h"
 
-@interface DemoExampleViewController ()
+@interface DemoExampleViewController () <PSTabViewControllerDataSource, PSTabViewControllerDelegate>
 @property (nonatomic, weak) IBOutlet UIButton *retryButton;
 @end
 
@@ -97,6 +97,10 @@
             [self runPSAttributedDivisionLabel];
             break;
             
+        case ExampleTypePSTabViewController:
+            [self runPSTabViewController];
+            break;
+            
         default:
             break;
     }
@@ -115,7 +119,7 @@
 - (void)runPSAlertView {
     _retryButton.hidden = NO;
     
-    [PSAlertView alertViewWithTitle:@"Title Sample" message:@"Message Sample!!" cancelButtonTitle:@"Ok" dismission:nil otherButtonTitles:nil, nil];
+    [PSAlertView alertViewWithTitle:@"Title Sample" message:@"Message Sample!!" cancelButtonTitle:@"Ok" dismission:nil otherButtonTitles:nil];
 }
 
 - (void)runPSAlertViewWithCustomContentView {
@@ -124,7 +128,7 @@
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 0, 100)];
     tableView.dataSource = self;
     
-    [PSAlertView alertViewWithContentView:tableView cancelButtonTitle:@"Ok" dismission:nil otherButtonTitles:nil, nil];
+    [PSAlertView alertViewWithContentView:tableView cancelButtonTitle:@"Ok" dismission:nil otherButtonTitles:nil];
 }
 
 - (void)runPSBadge {
@@ -198,6 +202,16 @@
     });
 }
 
+- (void)runPSTabViewController {
+    PSTabViewController *controller = [[PSTabViewController alloc] init];
+    controller.dataSource = self;
+    controller.delegate = self;
+    
+    [self addChildViewController:controller];
+    [self.view addSubview:controller.view];
+    [controller reloadData];
+}
+
 - (void)runPSToastView {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     button.x = 110;
@@ -241,6 +255,28 @@
 
 - (IBAction)buttonClicked:(id)sender {
     [self runExample];
+}
+
+#pragma mark - PSTabViewController data source
+
+- (NSArray<UIViewController *> * _Nonnull)childViewControllersWithController:(PSTabViewController * _Nonnull)controller {
+    UIViewController *firstController = [[UIViewController alloc] init];
+    firstController.view.backgroundColor = [UIColor yellowColor];
+    
+    UIViewController *secondController = [[UIViewController alloc] init];
+    secondController.view.backgroundColor = [UIColor greenColor];
+    
+    return @[firstController, secondController];
+}
+
+- (void)controller:(PSTabViewController * _Nonnull)controller renderWithTab:(UIButton * _Nonnull)tab tabIndex:(NSInteger)tabIndex {
+    
+}
+
+#pragma mark - PSTabViewController delegate
+
+- (void)didChangeTabIndex:(NSInteger)tabIndex {
+    
 }
 
 @end

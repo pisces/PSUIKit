@@ -8,7 +8,7 @@
 
 @import PSUIKit;
 
-#define exampleTitles @[@"Apply Default Navigation Theme", @"Apply Custom Navigation Theme", @"PSImagePickerViewController", @"PSAlertView", @"PSAlertView with CustomContentView", @"PSBadge", @"PSButtonBar", @"PSToastView", @"PSPreloader", @"PSAttributedDivisionLabel"]
+#define exampleTitles @[@"Apply Default Navigation Theme", @"Apply Custom Navigation Theme", @"PSImagePickerViewController", @"PSAlertView", @"PSAlertView with CustomContentView", @"PSBadge", @"PSButtonBar", @"PSToastView", @"PSPreloader", @"PSAttributedDivisionLabel", @"PSTabViewController"]
 
 typedef NS_ENUM(NSInteger, ExampleType) {
     ExampleTypeApplyDefaultTheme = 1,
@@ -20,7 +20,8 @@ typedef NS_ENUM(NSInteger, ExampleType) {
     ExampleTypePSButtonBar,
     ExampleTypePSToastView,
     ExampleTypePSPreloader,
-    ExampleTypePSAttributedDivisionLabel
+    ExampleTypePSAttributedDivisionLabel,
+    ExampleTypePSTabViewController
 };
 
 @interface DemoExampleViewController : PSViewController <UITableViewDataSource>
