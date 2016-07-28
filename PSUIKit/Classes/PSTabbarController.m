@@ -46,7 +46,6 @@
         _buttonBar.selectedIndex = _selectedIndex;
         
         [self.view showGuideLines];
-        
     }
     
     if (dataSourceChanged) {
@@ -67,6 +66,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     _selectedIndex = 0;
+    _tabbarPosition = PSTabbarPositionTop;
     
     _buttonBar = [[PSButtonBar alloc] init];
     _buttonBar.delegate = self;
@@ -147,6 +147,7 @@
     button.font = [UIFont systemFontOfSize:13];
     
     [button setBackgroundColor:[UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1] cornerRadius:0 forState:UIControlStateNormal];
+    [button setBackgroundColor:[UIColor whiteColor] cornerRadius:0 forState:UIControlStateHighlighted];
     [button setBackgroundColor:[UIColor whiteColor] cornerRadius:0 forState:UIControlStateSelected];
     [button setTitle:_controllers[buttonIndex].title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
