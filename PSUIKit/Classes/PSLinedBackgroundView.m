@@ -111,7 +111,7 @@
 - (void)initProperties
 {
     self.clearsContextBeforeDrawing = YES;
-    _lineHeight = 1.0f;
+    _lineHeight = 0.5f;
     _lineDrawPosition = LineDrawPositionBottom | LineDrawPositionTop;
     _linePadding = CGPaddingMakeHorizontal(0, 0);
     _seperatorColors = @[[UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1]];

@@ -20,5 +20,6 @@
 #import "PSPreloader.h"
 #import "PSRecycledScrollView.h"
 #import "PSToastView.h"
+#import "PSTabbarController.h"
 
 #endif

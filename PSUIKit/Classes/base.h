@@ -15,7 +15,6 @@
 #import "PSCollectionViewCell.h"
 #import "PSNavigationController.h"
 #import "PSScrollView.h"
-#import "PSTabbarController.h"
 #import "PSTableViewCell.h"
 #import "PSTableViewController.h"
 #import "PSView.h"

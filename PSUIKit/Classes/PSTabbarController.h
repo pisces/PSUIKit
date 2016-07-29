@@ -14,17 +14,8 @@ typedef NS_ENUM(NSInteger, PSTabbarPosition) {
     PSTabbarPositionBottom
 };
 
-@class PSTabbarController;
-
-@protocol PSTabbarControllerDataSource <NSObject>
-- (NSArray<UIViewController *> * _Nonnull)childViewControllersWithController:(PSTabbarController * _Nonnull)controller;
-- (void)controller:(PSTabbarController * _Nonnull)controller renderWithTab:(UIButton * _Nonnull)tab tabIndex:(NSInteger)tabIndex;
-@end
-
-
-@protocol PSTabbarControllerDelegate <NSObject>
-- (void)didChangeTabIndex:(NSInteger)tabIndex;
-@end
+@protocol PSTabbarControllerDataSource;
+@protocol PSTabbarControllerDelegate;
 
 @interface PSTabbarController : PSViewController
 @property (nonatomic) BOOL pagingEnabled;
@@ -35,4 +26,14 @@ typedef NS_ENUM(NSInteger, PSTabbarPosition) {
 @property (nonnull, nonatomic, readonly) UIScrollView *containerView;
 @property (nullable, nonatomic, weak) IBOutlet id<PSTabbarControllerDataSource> dataSource;
 @property (nullable, nonatomic, weak) IBOutlet id<PSTabbarControllerDelegate> delegate;
+@end
+
+@protocol PSTabbarControllerDataSource <NSObject>
+- (NSArray<UIViewController *> * _Nonnull)childViewControllersWithController:(PSTabbarController * _Nonnull)controller;
+- (void)controller:(PSTabbarController * _Nonnull)controller renderWithTab:(UIButton * _Nonnull)tab tabIndex:(NSInteger)tabIndex;
+@end
+
+
+@protocol PSTabbarControllerDelegate <NSObject>
+- (void)didChangeTabIndex:(NSInteger)tabIndex;
 @end

@@ -44,8 +44,6 @@
         controllerStack.selectedIndex = _selectedIndex;
         _buttonBar.numOfButtons = _controllers.count;
         _buttonBar.selectedIndex = _selectedIndex;
-        
-        [self.view showGuideLines];
     }
     
     if (dataSourceChanged) {
