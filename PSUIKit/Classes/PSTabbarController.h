@@ -24,6 +24,7 @@ typedef NS_ENUM(NSInteger, PSTabbarPosition) {
 @property (nonatomic) PSTabbarPosition tabbarPosition;
 @property (nonnull, nonatomic, readonly) PSButtonBar *buttonBar;
 @property (nonnull, nonatomic, readonly) UIScrollView *containerView;
+@property (nullable, nonatomic, readonly) UIViewController *selectedViewController;
 @property (nullable, nonatomic, weak) IBOutlet id<PSTabbarControllerDataSource> dataSource;
 @property (nullable, nonatomic, weak) IBOutlet id<PSTabbarControllerDelegate> delegate;
 @end

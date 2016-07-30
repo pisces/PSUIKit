@@ -82,7 +82,15 @@
     self.buttonBarHeight = 40;
 }
 
+- (void)layoutSubviews {
+    [self updateLayout];
+}
+
 #pragma mark - Public getter/setter
+
+- (UIViewController *)selectedViewController {
+    return controllerStack.selectedViewController;
+}
 
 - (void)setButtonBarHeight:(CGFloat)buttonBarHeight {
     if (buttonBarHeight == _buttonBarHeight) {
