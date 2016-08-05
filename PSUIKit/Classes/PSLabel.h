@@ -15,6 +15,7 @@
 @end
 
 @interface PSLabel : UILabel <PSLabelProtectedMethods>
+@property (nonatomic) BOOL allowTouchHighlighted;
 @property (nonatomic, readonly) BOOL appeared;
 @property (nonatomic) BOOL immediatelyUpdating;
 - (void)invalidateProperties;

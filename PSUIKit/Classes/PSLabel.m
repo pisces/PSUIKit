@@ -54,9 +54,34 @@
     return self;
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    if (_allowTouchHighlighted) {
+        self.highlighted = YES;
+    }
+}
+
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.highlighted = NO;
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.highlighted = NO;
+}
+
 // ================================================================================================
 //  Public
 // ================================================================================================
+
+- (void)setAllowTouchHighlighted:(BOOL)allowTouchHighlighted {
+    if (allowTouchHighlighted == _allowTouchHighlighted)
+        return;
+    
+    _allowTouchHighlighted = allowTouchHighlighted;
+    
+    if (allowTouchHighlighted) {
+        self.userInteractionEnabled = allowTouchHighlighted;
+    }
+}
 
 - (void)invalidateProperties
 {

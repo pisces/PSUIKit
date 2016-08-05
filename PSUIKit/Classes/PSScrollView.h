@@ -15,6 +15,8 @@
 @end
 
 @interface PSScrollView : UIScrollView <PSScrollViewProtectedMethods>
+@property (nonatomic) BOOL allowShouldRecognizeSimultaneously;
+@property (nonatomic) BOOL allowsTouchesOutsideSubview;
 @property (nonatomic) BOOL immediatelyUpdating;
 - (void)invalidateProperties;
 - (void)validateProperties;

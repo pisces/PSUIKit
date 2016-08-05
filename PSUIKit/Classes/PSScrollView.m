@@ -15,7 +15,7 @@
 }
 
 // ================================================================================================
-//  Overridden: UIView
+//  Overridden: UIScrollView
 // ================================================================================================
 
 - (void)didMoveToSuperview
@@ -46,6 +46,25 @@
     if (self)
         [self initProperties];
     return self;
+}
+
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(nonnull UIGestureRecognizer *)otherGestureRecognizer
+{
+    return _allowShouldRecognizeSimultaneously;
+}
+
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
+{
+    if (_allowsTouchesOutsideSubview) {
+        for (UIView *subview in self.subviews) {
+            CGPoint pointInSubview = [subview convertPoint:point fromView:self];
+            if ([subview pointInside:pointInSubview withEvent:event]) {
+                return YES;
+            }
+        }
+        return NO;
+    }
+    return [super pointInside:point withEvent:event];
 }
 
 // ================================================================================================
