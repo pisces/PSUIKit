@@ -159,6 +159,8 @@ static char const * const ThemeKey = "Theme";
     
     if ([self respondsToSelector:@selector(setExtendedLayoutIncludesOpaqueBars:)])
         self.extendedLayoutIncludesOpaqueBars = YES;
+    
+    self.interactivePopGestureRecognizer.delegate = self;
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
@@ -174,6 +176,10 @@ static char const * const ThemeKey = "Theme";
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
     return self.viewControllers.count > 0 ? [self.viewControllers.lastObject preferredInterfaceOrientationForPresentation] : UIInterfaceOrientationPortrait;
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    return self.viewControllers.count > 1;
 }
 
 // ================================================================================================

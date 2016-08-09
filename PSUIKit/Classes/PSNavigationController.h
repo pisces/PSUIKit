@@ -20,5 +20,5 @@
 @property (nonatomic, readonly) UIView *backgroundView;
 @end
 
-@interface PSNavigationController : UINavigationController
+@interface PSNavigationController : UINavigationController <UIGestureRecognizerDelegate>
 @end

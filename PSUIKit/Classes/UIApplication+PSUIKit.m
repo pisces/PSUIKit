@@ -101,7 +101,7 @@ NSString *const ApplicationDidHandleOpenURLNotification = @"ApplicationDidHandle
     self.url = nil;
 }
 
-- (void)registerUserNotificationTypes:(UIRemoteNotificationType)types
+- (void)registerUserNotificationTypes:(UIUserNotificationType)types
 {
     if ([self respondsToSelector:@selector(registerUserNotificationSettings:)])
     {
@@ -112,7 +112,7 @@ NSString *const ApplicationDidHandleOpenURLNotification = @"ApplicationDidHandle
     [self registerForRemoteNotificationTypes:types];
 }
 
-- (UIRemoteNotificationType)enabledUserNotificationTypes
+- (UIUserNotificationType)enabledUserNotificationTypes
 {
     if ([self respondsToSelector:@selector(currentUserNotificationSettings)])
     {

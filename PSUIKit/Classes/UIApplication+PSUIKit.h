@@ -38,6 +38,6 @@ extern NSString *const ApplicationDidHandleOpenURLNotification;
 @property (nonatomic, strong) NSString *sourceApplication;
 @property (nonatomic, strong) NSURL *url;
 - (void)clearProperties;
-- (void)registerUserNotificationTypes:(UIRemoteNotificationType)types;
-- (UIRemoteNotificationType)enabledUserNotificationTypes;
+- (void)registerUserNotificationTypes:(UIUserNotificationType)types;
+- (UIUserNotificationType)enabledUserNotificationTypes;
 @end
