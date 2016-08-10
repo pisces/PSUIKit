@@ -97,7 +97,7 @@
     _alignment = PSButtonBarAlignmentHorizontal;
     _selectedIndex = -1;
     _horizontalGap = 0;
-    _seperatorLineWidth = 0.5;
+    _seperatorLineWidth = 1;
     _verticalGap = 0;
     _padding = CGPaddingMake(0, 0, 0, 0);
     _seperatorColor = [UIColor clearColor];
@@ -338,6 +338,7 @@
         UIButton *button = [PSButton buttonWithType:_buttonType];
         button.frame = CGRectMake([self xOffsetWithIndex:i], [self yOffsetWithIndex:i], _buttonWidth, _buttonHeight);
         button.userInteractionEnabled = YES;
+        button.titleLabel.minimumScaleFactor = 0.5;
         
         if (i == _selectedIndex)
         {
@@ -576,16 +577,18 @@
 - (void)initProperties
 {
     _lineColor = [UIColor clearColor];
-    _lineWidth = 0.5;
+    _lineWidth = 1;
     self.backgroundColor = [UIColor clearColor];
     self.userInteractionEnabled = NO;
 }
 
 - (void)drawRect:(CGRect)rect
 {
+    [super drawRect:rect];
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetLineWidth(context, _lineWidth);
     CGContextSetStrokeColorWithColor(context, _lineColor.CGColor);
+    CGContextSetLineWidth(context, _lineWidth);
     
     [self drawHorizontalLineWithContext:context rect:rect];
     [self drawVerticalLineWithContext:context rect:rect];
@@ -602,8 +605,6 @@
     if (_rowCount < 1)
         return;
     
-    CGContextSetLineWidth(context, _lineWidth);
-    
     CGFloat y = rect.size.height/_rowCount;
     
     for (NSUInteger i=0; i<_rowCount-1; i++)
@@ -618,8 +619,6 @@
 {
     if (_columnCount < 1)
         return;
-    
-    CGContextSetLineWidth(context, _lineWidth);
     
     CGFloat x = rect.size.width/_columnCount;
     
