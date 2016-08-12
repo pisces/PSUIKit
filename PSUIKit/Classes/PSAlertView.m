@@ -203,6 +203,7 @@ static UIView *modalView;
     }
     
     buttonTitles = [NSMutableArray array];
+    _padding = CGPaddingMake(25, 0, 25, 0);
     _contentPadding = CGPaddingMake(10, 10, 10, 10);
     _buttonHeight = 44;
     _headerViewHeight = 64;
@@ -226,7 +227,7 @@ static UIView *modalView;
 {
     [super setUpSubviews];
     
-    CGFloat alertViewWidth = self.window.width - 50;
+    CGFloat alertViewWidth = self.window.width - _padding.left - _padding.right;
     
     maximumMessageTextSize = CGSizeMake(alertViewWidth - _contentPadding.left - _contentPadding.right, self.superview.height - 30 - _headerViewHeight - _buttonHeight);
     
@@ -245,7 +246,7 @@ static UIView *modalView;
     _buttonBarLineView.frame = _buttonBar.bounds;
     
     self.size = CGSizeMake(alertViewWidth, _headerView.height + _contentView.height + _contentPadding.top + _contentPadding.bottom + _buttonBar.height);
-    self.center = self.superview.center;
+    self.center = CGPointMake(self.superview.center.x + (_padding.left - _padding.right), self.superview.center.y);
 }
 
 // ================================================================================================

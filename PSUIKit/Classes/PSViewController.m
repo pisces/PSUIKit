@@ -225,7 +225,7 @@
 
 - (void)setLeftBarButtonItemWithTheme:(id<UIThemeProtocol>)theme otherLeftBarButtonItem:(UIBarButtonItem *)otherItem
 {
-    if ([self.navigationController respondsToSelector:@selector(previousTitle)] && self.navigationController.previousTitle) {
+    if (self.navigationController.viewControllers.count > 1) {
         [self setBackBarButtonItemWithTitle:@"" withTheme:theme];
     } else if (![self.navigationItem getLeftBarButtonItem]) {
         [self.navigationItem addLeftBarButtonItem:otherItem];

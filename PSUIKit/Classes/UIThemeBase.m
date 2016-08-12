@@ -81,10 +81,7 @@
 - (UIBarButtonItem *)setBackBarButtonItemWithTitle:(NSString *)title withTheme:(id<UIThemeProtocol>)theme
 {
     UIBarButtonItem *leftBarButtonItem = [theme backBarButtonItemWithTitle:title target:self action:@selector(navigationBack:)];
-    if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0)
-        self.navigationController.previousViewController.navigationItem.backBarButtonItem = leftBarButtonItem;
-    else
-        [self.navigationItem addLeftBarButtonItem:leftBarButtonItem];
+    [self.navigationItem addLeftBarButtonItem:leftBarButtonItem];
     return leftBarButtonItem;
 }
 

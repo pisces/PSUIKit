@@ -26,6 +26,7 @@ typedef void (^PSAlertViewDismission)(PSAlertView *alertView, NSInteger buttonIn
 @property (nonatomic) CGFloat buttonHeight;
 @property (nonatomic) CGFloat headerViewHeight;
 @property (nonatomic) CGPadding contentPadding;
+@property (nonatomic) CGPadding padding;
 @property (nonatomic, strong) NSString *message;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, readonly) CGFloat contentViewHeight;
